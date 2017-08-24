@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+<<<<<<< HEAD
 using namespace std;
 
 typedef long long LL;
@@ -73,4 +74,35 @@ int main() {
 		cin >> n;
 		cout << get_ans(get(n)) << endl;
 	}
+=======
+
+typedef __int128 lll;
+
+const int Mod = 1e9 + 7;
+
+int n;
+
+lll pos(lll x) {
+	
+}
+
+bool check(lll x) {
+	lll a = pos(pos(x));
+}
+
+int main() {
+	int caseCnt; scanf("%d", &caseCnt);
+	for (int kase = 1; kase <= caseCnt; ++kase) {
+		scanf("%d", &n);
+		lll l = 1, r = (lll)n * n * n, ans;
+		while (l <= r) {
+			lll mid = (l + r) >> 1;
+			if (check(mid)) ans = mid, l = mid + 1;
+			else r = mid - 1;
+		}
+		printf("%d\n", (int)(ans % Mod));
+	}
+	
+	return 0;
+>>>>>>> 14b339d20b273e5fe7653c14a3126973e8b799ef
 }
