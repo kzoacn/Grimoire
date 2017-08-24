@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.4.19)  24 AUG 2017 21:23
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.4.19)  24 AUG 2017 21:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1771,18 +1771,7 @@ Package: yfonts 2003/01/08 v1.3 (WaS)
 *************************************************
 runsystem(which pygmentize && touch full.aex)...executed.
 
-
-! Package minted Error: You must have `pygmentize' installed to use this packag
-e.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 \begin{document}
-                     
-Refer to the installation instructions in the minted documentation for more inf
-ormation.
+runsystem(rm full.aex)...executed.
 
 (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2016/05/14 v3.4.0 xeCJK patch file for listings
@@ -1966,371 +1955,93 @@ Chapter 1.
 . - 'bold small caps'  (bx/sc) with NFSS spec.: 
 .................................................
 (./_minted-full/default-pyg-prefix.pygstyle) (./_minted-full/xcode.pygstyle)
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/algebra/linear-re
-cursion.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open(o
-s.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\");
- f.write(textwrap.dedent(t)); f.close();")...executed.
+(./_minted-full/3BFCF6D6DF29C641DA3778F1725C4FFAE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex
+\g__fontspec_family_STXihei_int=\count277
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STXihei/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STXihei/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STXihei/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'STXihei(0)' created for font 'STXihei' with options
+. [Script={CJK},AutoFakeBold={4}].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"STXihei/OT:script=hani;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
+. <->"STXihei/OT:script=hani;language=DFLT;embolden=4;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+.................................................
+ [5])
+(./_minted-full/DB1F63A6A410C52C7A35E9F9A7AB1975E3F1F0CB35ED651431B0051B42D96D9
+3.pygtex [6])
+(./_minted-full/06CC42F25F4192C07487BA1FF24C9F5FE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex [7])
+(./_minted-full/A8771C2DCD9DC309F88BBD1FBDFC568FE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex)
+(./_minted-full/C938F5D5D596D86B193F83F1670D6A91E3F1F0CB35ED651431B0051B42D96D9
+3.pygtex
+Underfull \vbox (badness 4378) has occurred while \output is active []
 
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/3BFCF6D6DF29C641DA3778F1725C4FFAE3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...{cpp}{\source/algebra/linear-recursion.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/algebra/NTT+CRT.c
-pp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open(os.path.ex
-panduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\"); f.write(
-textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/DB1F63A6A410C52C7A35E9F9A7AB1975E3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 \inputminted{cpp}{\source/algebra/NTT+CRT.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/algebra/polynomia
-l-inverse.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open
-(os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\"
-); f.write(textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/06CC42F25F4192C07487BA1FF24C9F5FE3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...p}{\source/algebra/polynomial-inverse.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/algebra/polynomia
-l-divide.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open(
-os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\")
-; f.write(textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/A8771C2DCD9DC309F88BBD1FBDFC568FE3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ...pp}{\source/algebra/polynomial-divide.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/algebra/polynomia
-l-expandln.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = ope
-n(os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\
-"); f.write(textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/C938F5D5D596D86B193F83F1670D6A91E3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 ...}{\source/algebra/polynomial-expandln.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-) (../source/number-theory.tex [5] [6
-
-]
+ [8]
+[9])) (../source/number-theory.tex [10]
 Chapter 2.
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/number-theory/big
-integer-multiply.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f
- = open(os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\
-"UTF8\"); f.write(textwrap.dedent(t)); f.close();")...executed.
 
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/2AD7A1FB29D3930CAA7F3627566D3ACCE3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
+(./_minted-full/2AD7A1FB29D3930CAA7F3627566D3ACCE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex)
+(./_minted-full/7039B053421713AD7C8634703CEE045FE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex)
+(./_minted-full/4C33FDF98DB9A636F3EA8C85D5F2426DE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex [11
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 ...urce/number-theory/biginteger-multiply.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/number-theory/int
-eger-lattice-under-segment.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.
-close(); f = open(os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", 
-encoding=\"UTF8\"); f.write(textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/7039B053421713AD7C8634703CEE045FE3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 ...r-theory/integer-lattice-under-segment.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/number-theory/CRT
-.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open(os.path.
-expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\"); f.writ
-e(textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/4C33FDF98DB9A636F3EA8C85D5F2426DE3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...tminted{cpp}{\source/number-theory/CRT.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-) (../source/graph-theory.tex [7] [8
-
-]
+])) (../source/graph-theory.tex [12]
 Chapter 3.
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/graph-theory/gene
-ral-matching.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = o
-pen(os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF
-8\"); f.write(textwrap.dedent(t)); f.close();")...executed.
 
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/59CE12D58C1D5F8EC81FFF0F142E9B61E3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 ...{\source/graph-theory/general-matching.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/graph-theory/Stoe
-rWagner_O(V^3).cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f =
- open(os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"U
-TF8\"); f.write(textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/A82423EEA855EEC9550DD2E608B4B37DE3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...source/graph-theory/StoerWagner_O(V^3).cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/graph-theory/weig
-hted_blossom.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = o
-pen(os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF
-8\"); f.write(textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/6FEEA092DC385AB25DF15E1789D46C91E3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...{\source/graph-theory/weighted_blossom.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-) (../source/hints.tex [9] [10
+(./_minted-full/59CE12D58C1D5F8EC81FFF0F142E9B61E3F1F0CB35ED651431B0051B42D96D9
+3.pygtex [13
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14])
+(./_minted-full/6FEEA092DC385AB25DF15E1789D46C91E3F1F0CB35ED651431B0051B42D96D9
+3.pygtex [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18])
+(./_minted-full/A82423EEA855EEC9550DD2E608B4B37DE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex [19])) (../source/hints.tex [20]
 Chapter 4.
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/hints/input-accel
-eration.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open(o
-s.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\");
- f.write(textwrap.dedent(t)); f.close();")...executed.
 
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/B62E04CA900BBC2C53E64E8A3BF6E311E3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
+(./_minted-full/B62E04CA900BBC2C53E64E8A3BF6E311E3F1F0CB35ED651431B0051B42D96D9
+3.pygtex)
+(./_minted-full/36A5EA7D72958281A8BF2F7861C4C129E3F1F0CB35ED651431B0051B42D96D9
+3.pygtex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [21
 
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 ...{cpp}{\source/hints/input-acceleration.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; f = open(os.path.expanduser(os.path.expandvars(\"../source/hints/STL-memory-
-release.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open(o
-s.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\");
- f.write(textwrap.dedent(t)); f.close();")...executed.
-
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
-escape=True -o _minted-full/36A5EA7D72958281A8BF2F7861C4C129E3F1F0CB35ED651431B
-0051B42D96D93.pygtex full.pyg)...executed.
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...{cpp}{\source/hints/STL-memory-release.cpp}
-                                                  
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-)) [11] (./full.aux)
+])))
+[22] (./full.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.21748pt have occurred.
@@ -2338,16 +2049,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-runsystem(rm full.pyg)...executed.
-
  ) 
 Here is how much of TeX's memory you used:
- 27152 strings out of 493589
- 532211 string characters out of 6145556
- 567713 words of memory out of 5000000
- 30131 multiletter control sequences out of 15000+600000
- 19562 words of font info for 114 fonts, out of 8000000 for 9000
+ 27252 strings out of 493589
+ 537928 string characters out of 6145556
+ 591376 words of memory out of 5000000
+ 30192 multiletter control sequences out of 15000+600000
+ 21144 words of font info for 126 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 63i,7n,87p,10437b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,10n,87p,10437b,728s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on full.pdf (11 pages).
+Output written on full.pdf (22 pages).
