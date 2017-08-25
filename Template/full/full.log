@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.4.19)  24 AUG 2017 21:45
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.4.19)  25 AUG 2017 22:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2009,7 +2009,19 @@ Chapter 2.
 
 ])) (../source/graph-theory.tex [12]
 Chapter 3.
+runsystem(python -c "import sys; import os; import textwrap; from io import ope
+n; f = open(os.path.expanduser(os.path.expandvars(\"../source/graph-theory/basi
+c.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open(os.path
+.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\"); f.wri
+te(textwrap.dedent(t)); f.close();")...executed.
 
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
+escape=True -o _minted-full/3D063ABCAE4BC76BE1E4421E8D971B9CE3F1F0CB35ED651431B
+0051B42D96D93.pygtex full.pyg)...executed.
+
+
+(./_minted-full/3D063ABCAE4BC76BE1E4421E8D971B9CE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex)
 (./_minted-full/59CE12D58C1D5F8EC81FFF0F142E9B61E3F1F0CB35ED651431B0051B42D96D9
 3.pygtex [13
 
@@ -2017,7 +2029,18 @@ Chapter 3.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14])
-(./_minted-full/6FEEA092DC385AB25DF15E1789D46C91E3F1F0CB35ED651431B0051B42D96D9
+runsystem(python -c "import sys; import os; import textwrap; from io import ope
+n; f = open(os.path.expanduser(os.path.expandvars(\"../source/graph-theory/weig
+hted_blossom.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = o
+pen(os.path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF
+8\"); f.write(textwrap.dedent(t)); f.close();")...executed.
+
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
+escape=True -o _minted-full/E254E8BE06BB5006F7815536E18AE52DE3F1F0CB35ED651431B
+0051B42D96D93.pygtex full.pyg)...executed.
+
+
+(./_minted-full/E254E8BE06BB5006F7815536E18AE52DE3F1F0CB35ED651431B0051B42D96D9
 3.pygtex [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2027,9 +2050,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18])
+ [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19])
 (./_minted-full/A82423EEA855EEC9550DD2E608B4B37DE3F1F0CB35ED651431B0051B42D96D9
-3.pygtex [19])) (../source/hints.tex [20]
+3.pygtex [20])
+runsystem(python -c "import sys; import os; import textwrap; from io import ope
+n; f = open(os.path.expanduser(os.path.expandvars(\"../source/graph-theory/domi
+nator.cpp\")), \"r\", encoding=\"UTF8\"); t = f.read(); f.close(); f = open(os.
+path.expanduser(os.path.expandvars(\"full.pyg\")), \"w\", encoding=\"UTF8\"); f
+.write(textwrap.dedent(t)); f.close();")...executed.
+
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -P math
+escape=True -o _minted-full/70B8F0C1126E12D81276531DECFDDDBAE3F1F0CB35ED651431B
+0051B42D96D93.pygtex full.pyg)...executed.
+
+
+(./_minted-full/70B8F0C1126E12D81276531DECFDDDBAE3F1F0CB35ED651431B0051B42D96D9
+3.pygtex [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]))
+(../source/hints.tex [23] [24
+
+]
 Chapter 4.
 
 (./_minted-full/B62E04CA900BBC2C53E64E8A3BF6E311E3F1F0CB35ED651431B0051B42D96D9
@@ -2038,10 +2083,12 @@ Chapter 4.
 3.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21
+ [25])))
+runsystem(rm _minted-full/6FEEA092DC385AB25DF15E1789D46C91E3F1F0CB35ED651431B00
+51B42D96D93.pygtex)...executed.
 
-])))
-[22] (./full.aux)
+
+[26] (./full.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.21748pt have occurred.
@@ -2049,14 +2096,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+runsystem(rm full.pyg)...executed.
+
  ) 
 Here is how much of TeX's memory you used:
- 27252 strings out of 493589
- 537928 string characters out of 6145556
- 591376 words of memory out of 5000000
- 30192 multiletter control sequences out of 15000+600000
+ 27261 strings out of 493589
+ 538630 string characters out of 6145556
+ 593653 words of memory out of 5000000
+ 30194 multiletter control sequences out of 15000+600000
  21144 words of font info for 126 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 63i,10n,87p,10437b,728s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,10n,87p,10437b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on full.pdf (22 pages).
+Output written on full.pdf (26 pages).

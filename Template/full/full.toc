@@ -9,9 +9,11 @@
 \contentsline {section}{\numberline {2.2}线段下整点}{11}
 \contentsline {section}{\numberline {2.3}中国剩余定理}{11}
 \contentsline {chapter}{\numberline {3}图论}{13}
-\contentsline {section}{\numberline {3.1}一般图匹配}{13}
-\contentsline {section}{\numberline {3.2}一般最大权匹配}{15}
-\contentsline {section}{\numberline {3.3}无向图最小割}{19}
-\contentsline {chapter}{\numberline {4}技巧}{21}
-\contentsline {section}{\numberline {4.1}无敌的读入优化}{21}
-\contentsline {section}{\numberline {4.2}真正释放STL内存}{22}
+\contentsline {section}{\numberline {3.1}图论基础}{13}
+\contentsline {section}{\numberline {3.2}一般图匹配}{13}
+\contentsline {section}{\numberline {3.3}一般最大权匹配}{15}
+\contentsline {section}{\numberline {3.4}无向图最小割}{20}
+\contentsline {section}{\numberline {3.5}必经点dominator tree}{21}
+\contentsline {chapter}{\numberline {4}技巧}{25}
+\contentsline {section}{\numberline {4.1}无敌的读入优化}{25}
+\contentsline {section}{\numberline {4.2}真正释放STL内存}{26}
