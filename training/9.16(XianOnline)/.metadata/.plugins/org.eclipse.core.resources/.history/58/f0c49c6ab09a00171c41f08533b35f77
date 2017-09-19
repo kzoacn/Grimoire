@@ -1,0 +1,20 @@
+import java.util.*;
+import java.math.*;
+
+public class Main {
+	static public void main(String[] arg) {
+		//System.out.println("asdf");
+		Scanner cin = new Scanner(System.in);
+		int n;
+		String s;
+		while (cin.hasNext()) {
+			n = cin.nextInt();
+			BigDecimal ans = new BigDecimal(0.0);
+			for (int i = 1; i <= n; ++i) {
+				s = cin.next();
+				int l = s.length();
+				int j = 
+			}
+		}
+	} 
+}

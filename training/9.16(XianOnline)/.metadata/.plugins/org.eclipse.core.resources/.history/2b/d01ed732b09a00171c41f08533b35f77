@@ -1,0 +1,14 @@
+import java.util.*;
+import java.math.*;
+
+public class Main {
+	static public void main(String[] arg) {
+		//System.out.println("asdf");
+		Scanner cin = new Scanner(System.in);
+		int n;
+		while (cin.hasNext()) {
+			n = cin.nextInt();
+			
+		}
+	} 
+}

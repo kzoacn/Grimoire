@@ -1,0 +1,8 @@
+import java.util.*;
+import java.math.*;
+
+public class Main {
+	static public void main(String[] arg) {
+		
+	} 
+}

@@ -1,0 +1,42 @@
+import java.util.*;
+import java.math.*;
+
+public class Main {
+	static public void main(String[] arg) {
+		//System.out.println("asdf");
+		Scanner cin = new Scanner(System.in);
+		int n;
+		String s;
+		while (cin.hasNext()) {
+			n = cin.nextInt();
+			BigDecimal ans = new BigDecimal("0.0");
+			for (int i = 1; i <= n; ++i) {
+				s = cin.next();
+				int l = s.length();
+				int j = 0;
+				BigDecimal tmp = new BigDecimal("2.0");
+				BigDecimal two = tmp;
+				while (j < l && s.charAt(j) != '(') {
+					tmp = tmp.divide(two, 50, BigDecimal.ROUND_DOWN);
+					if (s.charAt(j) == '0') {
+						ans = ans.add(tmp);						
+					} else {
+						ans = ans.subtract(tmp);
+					}
+					++j;
+				}
+				if (j < l && s.charAt(j) == '(') {
+					++j;
+					int k = j;
+					while (s.charAt(k) != ')') {
+						++k;
+					}
+					tmp = tmp.divide(BigDecimal.valueOf((1ll << k - 1));
+					for (int t = j; t < k; ++t) {
+						
+					}
+				}
+			}
+		}
+	} 
+}
