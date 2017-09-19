@@ -1,0 +1,23 @@
+\contentsline {chapter}{\numberline {1}代数}{5}
+\contentsline {section}{\numberline {1.1}$O(n^2\qopname \relax o{log}n)$求线性递推数列第n项}{5}
+\contentsline {section}{\numberline {1.2}闪电数论变换与魔力CRT}{6}
+\contentsline {section}{\numberline {1.3}多项式求逆}{7}
+\contentsline {section}{\numberline {1.4}多项式除法}{8}
+\contentsline {section}{\numberline {1.5}多项式取指数取对数}{9}
+\contentsline {chapter}{\numberline {2}数论}{11}
+\contentsline {section}{\numberline {2.1}大整数相乘取模}{11}
+\contentsline {section}{\numberline {2.2}线段下整点}{11}
+\contentsline {section}{\numberline {2.3}中国剩余定理}{11}
+\contentsline {chapter}{\numberline {3}图论}{13}
+\contentsline {section}{\numberline {3.1}图论基础}{13}
+\contentsline {section}{\numberline {3.2}一般图匹配}{13}
+\contentsline {section}{\numberline {3.3}一般最大权匹配}{15}
+\contentsline {section}{\numberline {3.4}无向图最小割}{20}
+\contentsline {section}{\numberline {3.5}最大带权带花树}{21}
+\contentsline {section}{\numberline {3.6}闪电二分图匹配}{26}
+\contentsline {section}{\numberline {3.7}必经点dominator tree}{27}
+\contentsline {chapter}{\numberline {4}字符串}{31}
+\contentsline {section}{\numberline {4.1}Manacher}{31}
+\contentsline {chapter}{\numberline {5}技巧}{33}
+\contentsline {section}{\numberline {5.1}无敌的读入优化}{33}
+\contentsline {section}{\numberline {5.2}真正释放STL内存}{34}
