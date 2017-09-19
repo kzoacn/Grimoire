@@ -1,9 +1,10 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+#include <unistd.h>
+using namespace std;
 
 #define X first
 #define Y second
 #define m_p make_pair
-using namespace std;
 int n=8,m=9;
 //int cnt=0;
 struct Map{
@@ -74,10 +75,13 @@ Map operator*(Map mp,view v){
 	return nmp;
 }
 
+pair<int,int>tmp[90];
+
 void pre(){
 #define P1(a,b,c,d) p1[a][b]=m_p(c,d)
-#define P11(a,b,c,d) p1[c][d]=m_p(a,b)
 #define PPP1(a,b,c,d,e,f) P1(a,b,c,d);P1(c,d,e,f);P1(e,f,a,b);
+
+
 
 	PPP1(1,1,5,9,7,5);
 	PPP1(2,1,8,5,4,9);
@@ -85,15 +89,15 @@ void pre(){
 	PPP1(2,2,8,7,4,4);
 	PPP1(2,6,8,8,4,3);
 	PPP1(2,5,8,9,4,1);
-	P11(3, 1, 3, 5);
-	P11(3, 2, 3, 7);
-	P11(3, 3, 3, 6);
-	P11(3, 4, 3, 2);
-	P11(3, 5, 3, 9);
-	P11(3, 6, 3, 8);
-	P11(3, 7, 3, 4);
-	P11(3, 8, 3, 3);
-	P11(3, 9, 3, 1);
+	P1(3, 1, 3, 5);
+	P1(3, 2, 3, 7);
+	P1(3, 3, 3, 6);
+	P1(3, 4, 3, 2);
+	P1(3, 5, 3, 9);
+	P1(3, 6, 3, 8);
+	P1(3, 7, 3, 4);
+	P1(3, 8, 3, 3);
+	P1(3, 9, 3, 1);
 	p1.build();
 #define P2(a,b,c,d) p2[a][b]=m_p(c,d);
 #define PPP2(a,b,c,d,e,f) P2(a,b,c,d);P2(c,d,e,f);P2(e,f,a,b);
@@ -106,7 +110,6 @@ void pre(){
 	PPP2(2,7,8,4,4,2);
 	p2.build();
 	
-	pair<int,int>tmp[90];
 	int sz=0;
 #define MM(a,b) tmp[++sz]=m_p(a,b);
 	
@@ -149,87 +152,62 @@ bool check(){
 	return true;
 }
 
-void dfs(int dep){
-	
-	if(check()){
-		flag=1;
-	//	now.print();
-		return ;
-	}
-	if(dep>3||flag)return ;
-	
-	for(int i=0;i<4;i++){
-		for(int j=0;j<2;j++){
-			
-			Map back;
-			
-			back=now;
-			now=now*p1;
-			dfs(dep+1);
-			if(flag)return ;
-			now=back;
-			
-			
-			back=now;
-			now=now*p1*p1;
-			dfs(dep+1);
-			if(flag)return ;
-			now=back;
-		
-			back=now;
-			now=now*p2;
-			dfs(dep+1);
-			if(flag)return ;
-			now=back;
-			
-			
-			back=now;
-			now=now*p2*p2;
-			dfs(dep+1);
-			if(flag)return ;
-			now=back;
-			
-			
-			now=now*v2;
+inline void get_print(Map now) {
+	int idx = 0;
+	for (int i = 1; i <= 8; ++i) {
+		for (int j = 1; j <= 9; ++j) {
+			++idx;
+			cout << now[tmp[idx].X][tmp[idx].Y] << " ";
 		}
-		now=now*v1;
+		cout << endl;
 	}
 }
 
-
-int main(){
+int main() {
+	srand(time(0) ^ getpid());
 	pre();
-	int T;cin>>T;
-	while(T--){
-		flag=0;
-		
-		for(int i=1;i<=n;i++){
-			for(int j=1;j<=m;j++){
-				int x;scanf("%d",&x);
-				now[M[i][j].X][M[i][j].Y]=x;
+	int cs = 1;
+	cout << cs << endl;
+	for (; cs; --cs) {
+		for (int i = 1; i <= 8; ++i) {
+			for (int j = 1; j <= 9; ++j) {
+				now[i][j] = i;
 			}
 		}
-//		return 0;
-
-		//now.print();
+		/*now = now * p1;
+		now.print();
+		cout << endl;
+		get_print(now);
+		cout << endl;
+		//cout << endl;	
+		//now.print();cout << endl;
+		continue;*/
 		
 		
-		/*for(int i=1;i<=n;i++){
-			for(int j=1;j<=m;j++){
-				now[i][j]=i;
+		string st = "";
+		for (int i = 1; i <= 3; ++i) {
+			int x = rand() % 4;
+			if (x == 0) {
+				now = now * v1;
 			}
-		}*/
+			if (x == 1) {
+				now = now * v2;
+			}
+			if (x == 2) {
+				now = now * p1;
+			}
+			if (x == 3) {
+				now = now * p1;
+			}
+			st.append(1, char('0' + x));
+		}
 		
-		//now.print();
-		//puts("");
-				
-//		now=now*p2*v2*p2*v1*p1*v2*p2;
+		get_print(now);
+		cout << endl;	
 		
-		//now.print();
+		now.print();
+		cout << endl;
 		
-		dfs(1);
-		//cerr<<cnt<<endl;
-		puts(flag?"YES":"NO");
+		cout << st << endl;
 	}
-	return 0;
 }
