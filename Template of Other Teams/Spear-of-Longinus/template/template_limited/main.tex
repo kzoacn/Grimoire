@@ -1,0 +1,906 @@
+%!TEX program = xelatex
+\documentclass[landscape, twoside, a4paper]{article}
+
+
+%\usepackage{ctex}
+\usepackage{listings, color, fontspec, minted, setspace, titlesec, fancyhdr, dingbat, mdframed, multicol}
+\usepackage{graphicx, amssymb, amsmath, textcomp, booktabs, xeCJK}
+\usepackage[left=1cm,right=1cm,top=1.3cm,bottom=0.5cm,columnsep=1cm,dvipdfm]{geometry}
+\allowdisplaybreaks
+%\setlength{\parindent}{0em}
+%\setlength{\mathindent}{0pt}
+\lstset{breaklines}
+\let\cleardoublepage\relax
+\titleformat{\section}{\large}{}{0pt}{}
+\titleformat{\subsection}{\normalsize}{}{0pt}{}
+\titleformat{\subsubsection}{\small}{}{0pt}{}
+%\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+%\titleformat{\section}{\normalfont\large\bfseries}{Chapter \,\thesection}{10pt}{\large}
+%\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+%\titleformat{\subsubsection}{\normalfont\small\bfseries}{\thesubsubsection}{1em}{}
+%\titleformat{\subsubsection}{\normalfont\footnotesize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\section} {0pt}{0pt}{0pt}
+\titlespacing*{\subsection} {0pt}{0pt}{0pt}
+\titlespacing*{\subsubsection} {0pt}{-1pt}{-1pt}
+%\titlespacing*{\subsubsection}{0pt}{-1pt}{-1pt}
+%configure fonts
+%\setmonofont{Menlo}[Scale=0.8]
+%\setCJKmainfont{STHeiti}
+
+\renewcommand{\theFancyVerbLine}{\sffamily \textcolor[rgb]{0.5,0.5,0.5}{\scriptsize {\arabic{FancyVerbLine}}}}
+
+\setminted[cpp]{
+	style=xcode,
+	mathescape,
+	linenos,
+	autogobble,
+	baselinestretch=0.5,
+	tabsize=4,
+	fontsize=\small,
+	%bgcolor=Gray,
+	frame=single,
+	framesep=1mm,
+	framerule=0.3pt,
+	numbersep=1mm,
+	breaklines=true,
+	breaksymbolsepleft=2pt,
+	%breaksymbolleft=\raisebox{0.8ex}{ \small\reflectbox{\carriagereturn}}, %not moe!
+	%breaksymbolright=\small\carriagereturn,
+	breakbytoken=false,
+}
+\setminted[java]{
+	style=xcode,
+	mathescape,
+	linenos,
+	autogobble,
+	baselinestretch=1.0,
+	tabsize=4,
+	%bgcolor=Gray,
+	frame=single,
+	framesep=1mm,
+	framerule=0.3pt,
+	numbersep=1mm,
+	breaklines=true,
+	breaksymbolsepleft=2pt,
+	%breaksymbolleft=\raisebox{0.8ex}{ \small\reflectbox{\carriagereturn}}, %not moe!
+	%breaksymbolright=\small\carriagereturn,
+	breakbytoken=false,
+}
+\setminted[text]{
+	style=xcode,
+	mathescape,
+	linenos,
+	autogobble,
+	baselinestretch=1.0,
+	tabsize=4,
+	%bgcolor=Gray,
+	frame=single,
+	framesep=1mm,
+	framerule=0.3pt,
+	numbersep=1mm,
+	breaklines=true,
+	breaksymbolsepleft=2pt,
+	%breaksymbolleft=\raisebox{0.8ex}{ \small\reflectbox{\carriagereturn}}, %not moe!
+	%breaksymbolright=\small\carriagereturn,
+	breakbytoken=false,
+}
+
+\pagestyle{fancy}
+\setlength{\headsep}{0.1cm}
+\rhead{Page \thepage}
+\lhead{上海交通大学 Shanghai Jiao Tong University}
+ %页眉线宽，设为0可以去页眉线
+%\setlength{\skip\footins}{0.5cm}    %脚注与正文的距离           
+%\renewcommand{\footnotesize}{}      %设置脚注字体大小           
+%\renewcommand{\footrulewidth}{1pt}  %脚注线的宽度           
+
+\newcommand{\cppcode}[1]{
+	\inputminted[mathescape,
+	frame=lines,linenos]{cpp}{source/#1}
+}
+\newcommand{\javacode}[1]{
+	\inputminted[mathescape,
+	frame=lines,linenos]{java}{source/#1}
+}
+\begin{document}\scriptsize
+	%\title{}
+	%\author{\emph{Shanghai Jiao Tong University}}
+%	\date{\today}
+%	\maketitle
+	
+	\begin{center}
+		\textbf{\LARGE{Spear of Longinus}}
+		
+		
+		\textbf{\small{Shanghai Jiao Tong University}}
+	\end{center}
+	
+	%\clearpage
+	\begin{multicols}{2}
+		
+		\begin{spacing}{0}
+			\tableofcontents
+		\end{spacing}
+		\clearpage
+		
+		\begin{spacing}{0.8}
+			
+
+\section{数论}
+
+
+%\subsection{快速求逆元}
+%返回结果：$$x^{-1}(mod)$$
+%\indent 使用条件：$x \in [0, mod)$并且$x$与$mod$互质
+%\cppcode{number-theory/inverse.cpp}
+
+\subsection{扩展欧几里德算法}
+
+
+\cppcode{number-theory/extended-euclid.cpp}
+
+
+\subsection{中国剩余定理}
+
+\cppcode{number-theory/chinese-remainder-theorem.cpp}
+
+
+\subsection{中国剩余定理2}
+
+\cppcode{number-theory/china2.cpp}
+
+
+%\subsection{组合数取模}
+
+%\cppcode{number-theory/CnmmodP.cpp}
+
+
+\subsection{扩展小步大步}
+
+\cppcode{number-theory/exBSGS.cpp}
+
+
+\subsection{卢卡斯定理}
+
+\cppcode{number-theory/Lucas.cpp}
+
+
+
+\subsection{Miller Rabin 素数测试}
+
+
+\cppcode{number-theory/miller-rabin.cpp}
+
+
+\subsection{Pollard Rho 大数分解}
+
+
+时间复杂度：$\mathcal{O}(n^{1/4})$
+
+
+\cppcode{number-theory/pollard-rho.cpp}
+
+
+
+
+\subsection{快速数论变换(zky)}
+
+返回结果：$$c_i=\sum_{0 \leq j \leq i} a_j \cdot b_{i-j} (mod) \ (0 \leq i < n)$$
+
+\indent 使用说明：$magic$是$mod$的原根\\
+
+\indent 时间复杂度：$\mathcal{O}(n log n)$
+
+\cppcode{number-theory/number-theoretic-transform.cpp}
+
+
+%\subsection{快速数论变换(lyx)}
+
+%\cppcode{number-theory/DFT.cpp}
+
+
+\subsection{原根}
+
+\cppcode{number-theory/primeroot.cpp}
+
+
+\subsection{线性递推}
+
+\cppcode{number-theory/linear-recurrence.cpp}
+
+
+%\subsection{线性筛}
+
+%\cppcode{number-theory/linear-sieve.cpp}
+
+
+%\subsection{离散对数}
+
+
+%\subsection{离散平方根}
+
+
+%\subsection{佩尔方程求解}
+
+
+\subsection{直线下整点个数}
+
+
+返回结果：$$\sum_{0 \leq i < n} \lfloor \frac{a + b \cdot i}{m} \rfloor$$
+\cppcode{number-theory/lattice-count.cpp}
+
+
+\section{数值}
+
+
+\subsection{高斯消元}
+
+\cppcode{numerical-algorithm/Gauss.cpp}
+
+
+\subsection{快速傅立叶变换}
+
+
+返回结果：$$c_i=\sum_{0 \leq j \leq i} a_j \cdot b_{i-j} \ (0 \leq i < n)$$
+
+\indent 时间复杂度：$\mathcal{O}(n log n)$
+
+
+\cppcode{numerical-algorithm/fast-fourier-transform.cpp}
+
+
+\subsection{单纯形法求解线性规划}
+
+
+返回结果：$$max\{c_{1 \times m} \cdot x_{m \times 1} \ | \ x_{m \times 1} \geq 0_{m \times 1}, a_{n \times m} \cdot x_{m \times 1} \leq b_{n \times 1}\}$$
+
+
+\cppcode{numerical-algorithm/linear-programming-simplex.cpp}
+
+
+\subsection{自适应辛普森}
+
+
+\cppcode{numerical-algorithm/adaptive-simpson.cpp}
+
+
+
+\subsection{多项式求根}
+
+
+\cppcode{numerical-algorithm/polyroot.cpp}
+
+
+%\subsection{牛顿迭代法}
+
+
+%\subsection{多项式方程求解}
+
+
+%\subsection{最小二乘法}
+
+
+\section{数据结构}
+
+
+\subsection{平衡的二叉查找树}
+
+
+\subsubsection{Treap}
+
+
+\cppcode{data-structure/Treap.cpp}
+
+
+%\subsubsection{Splay}
+
+
+%\cppcode{data-structure/Splay.cpp}
+
+
+\subsection{坚固的数据结构}
+
+
+%\subsubsection{坚固的线段树}
+
+
+%\cppcode{data-structure/persistent-segment-tree.cpp}
+
+
+\subsubsection{坚固的平衡树}
+
+
+\cppcode{data-structure/fhqTreap.cpp}
+
+
+\subsubsection{坚固的字符串}
+
+
+%\begin{enumerate}
+
+%\item ext库中的rope
+
+%\cppcode{data-structure/crope.cpp}
+
+%\item 可持久化平衡树实现的rope
+
+%\cppcode{data-structure/rope.cpp}
+
+%\end{enumerate}
+
+
+\subsubsection{坚固的左偏树}
+
+\cppcode{data-structure/lefttree.cpp}
+
+
+%\subsubsection{不坚固的斜堆}
+
+%\cppcode{data-structure/SkewHeap.cpp}
+
+
+\subsection{树上的魔术师}
+
+
+%\subsubsection{轻重树链剖分(zky)}
+
+%\cppcode{data-structure/HLD.cpp}
+
+
+%\subsubsection{轻重树链剖分(lyx)}
+
+%\cppcode{data-structure/tree-chain.cpp}
+
+
+\subsubsection{Link Cut Tree(zky)}
+
+\cppcode{data-structure/LCT.cpp}
+
+
+\subsubsection{Link Cut Tree(Splay)}
+
+\cppcode{data-structure/Link-cut-tree.cpp}
+
+
+%\subsubsection{AAA Tree}
+
+%\cppcode{data-structure/toptree.cpp}
+
+
+%\subsection{ST}
+
+%\cppcode{data-structure/Rmq.cpp}
+
+
+\subsection{可持久化线段树}
+
+\cppcode{data-structure/ChairTree.cpp}
+
+
+%\subsection{可持久化Trie}
+
+%\cppcode{data-structure/ChairTrie.cpp}
+
+
+\subsection{k-d树}
+
+\cppcode{data-structure/kd-tree.cpp}
+
+
+
+\subsection{莫队算法}
+
+\cppcode{data-structure/mo-team.cpp}
+
+%\subsection{树上在线莫队}
+
+%\cppcode{data-structure/mo-teamontree.cpp}
+
+
+%\subsection{整体二分}
+
+%\cppcode{data-structure/binary-search.cpp}
+
+
+\subsection{树状数组kth}
+
+\cppcode{data-structure/fenwicktree.cpp}
+
+
+\subsection{虚树}
+
+\cppcode{data-structure/virtualtree.cpp}
+
+
+\subsection{点分治(zky)}
+
+\cppcode{data-structure/pointdivide.cpp}
+
+
+\subsection{元芳树}
+
+\cppcode{data-structure/yuanfang.cpp}
+
+
+
+\section{图论}
+
+
+%\subsection{强连通分量}
+
+
+%\cppcode{graph-theory/strongly-connected-components.cpp}
+
+
+%\subsection{双连通分量}
+
+
+\subsection{点双连通分量(lyx)}
+
+\cppcode{graph-theory/pointtwo.cpp}
+
+
+%\subsubsection{边双连通分量}
+
+
+\subsection{2-SAT问题(强连通分量)}
+
+
+\cppcode{graph-theory/two-satisfiability.cpp}
+
+
+\subsection{二分图最大匹配}
+
+
+\subsubsection{Hungary算法}
+
+
+时间复杂度：$\mathcal{O}(V \cdot E)$
+
+
+\cppcode{graph-theory/Hungarian.cpp}
+
+
+\subsubsection{Hopcroft Karp算法}
+
+
+时间复杂度：$\mathcal{O}(\sqrt{V} \cdot E)$
+
+
+\cppcode{graph-theory/HK.cpp}
+
+
+\subsection{二分图最大权匹配}
+
+
+时间复杂度：$\mathcal{O}(V^4)$
+
+
+\cppcode{graph-theory/maximum-weight-matching.cpp}
+
+
+\subsection{最大流(dinic)}
+
+时间复杂度：$\mathcal{O}(V^2 \cdot E)$
+
+\cppcode{graph-theory/dinic.cpp}
+
+
+
+\subsection{最大流(sap)}
+
+时间复杂度：$\mathcal{O}(V^2 \cdot E)$
+
+\cppcode{graph-theory/Sap.cpp}
+
+
+
+\subsection{上下界网络流}
+
+
+$B(u,v)$表示边$(u,v)$流量的下界，$C(u,v)$表示边$(u,v)$流量的上界，$F(u,v)$表示边$(u,v)$的流量。设$G(u,v) = F(u,v) - B(u,v)$，显然有
+
+$$0 \leq G(u,v) \leq C(u,v)-B(u,v)$$
+
+
+\subsubsection{无源汇的上下界可行流}
+
+
+建立超级源点$S^*$和超级汇点$T^*$，对于原图每条边$(u,v)$在新网络中连如下三条边：$S^* \rightarrow v$，容量为$B(u,v)$；$u \rightarrow T^*$，容量为$B(u,v)$；$u \rightarrow v$，容量为$C(u,v) - B(u,v)$。最后求新网络的最大流，判断从超级源点$S^*$出发的边是否都满流即可，边$(u,v)$的最终解中的实际流量为$G(u,v)+B(u,v)$。
+
+
+\subsubsection{有源汇的上下界可行流}
+
+
+从汇点$T$到源点$S$连一条上界为$\infty$，下界为$0$的边。按照\textbf{无源汇的上下界可行流}一样做即可，流量即为$T \rightarrow S$边上的流量。
+
+
+\subsubsection{有源汇的上下界最大流}
+
+
+\begin{enumerate}
+
+\item 在\textbf{有源汇的上下界可行流}中，从汇点$T$到源点$S$的边改为连一条上界为$\infty$，下届为$x$的边。$x$满足二分性质，找到最大的$x$使得新网络存在\textbf{无源汇的上下界可行流}即为原图的最大流。
+
+\item 从汇点$T$到源点$S$连一条上界为$\infty$，下界为$0$的边，变成无源汇的网络。按照\textbf{无源汇的上下界可行流}的方法，建立超级源点$S^*$和超级汇点$T^*$，求一遍$S^* \rightarrow T^*$的最大流，再将从汇点$T$到源点$S$的这条边拆掉，求一次$S \rightarrow T$的最大流即可。
+
+\end{enumerate}
+
+
+\subsubsection{有源汇的上下界最小流}
+
+
+\begin{enumerate}
+
+\item 在\textbf{有源汇的上下界可行流}中，从汇点$T$到源点$S$的边改为连一条上界为$x$，下界为$0$的边。$x$满足二分性质，找到最小的$x$使得新网络存在\textbf{无源汇的上下界可行流}即为原图的最小流。
+
+\item 按照\textbf{无源汇的上下界可行流}的方法，建立超级源点$S^*$与超级汇点$T^*$，求一遍$S^* \rightarrow T^*$的最大流，但是注意这一次不加上汇点$T$到源点$S$的这条边，即不使之改为无源汇的网络去求解。求完后，再加上那条汇点$T$到源点$S$上界$\infty$的边。因为这条边下界为$0$，所以$S^*$，$T^*$无影响，再直接求一次$S^* \rightarrow T^*$的最大流。若超级源点$S^*$出发的边全部满流，则$T \rightarrow S$边上的流量即为原图的最小流，否则无解。
+
+\end{enumerate}
+
+
+\subsection{最小费用最大流}
+
+
+\subsubsection{稀疏图}
+
+
+时间复杂度：$\mathcal{O}(V \cdot E^2)$
+
+
+\cppcode{graph-theory/minimum-cost-flow-spfa.cpp}
+
+
+\subsubsection{稠密图}
+
+
+使用条件：费用非负\\
+
+\indent 时间复杂度：$\mathcal{O}(V \cdot E^2)$
+
+
+\cppcode{graph-theory/minimum-cost-flow-zkw.cpp}
+
+
+\subsection{一般图最大匹配}
+
+
+时间复杂度：$\mathcal{O}(V^3)$
+
+
+\cppcode{graph-theory/maximum-matching-blossom.cpp}
+
+
+\subsection{无向图全局最小割}
+
+
+时间复杂度：$\mathcal{O}(V^3)$\\
+
+\indent 注意事项：处理重边时，应该对边权累加
+
+
+\cppcode{graph-theory/minimum-cut-stoer-wagner.cpp}
+
+
+%\subsection{最小树形图}
+
+
+%\subsection{有根树的同构}
+
+
+%时间复杂度：$\mathcal{O}(V log V)$
+
+
+%\cppcode{graph-theory/rooted-tree-isomorphism.cpp}
+
+
+%\subsection{度限制生成树}
+
+
+%\subsection{弦图相关}
+
+
+%\subsubsection{弦图的判定}
+
+
+%\subsubsection{弦图的团数}
+
+
+\subsection{哈密尔顿回路（ORE性质的图）}
+
+
+ORE性质：$$\forall x,y \in V \wedge (x,y) \notin E \ \ s.t. \ \ deg_x+deg_y \geq n$$
+
+\indent 返回结果：从顶点$1$出发的一个哈密尔顿回路\\
+
+\indent 使用条件：$n \geq 3$
+
+
+\cppcode{graph-theory/hamiltonian-circuit-ore.cpp}
+
+
+\subsection{必经点树}
+
+\cppcode{graph-theory/dominator-tree.cpp}
+
+
+\section{字符串}
+
+
+\subsection{模式匹配}
+
+
+\subsubsection{KMP算法}
+
+
+\cppcode{string-manipulation/KMP.cpp}
+
+
+\subsubsection{扩展KMP算法}
+
+
+返回结果：$$next_i = lcp(text, text_{i \dots n-1})$$
+
+
+\cppcode{string-manipulation/ExtKMP.cpp}
+
+
+\subsubsection{AC自动机}
+
+
+\cppcode{string-manipulation/ACmachine.cpp}
+
+
+\subsection{后缀三姐妹}
+
+
+\subsubsection{后缀数组}
+
+
+\cppcode{string-manipulation/Sa.cpp}
+
+
+\subsubsection{后缀数组(dc3)}
+
+\cppcode{string-manipulation/DC3.cpp}
+
+
+\subsubsection{后缀自动机}
+\indent 多串LCS
+\indent 对一个串建后缀自动机，其他串在上面匹配，因为是求所有串的公共子串，所以每个点记录每个串最长匹配长度的最小值，最后找到所有点中最长的一个即可。一个注意事项就是，当走到一个点时，还要更新它的parent树上的祖先的匹配长度,数组开两倍啦啦啦!
+
+
+\indent 各长度字串出现次数最大值
+\indent 给一个字符串S，令F(x)表示S的所有长度为x的子串中，出现次数的最大值。
+\indent 构建字符串的自动机，对于每个节点，right集合大小就是出现次数，maxs就是它代表的最长长度，那么我们用|right(x)|去更新f[maxs[x]]的值，最后从大到小用f[i]去更新f[i-1]的值即可
+
+\cppcode{string-manipulation/Sam-LCS.cpp}
+
+%\subsubsection{后缀自动机-各长度字串出现次数最大值}
+
+%\cppcode{string-manipulation/Sam-max.cpp}
+
+%\subsubsection{后缀自动机-两串LCS}
+
+%\cppcode{string-manipulation/Sam-2LCS.cpp}
+
+
+\subsection{回文三兄弟}
+
+\subsubsection{马拉车}
+
+\cppcode{string-manipulation/Manacher.cpp}
+
+%\subsubsection{回文树(lyx)}
+
+%\cppcode{string-manipulation/PAMM.cpp}
+
+\subsubsection{回文自动机(zky)}
+
+\cppcode{string-manipulation/PAM.cpp}
+
+
+
+
+
+\subsection{循环串最小表示}
+
+\cppcode{string-manipulation/minexpress.cpp}
+
+
+\section{计算几何}
+
+
+\subsection{二维基础}
+
+
+\subsubsection{点类}
+\cppcode{computational-geometry/point.cpp}
+
+
+\subsubsection{圆类}
+\cppcode{computational-geometry/circle.cpp}
+
+\subsubsection{凸包}
+
+
+\cppcode{computational-geometry/convex-hull.cpp}
+
+
+\subsubsection{半平面交}
+
+\cppcode{computational-geometry/halfplaneintersection.cpp}
+
+
+%\subsubsection{最近点对}
+
+%\cppcode{computational-geometry/closest-pair-of-points.cpp}
+
+
+\subsubsection{最小圆覆盖}
+
+\cppcode{computational-geometry/mincir.cpp}
+
+
+%\subsubsection{凸包快速询问}
+
+%\cppcode{computational-geometry/PlayWithConvex.cpp}
+
+
+%\subsection{三维基础}
+
+
+%\subsubsection{点类}
+
+
+%\subsubsection{凸包}
+
+
+%\subsubsection{绕轴旋转}
+
+
+\subsection{多边形}
+
+
+\subsubsection{判断点在多边形内部}
+
+
+\cppcode{computational-geometry/point-in-polygon.cpp}
+
+
+
+
+%\subsubsection{旋转卡壳}
+
+
+%\subsubsection{动态凸包}
+
+
+%\subsubsection{点到凸包的切线}
+
+
+%\subsubsection{直线与凸包的交点}
+
+
+%\subsubsection{凸多边形的交集}
+
+
+%\subsubsection{凸多边形内的最大圆}
+
+
+%\subsection{圆}
+
+
+%\subsubsection{圆类}
+
+
+%\subsubsection{圆的交集}
+
+
+%\subsubsection{最小覆盖圆}
+
+
+%\subsubsection{最小覆盖球}
+
+
+%\subsubsection{判断圆存在交集}
+
+
+%\subsubsection{圆与多边形的交集}
+
+
+%\subsection{三角形}
+
+
+%\subsubsection{三角形的内心}
+
+
+%\subsubsection{三角形的外心}
+
+
+%\subsubsection{三角形的垂心}
+
+
+%\subsection{黑暗科技}
+
+
+%\subsubsection{平面图形的转动惯量}
+
+
+%\subsubsection{平面区域处理}
+
+
+%\subsubsection{Vonoroi图}
+
+
+\section{其他}
+
+
+\subsection{斯坦纳树}
+
+\cppcode{miscellany/Steiner-Tree.cpp}
+
+
+\subsection{无敌的读入优化}
+
+\cppcode{miscellany/Reader.cpp}
+
+
+\subsection{最小树形图}
+
+\cppcode{miscellany/mintreegraph.cpp}
+
+
+\subsection{DLX}
+
+\cppcode{miscellany/DLX.cpp}
+
+
+%\subsection{插头DP}
+
+%\cppcode{miscellany/plugdp.cpp}
+
+
+
+\subsection{某年某月某日是星期几}
+
+
+\cppcode{miscellany/what-day-is-today.cpp}
+
+
+\subsection{枚举大小为$k$的子集}
+
+
+使用条件：$k > 0$
+
+
+\cppcode{miscellany/subset-of-size-k.cpp}
+
+
+\subsection{环状最长公共子串}
+
+
+\cppcode{miscellany/cyclic-longest-common-string.cpp}
+
+
+\subsection{LLMOD}
+
+
+\cppcode{miscellany/LLMOD.cpp}
+
+
+%\subsection{搜索}
+
+
+%\subsubsection{Dancing Links X}
+
+
+\section{Java}
+\subsection{基础模板}
+\javacode{template.java}
+
+
+
+		\end{spacing}
+	\end{multicols}
+\end{document}

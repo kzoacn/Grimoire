@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kt}{int} \PYGxcode{n+nf}{find}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{k}\PYGxcode{p}{)\PYGxcodeZob{}}
+    \PYGxcode{k+kt}{int} \PYGxcode{n}{cnt}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{,}\PYGxcode{n}{ans}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+    \PYGxcode{k}{for}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{22}\PYGxcode{p}{;}\PYGxcode{n}{i}\PYGxcode{o}{\PYGxcodeZgt{}=}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}\PYGxcode{n}{i}\PYGxcode{o}{\PYGxcodeZhy{}\PYGxcodeZhy{}}\PYGxcode{p}{)\PYGxcodeZob{}}
+        \PYGxcode{n}{ans}\PYGxcode{o}{+=}\PYGxcode{p}{(}\PYGxcode{l+m+mi}{1}\PYGxcode{o}{\PYGxcodeZlt{}\PYGxcodeZlt{}}\PYGxcode{n}{i}\PYGxcode{p}{);}
+        \PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{ans}\PYGxcode{o}{\PYGxcodeZgt{}}\PYGxcode{n}{n} \PYGxcode{o}{||} \PYGxcode{n}{cnt}\PYGxcode{o}{+}\PYGxcode{n}{d}\PYGxcode{p}{[}\PYGxcode{n}{ans}\PYGxcode{p}{]}\PYGxcode{o}{\PYGxcodeZgt{}=}\PYGxcode{n}{k}\PYGxcode{p}{)}\PYGxcode{n}{ans}\PYGxcode{o}{\PYGxcodeZhy{}=}\PYGxcode{p}{(}\PYGxcode{l+m+mi}{1}\PYGxcode{o}{\PYGxcodeZlt{}\PYGxcodeZlt{}}\PYGxcode{n}{i}\PYGxcode{p}{);}
+        \PYGxcode{k}{else} \PYGxcode{n}{cnt}\PYGxcode{o}{+=}\PYGxcode{n}{d}\PYGxcode{p}{[}\PYGxcode{n}{ans}\PYGxcode{p}{];}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k}{return} \PYGxcode{n}{ans}\PYGxcode{o}{+}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

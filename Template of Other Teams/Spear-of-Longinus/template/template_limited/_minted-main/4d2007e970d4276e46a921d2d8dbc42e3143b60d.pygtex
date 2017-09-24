@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kt}{double} \PYGxcode{n+nf}{area}\PYGxcode{p}{(}\PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{left}\PYGxcode{p}{,} \PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{right}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k+kt}{double} \PYGxcode{n}{mid} \PYGxcode{o}{=} \PYGxcode{p}{(}\PYGxcode{n}{left} \PYGxcode{o}{+} \PYGxcode{n}{right}\PYGxcode{p}{)} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{;}
+    \PYGxcode{k}{return} \PYGxcode{p}{(}\PYGxcode{n}{right} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{n}{left}\PYGxcode{p}{)} \PYGxcode{o}{*} \PYGxcode{p}{(}\PYGxcode{n}{calc}\PYGxcode{p}{(}\PYGxcode{n}{left}\PYGxcode{p}{)} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{4} \PYGxcode{o}{*} \PYGxcode{n}{calc}\PYGxcode{p}{(}\PYGxcode{n}{mid}\PYGxcode{p}{)} \PYGxcode{o}{+} \PYGxcode{n}{calc}\PYGxcode{p}{(}\PYGxcode{n}{right}\PYGxcode{p}{))} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{6}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k+kt}{double} \PYGxcode{n+nf}{simpson}\PYGxcode{p}{(}\PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{left}\PYGxcode{p}{,} \PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{right}\PYGxcode{p}{,}
+               \PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{eps}\PYGxcode{p}{,} \PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{area\PYGxcodeZus{}sum}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k+kt}{double} \PYGxcode{n}{mid} \PYGxcode{o}{=} \PYGxcode{p}{(}\PYGxcode{n}{left} \PYGxcode{o}{+} \PYGxcode{n}{right}\PYGxcode{p}{)} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{;}
+    \PYGxcode{k+kt}{double} \PYGxcode{n}{area\PYGxcodeZus{}left} \PYGxcode{o}{=} \PYGxcode{n}{area}\PYGxcode{p}{(}\PYGxcode{n}{left}\PYGxcode{p}{,} \PYGxcode{n}{mid}\PYGxcode{p}{);}
+    \PYGxcode{k+kt}{double} \PYGxcode{n}{area\PYGxcodeZus{}right} \PYGxcode{o}{=} \PYGxcode{n}{area}\PYGxcode{p}{(}\PYGxcode{n}{mid}\PYGxcode{p}{,} \PYGxcode{n}{right}\PYGxcode{p}{);}
+    \PYGxcode{k+kt}{double} \PYGxcode{n}{area\PYGxcodeZus{}total} \PYGxcode{o}{=} \PYGxcode{n}{area\PYGxcodeZus{}left} \PYGxcode{o}{+} \PYGxcode{n}{area\PYGxcodeZus{}right}\PYGxcode{p}{;}
+    \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{std}\PYGxcode{o}{::}\PYGxcode{n}{abs}\PYGxcode{p}{(}\PYGxcode{n}{area\PYGxcodeZus{}total} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{n}{area\PYGxcodeZus{}sum}\PYGxcode{p}{)} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{l+m+mi}{15} \PYGxcode{o}{*} \PYGxcode{n}{eps}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{k}{return} \PYGxcode{n}{area\PYGxcodeZus{}total} \PYGxcode{o}{+} \PYGxcode{p}{(}\PYGxcode{n}{area\PYGxcodeZus{}total} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{n}{area\PYGxcodeZus{}sum}\PYGxcode{p}{)} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{15}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k}{return} \PYGxcode{n}{simpson}\PYGxcode{p}{(}\PYGxcode{n}{left}\PYGxcode{p}{,} \PYGxcode{n}{mid}\PYGxcode{p}{,} \PYGxcode{n}{eps} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{,} \PYGxcode{n}{area\PYGxcodeZus{}left}\PYGxcode{p}{)}
+         \PYGxcode{o}{+} \PYGxcode{n}{simpson}\PYGxcode{p}{(}\PYGxcode{n}{mid}\PYGxcode{p}{,} \PYGxcode{n}{right}\PYGxcode{p}{,} \PYGxcode{n}{eps} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{,} \PYGxcode{n}{area\PYGxcodeZus{}right}\PYGxcode{p}{);}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k+kt}{double} \PYGxcode{n+nf}{simpson}\PYGxcode{p}{(}\PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{left}\PYGxcode{p}{,} \PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{right}\PYGxcode{p}{,} \PYGxcode{k}{const} \PYGxcode{k+kt}{double} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{eps}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k}{return} \PYGxcode{n}{simpson}\PYGxcode{p}{(}\PYGxcode{n}{left}\PYGxcode{p}{,} \PYGxcode{n}{right}\PYGxcode{p}{,} \PYGxcode{n}{eps}\PYGxcode{p}{,} \PYGxcode{n}{area}\PYGxcode{p}{(}\PYGxcode{n}{left}\PYGxcode{p}{,} \PYGxcode{n}{right}\PYGxcode{p}{));}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

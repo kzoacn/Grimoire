@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kt}{bool} \PYGxcode{n+nf}{InPoly}\PYGxcode{p}{(}\PYGxcode{n}{P} \PYGxcode{n}{p}\PYGxcode{p}{,}\PYGxcode{n}{vector}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{n}{P}\PYGxcode{o}{\PYGxcodeZgt{}}\PYGxcode{n}{poly}\PYGxcode{p}{)\PYGxcodeZob{}}
+	\PYGxcode{k+kt}{int} \PYGxcode{n}{cnt}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+	\PYGxcode{k}{for}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}\PYGxcode{n}{i}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{n}{poly}\PYGxcode{p}{.}\PYGxcode{n}{size}\PYGxcode{p}{();}\PYGxcode{n}{i}\PYGxcode{o}{++}\PYGxcode{p}{)\PYGxcodeZob{}}
+		\PYGxcode{n}{P} \PYGxcode{n}{a}\PYGxcode{o}{=}\PYGxcode{n}{poly}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{],}\PYGxcode{n}{b}\PYGxcode{o}{=}\PYGxcode{n}{poly}\PYGxcode{p}{[(}\PYGxcode{n}{i}\PYGxcode{o}{+}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{poly}\PYGxcode{p}{.}\PYGxcode{n}{size}\PYGxcode{p}{()];}
+		\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{OnLine}\PYGxcode{p}{(}\PYGxcode{n}{p}\PYGxcode{p}{,}\PYGxcode{n}{L}\PYGxcode{p}{(}\PYGxcode{n}{a}\PYGxcode{p}{,}\PYGxcode{n}{b}\PYGxcode{p}{)))}
+			\PYGxcode{k}{return} \PYGxcode{n+nb}{false}\PYGxcode{p}{;}
+		\PYGxcode{k+kt}{int} \PYGxcode{n}{x}\PYGxcode{o}{=}\PYGxcode{n}{sgn}\PYGxcode{p}{(}\PYGxcode{n}{det}\PYGxcode{p}{(}\PYGxcode{n}{a}\PYGxcode{p}{,}\PYGxcode{n}{p}\PYGxcode{p}{,}\PYGxcode{n}{b}\PYGxcode{p}{));}
+		\PYGxcode{k+kt}{int} \PYGxcode{n}{y}\PYGxcode{o}{=}\PYGxcode{n}{sgn}\PYGxcode{p}{(}\PYGxcode{n}{a}\PYGxcode{p}{.}\PYGxcode{n}{y}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{n}{p}\PYGxcode{p}{.}\PYGxcode{n}{y}\PYGxcode{p}{);}
+		\PYGxcode{k+kt}{int} \PYGxcode{n}{z}\PYGxcode{o}{=}\PYGxcode{n}{sgn}\PYGxcode{p}{(}\PYGxcode{n}{b}\PYGxcode{p}{.}\PYGxcode{n}{y}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{n}{p}\PYGxcode{p}{.}\PYGxcode{n}{y}\PYGxcode{p}{);}
+		\PYGxcode{n}{cnt}\PYGxcode{o}{+=}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{o}{\PYGxcodeZgt{}}\PYGxcode{l+m+mi}{0}\PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}}\PYGxcode{n}{y}\PYGxcode{o}{\PYGxcodeZlt{}=}\PYGxcode{l+m+mi}{0}\PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}}\PYGxcode{n}{z}\PYGxcode{o}{\PYGxcodeZgt{}}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{);}
+		\PYGxcode{n}{cnt}\PYGxcode{o}{\PYGxcodeZhy{}=}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{l+m+mi}{0}\PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}}\PYGxcode{n}{z}\PYGxcode{o}{\PYGxcodeZlt{}=}\PYGxcode{l+m+mi}{0}\PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}}\PYGxcode{n}{y}\PYGxcode{o}{\PYGxcodeZgt{}}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{);}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+	\PYGxcode{k}{return} \PYGxcode{n}{cnt}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

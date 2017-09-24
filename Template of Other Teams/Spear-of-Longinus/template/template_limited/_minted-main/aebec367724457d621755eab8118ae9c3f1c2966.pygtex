@@ -1,0 +1,119 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kt}{int} \PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{],} \PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{],} \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{],} \PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{],} \PYGxcode{n}{visit}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{];}
+\PYGxcode{n}{std}\PYGxcode{o}{::}\PYGxcode{n}{vector}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{k+kt}{int}\PYGxcode{o}{\PYGxcodeZgt{}} \PYGxcode{n}{queue}\PYGxcode{p}{;}
+
+\PYGxcode{k+kt}{int} \PYGxcode{n+nf}{find}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{x}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{!=} \PYGxcode{n}{x}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]);}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k}{return} \PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{];}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{merge}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{x}\PYGxcode{p}{,} \PYGxcode{k+kt}{int} \PYGxcode{n}{y}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{n}{x} \PYGxcode{o}{=} \PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{);}
+    \PYGxcode{n}{y} \PYGxcode{o}{=} \PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{y}\PYGxcode{p}{);}
+    \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{x} \PYGxcode{o}{!=} \PYGxcode{n}{y}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{y}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k+kt}{int} \PYGxcode{n+nf}{lca}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{x}\PYGxcode{p}{,} \PYGxcode{k+kt}{int} \PYGxcode{n}{y}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k}{static} \PYGxcode{k+kt}{int} \PYGxcode{n}{stamp} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+    \PYGxcode{n}{stamp}\PYGxcode{o}{++}\PYGxcode{p}{;}
+    \PYGxcode{k}{while} \PYGxcode{p}{(}\PYGxcode{n+nb}{true}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{x} \PYGxcode{o}{!=} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+            \PYGxcode{n}{x} \PYGxcode{o}{=} \PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{);}
+            \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{visit}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{n}{stamp}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{k}{return} \PYGxcode{n}{x}\PYGxcode{p}{;}
+            \PYGxcode{p}{\PYGxcodeZcb{}}
+            \PYGxcode{n}{visit}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{stamp}\PYGxcode{p}{;}
+            \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{!=} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{n}{x} \PYGxcode{o}{=} \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]];}
+            \PYGxcode{p}{\PYGxcodeZcb{}} \PYGxcode{k}{else} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{n}{x} \PYGxcode{o}{=} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+            \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{n}{std}\PYGxcode{o}{::}\PYGxcode{n}{swap}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{,} \PYGxcode{n}{y}\PYGxcode{p}{);}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{group}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{a}\PYGxcode{p}{,} \PYGxcode{k+kt}{int} \PYGxcode{n}{p}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k}{while} \PYGxcode{p}{(}\PYGxcode{n}{a} \PYGxcode{o}{!=} \PYGxcode{n}{p}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{k+kt}{int} \PYGxcode{n}{b} \PYGxcode{o}{=} \PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{a}\PYGxcode{p}{],} \PYGxcode{n}{c} \PYGxcode{o}{=} \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{b}\PYGxcode{p}{];}
+        \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{c}\PYGxcode{p}{)} \PYGxcode{o}{!=} \PYGxcode{n}{p}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+            \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{c}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{b}\PYGxcode{p}{;}
+        \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{b}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+            \PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{b}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+            \PYGxcode{n}{queue}\PYGxcode{p}{.}\PYGxcode{n}{push\PYGxcodeZus{}back}\PYGxcode{p}{(}\PYGxcode{n}{b}\PYGxcode{p}{);}
+        \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{c}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+            \PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{c}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+            \PYGxcode{n}{queue}\PYGxcode{p}{.}\PYGxcode{n}{push\PYGxcodeZus{}back}\PYGxcode{p}{(}\PYGxcode{n}{c}\PYGxcode{p}{);}
+        \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{n}{merge}\PYGxcode{p}{(}\PYGxcode{n}{a}\PYGxcode{p}{,} \PYGxcode{n}{b}\PYGxcode{p}{);}
+        \PYGxcode{n}{merge}\PYGxcode{p}{(}\PYGxcode{n}{b}\PYGxcode{p}{,} \PYGxcode{n}{c}\PYGxcode{p}{);}
+        \PYGxcode{n}{a} \PYGxcode{o}{=} \PYGxcode{n}{c}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{augment}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{source}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{n}{queue}\PYGxcode{p}{.}\PYGxcode{n}{clear}\PYGxcode{p}{();}
+    \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{i}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{visit}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+        \PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{i}\PYGxcode{p}{;}
+        \PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{source}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+    \PYGxcode{n}{queue}\PYGxcode{p}{.}\PYGxcode{n}{push\PYGxcodeZus{}back}\PYGxcode{p}{(}\PYGxcode{n}{source}\PYGxcode{p}{);}
+    \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{head} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{head} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{p}{(}\PYGxcode{k+kt}{int}\PYGxcode{p}{)}\PYGxcode{n}{queue}\PYGxcode{p}{.}\PYGxcode{n}{size}\PYGxcode{p}{()} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{source}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{head}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{k+kt}{int} \PYGxcode{n}{x} \PYGxcode{o}{=} \PYGxcode{n}{queue}\PYGxcode{p}{[}\PYGxcode{n}{head}\PYGxcode{p}{];}
+        \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{p}{(}\PYGxcode{k+kt}{int}\PYGxcode{p}{)}\PYGxcode{n}{edge}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{size}\PYGxcode{p}{();} \PYGxcode{o}{++}\PYGxcode{n}{i}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+            \PYGxcode{k+kt}{int} \PYGxcode{n}{y} \PYGxcode{o}{=} \PYGxcode{n}{edge}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{][}\PYGxcode{n}{i}\PYGxcode{p}{];}
+            \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{n}{y} \PYGxcode{o}{||} \PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{)} \PYGxcode{o}{==} \PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{y}\PYGxcode{p}{)} \PYGxcode{o}{||} \PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{k}{continue}\PYGxcode{p}{;}
+            \PYGxcode{p}{\PYGxcodeZcb{}}
+            \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{k+kt}{int} \PYGxcode{n}{r} \PYGxcode{o}{=} \PYGxcode{n}{lca}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{,} \PYGxcode{n}{y}\PYGxcode{p}{);}
+                \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{)} \PYGxcode{o}{!=} \PYGxcode{n}{r}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                    \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{y}\PYGxcode{p}{;}
+                \PYGxcode{p}{\PYGxcodeZcb{}}
+                \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{y}\PYGxcode{p}{)} \PYGxcode{o}{!=} \PYGxcode{n}{r}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                    \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{x}\PYGxcode{p}{;}
+                \PYGxcode{p}{\PYGxcodeZcb{}}
+                \PYGxcode{n}{group}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{,} \PYGxcode{n}{r}\PYGxcode{p}{);}
+                \PYGxcode{n}{group}\PYGxcode{p}{(}\PYGxcode{n}{y}\PYGxcode{p}{,} \PYGxcode{n}{r}\PYGxcode{p}{);}
+            \PYGxcode{p}{\PYGxcodeZcb{}} \PYGxcode{k}{else} \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{x}\PYGxcode{p}{;}
+                \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{u} \PYGxcode{o}{=} \PYGxcode{n}{y}\PYGxcode{p}{;} \PYGxcode{n}{u} \PYGxcode{o}{!=} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                    \PYGxcode{k+kt}{int} \PYGxcode{n}{v} \PYGxcode{o}{=} \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{u}\PYGxcode{p}{];}
+                    \PYGxcode{k+kt}{int} \PYGxcode{n}{mv} \PYGxcode{o}{=} \PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{v}\PYGxcode{p}{];}
+                    \PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{v}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{u}\PYGxcode{p}{;}
+                    \PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{u}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{v}\PYGxcode{p}{;}
+                    \PYGxcode{n}{u} \PYGxcode{o}{=} \PYGxcode{n}{mv}\PYGxcode{p}{;}
+                \PYGxcode{p}{\PYGxcodeZcb{}}
+                \PYGxcode{k}{break}\PYGxcode{p}{;}
+            \PYGxcode{p}{\PYGxcodeZcb{}} \PYGxcode{k}{else} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{n}{next}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{x}\PYGxcode{p}{;}
+                \PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{;}
+                \PYGxcode{n}{mark}\PYGxcode{p}{[}\PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+                \PYGxcode{n}{queue}\PYGxcode{p}{.}\PYGxcode{n}{push\PYGxcodeZus{}back}\PYGxcode{p}{(}\PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{]);}
+            \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k+kt}{int} \PYGxcode{n+nf}{solve}\PYGxcode{p}{()} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{n}{std}\PYGxcode{o}{::}\PYGxcode{n}{fill}\PYGxcode{p}{(}\PYGxcode{n}{match}\PYGxcode{p}{,} \PYGxcode{n}{match} \PYGxcode{o}{+} \PYGxcode{n}{n}\PYGxcode{p}{,} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{);}
+    \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{i}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+            \PYGxcode{n}{augment}\PYGxcode{p}{(}\PYGxcode{n}{i}\PYGxcode{p}{);}
+        \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k+kt}{int} \PYGxcode{n}{answer} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+    \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{i}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{n}{answer} \PYGxcode{o}{+=} \PYGxcode{p}{(}\PYGxcode{n}{match}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]} \PYGxcode{o}{!=} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{);}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k}{return} \PYGxcode{n}{answer}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

@@ -1,0 +1,77 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+struct cmp{
+	bool operator()(int x,int y){
+		return x>y;
+	}
+};	
+
+
+priority_queue<int,vector<int> >q;
+
+
+/*
+map<>
+set<>
+multiset
+vector
+pq
+*/
+
+
+priority_queue<pair<int,int>,vector<int>,greater<int> >q;
+
+q.push(make_pair(dis[i],i))
+q.top()
+q,pop
+
+q.size
+
+while(!q.empty)
+array
+vector
+deque
+map
+
+make_heap(l,r)
+heap_push(l,r)
+heap_pop(l,r)
+ 
+ greater<int>
+ 
+ less<>
+
+int main(){
+
+	M[]=1;
+	M.count()
+	
+	M.count()
+	
+	S.insert(1);
+	S.insert(1);
+	
+	for(map<int,int>::iterator it=M.begin();it!=M.end();it++){
+		it->first
+		
+	}
+	set<int>::iterator it;
+	
+	it=S.find(2);
+	
+	if(it!=S.end()){
+		S.erase(it);
+		S.erase(*it);
+	}
+	[l,r)
+		r
+	
+	<=
+	
+	S.lower_bound(2) == S; >=
+	S.upper_bound    > 
+		
+
+	return 0;	
+}

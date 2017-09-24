@@ -1,0 +1,45 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k}{struct} \PYGxcode{n}{Node}\PYGxcode{p}{\PYGxcodeZob{}}
+	\PYGxcode{k+kt}{int} \PYGxcode{n}{Next}\PYGxcode{p}{[}\PYGxcode{l+m+mi}{30}\PYGxcode{p}{],} \PYGxcode{n}{fail}\PYGxcode{p}{,} \PYGxcode{n}{mark}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}\PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{];}
+
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{Init}\PYGxcode{p}{()\PYGxcodeZob{}}
+	\PYGxcode{n}{memset}\PYGxcode{p}{(}\PYGxcode{n}{Tree}\PYGxcode{p}{,} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{,} \PYGxcode{k}{sizeof} \PYGxcode{n}{Tree}\PYGxcode{p}{);}
+	\PYGxcode{n}{cnt} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+
+	\PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}=} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{n}{i}\PYGxcode{o}{++}\PYGxcode{p}{)\PYGxcodeZob{}}
+		\PYGxcode{k+kt}{char} \PYGxcode{n}{c}\PYGxcode{p}{;}
+		\PYGxcode{k+kt}{int} \PYGxcode{n}{now} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+		\PYGxcode{n}{scanf}\PYGxcode{p}{(}\PYGxcode{l+s}{\PYGxcodeZdq{}\PYGxcodeZpc{}s\PYGxcodeZdq{}}\PYGxcode{p}{,} \PYGxcode{n}{s} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{);}
+		\PYGxcode{k+kt}{int} \PYGxcode{n}{Length} \PYGxcode{o}{=} \PYGxcode{n}{strlen}\PYGxcode{p}{(}\PYGxcode{n}{s} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{);}
+		\PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{j} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{n}{j} \PYGxcode{o}{\PYGxcodeZlt{}=} \PYGxcode{n}{Length}\PYGxcode{p}{;} \PYGxcode{n}{j}\PYGxcode{o}{++}\PYGxcode{p}{)\PYGxcodeZob{}}
+			\PYGxcode{n}{c} \PYGxcode{o}{=} \PYGxcode{n}{s}\PYGxcode{p}{[}\PYGxcode{n}{j}\PYGxcode{p}{];}
+			\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{now}\PYGxcode{p}{].}\PYGxcode{n}{Next}\PYGxcode{p}{[}\PYGxcode{n}{c} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}a\PYGxcodeZsq{}}\PYGxcode{p}{])} \PYGxcode{n}{now} \PYGxcode{o}{=} \PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{now}\PYGxcode{p}{].}\PYGxcode{n}{Next}\PYGxcode{p}{[}\PYGxcode{n}{c} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}a\PYGxcodeZsq{}}\PYGxcode{p}{];} \PYGxcode{k}{else}
+				\PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{now}\PYGxcode{p}{].}\PYGxcode{n}{Next}\PYGxcode{p}{[}\PYGxcode{n}{c} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}a\PYGxcodeZsq{}}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{o}{++} \PYGxcode{n}{cnt}\PYGxcode{p}{,} \PYGxcode{n}{now} \PYGxcode{o}{=} \PYGxcode{n}{cnt}\PYGxcode{p}{;}
+		\PYGxcode{p}{\PYGxcodeZcb{}}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{Build\PYGxcodeZus{}Ac}\PYGxcode{p}{()\PYGxcodeZob{}}
+	\PYGxcode{k+kt}{int} \PYGxcode{n}{en} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+	\PYGxcode{n}{Q}\PYGxcode{p}{[}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+	\PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{fi} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{fi} \PYGxcode{o}{\PYGxcodeZlt{}=} \PYGxcode{n}{en}\PYGxcode{p}{;} \PYGxcode{n}{fi}\PYGxcode{o}{++}\PYGxcode{p}{)\PYGxcodeZob{}}
+		\PYGxcode{k+kt}{int} \PYGxcode{n}{now} \PYGxcode{o}{=} \PYGxcode{n}{Q}\PYGxcode{p}{[}\PYGxcode{n}{fi}\PYGxcode{p}{];}
+		\PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{next} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{next} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{l+m+mi}{26}\PYGxcode{p}{;} \PYGxcode{n}{next}\PYGxcode{o}{++}\PYGxcode{p}{)}
+			\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{now}\PYGxcode{p}{].}\PYGxcode{n}{Next}\PYGxcode{p}{[}\PYGxcode{n}{next}\PYGxcode{p}{])}
+			\PYGxcode{p}{\PYGxcodeZob{}}
+				\PYGxcode{k+kt}{int} \PYGxcode{n}{k} \PYGxcode{o}{=} \PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{now}\PYGxcode{p}{].}\PYGxcode{n}{Next}\PYGxcode{p}{[}\PYGxcode{n}{next}\PYGxcode{p}{];}
+				\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{now} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{k}\PYGxcode{p}{].}\PYGxcode{n}{fail} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{k}{else}
+				\PYGxcode{p}{\PYGxcodeZob{}}
+					\PYGxcode{k+kt}{int} \PYGxcode{n}{h} \PYGxcode{o}{=} \PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{now}\PYGxcode{p}{].}\PYGxcode{n}{fail}\PYGxcode{p}{;}
+					\PYGxcode{k}{while} \PYGxcode{p}{(}\PYGxcode{n}{h} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{o}{!}\PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{h}\PYGxcode{p}{].}\PYGxcode{n}{Next}\PYGxcode{p}{[}\PYGxcode{n}{next}\PYGxcode{p}{])} \PYGxcode{n}{h} \PYGxcode{o}{=} \PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{h}\PYGxcode{p}{].}\PYGxcode{n}{fail}\PYGxcode{p}{;}
+					\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{o}{!}\PYGxcode{n}{h}\PYGxcode{p}{)} \PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{k}\PYGxcode{p}{].}\PYGxcode{n}{fail} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} 
+					\PYGxcode{k}{else} \PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{k}\PYGxcode{p}{].}\PYGxcode{n}{fail} \PYGxcode{o}{=} \PYGxcode{n}{Tree}\PYGxcode{p}{[}\PYGxcode{n}{h}\PYGxcode{p}{].}\PYGxcode{n}{Next}\PYGxcode{p}{[}\PYGxcode{n}{next}\PYGxcode{p}{];}
+				\PYGxcode{p}{\PYGxcodeZcb{}}
+				\PYGxcode{n}{Q}\PYGxcode{p}{[}\PYGxcode{o}{++} \PYGxcode{n}{en}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{k}\PYGxcode{p}{;}
+			\PYGxcode{p}{\PYGxcodeZcb{}}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{c+c1}{/// Hints : when not match , fail = 1}
+\end{Verbatim}

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{c+c1}{//calc \PYGxcodeZbs{}sum\PYGxcodeZus{}\PYGxcodeZob{}i=0\PYGxcodeZcb{}\PYGxcodeZca{}\PYGxcodeZob{}n\PYGxcodeZhy{}1\PYGxcodeZcb{} [(a+bi)/m]}
+\PYGxcode{c+c1}{// n,a,b,m \PYGxcodeZgt{}0}
+\PYGxcode{n}{LL} \PYGxcode{n+nf}{solve}\PYGxcode{p}{(}\PYGxcode{n}{LL} \PYGxcode{n}{n}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{n}{a}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{n}{b}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{n}{m}\PYGxcode{p}{)\PYGxcodeZob{}}
+    \PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{b}\PYGxcode{o}{==}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{)}
+        \PYGxcode{k}{return} \PYGxcode{n}{n}\PYGxcode{o}{*}\PYGxcode{p}{(}\PYGxcode{n}{a}\PYGxcode{o}{/}\PYGxcode{n}{m}\PYGxcode{p}{);}
+    \PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{a}\PYGxcode{o}{\PYGxcodeZgt{}=}\PYGxcode{n}{m} \PYGxcode{o}{||} \PYGxcode{n}{b}\PYGxcode{o}{\PYGxcodeZgt{}=}\PYGxcode{n}{m}\PYGxcode{p}{)}
+        \PYGxcode{k}{return} \PYGxcode{n}{n}\PYGxcode{o}{*}\PYGxcode{p}{(}\PYGxcode{n}{a}\PYGxcode{o}{/}\PYGxcode{n}{m}\PYGxcode{p}{)}\PYGxcode{o}{+}\PYGxcode{p}{(}\PYGxcode{n}{n}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)}\PYGxcode{o}{*}\PYGxcode{n}{n}\PYGxcode{o}{/}\PYGxcode{l+m+mi}{2}\PYGxcode{o}{*}\PYGxcode{p}{(}\PYGxcode{n}{b}\PYGxcode{o}{/}\PYGxcode{n}{m}\PYGxcode{p}{)}\PYGxcode{o}{+}\PYGxcode{n}{solve}\PYGxcode{p}{(}\PYGxcode{n}{n}\PYGxcode{p}{,}\PYGxcode{n}{a}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{m}\PYGxcode{p}{,}\PYGxcode{n}{b}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{m}\PYGxcode{p}{,}\PYGxcode{n}{m}\PYGxcode{p}{);}
+    \PYGxcode{k}{return} \PYGxcode{n}{solve}\PYGxcode{p}{((}\PYGxcode{n}{a}\PYGxcode{o}{+}\PYGxcode{n}{b}\PYGxcode{o}{*}\PYGxcode{n}{n}\PYGxcode{p}{)}\PYGxcode{o}{/}\PYGxcode{n}{m}\PYGxcode{p}{,(}\PYGxcode{n}{a}\PYGxcode{o}{+}\PYGxcode{n}{b}\PYGxcode{o}{*}\PYGxcode{n}{n}\PYGxcode{p}{)}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{m}\PYGxcode{p}{,}\PYGxcode{n}{m}\PYGxcode{p}{,}\PYGxcode{n}{b}\PYGxcode{p}{);}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

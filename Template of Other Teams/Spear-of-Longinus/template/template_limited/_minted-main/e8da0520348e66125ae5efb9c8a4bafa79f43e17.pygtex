@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k}{namespace} \PYGxcode{n}{Reader} \PYGxcode{p}{\PYGxcodeZob{}}
+	\PYGxcode{k}{const} \PYGxcode{k+kt}{int} \PYGxcode{n}{L} \PYGxcode{o}{=} \PYGxcode{p}{(}\PYGxcode{l+m+mi}{1} \PYGxcode{o}{\PYGxcodeZlt{}\PYGxcodeZlt{}} \PYGxcode{l+m+mi}{20}\PYGxcode{p}{)} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{5}\PYGxcode{p}{;}
+	\PYGxcode{k+kt}{char} \PYGxcode{n}{buffer}\PYGxcode{p}{[}\PYGxcode{n}{L}\PYGxcode{p}{],} \PYGxcode{o}{*}\PYGxcode{n}{S}\PYGxcode{p}{,} \PYGxcode{o}{*}\PYGxcode{n}{T}\PYGxcode{p}{;}
+	\PYGxcode{k+kr}{\PYGxcodeZus{}\PYGxcodeZus{}inline} \PYGxcode{k+kt}{bool} \PYGxcode{n+nf}{getchar}\PYGxcode{p}{(}\PYGxcode{k+kt}{char} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{ch}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+		\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{S} \PYGxcode{o}{==} \PYGxcode{n}{T}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+			\PYGxcode{n}{T} \PYGxcode{o}{=} \PYGxcode{p}{(}\PYGxcode{n}{S} \PYGxcode{o}{=} \PYGxcode{n}{buffer}\PYGxcode{p}{)} \PYGxcode{o}{+} \PYGxcode{n}{fread}\PYGxcode{p}{(}\PYGxcode{n}{buffer}\PYGxcode{p}{,} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{,} \PYGxcode{n}{L}\PYGxcode{p}{,} \PYGxcode{n}{stdin}\PYGxcode{p}{);}
+			\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{S} \PYGxcode{o}{==} \PYGxcode{n}{T}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+				\PYGxcode{n}{ch} \PYGxcode{o}{=} \PYGxcode{n}{EOF}\PYGxcode{p}{;}
+				\PYGxcode{k}{return} \PYGxcode{n+nb}{false}\PYGxcode{p}{;}
+			\PYGxcode{p}{\PYGxcodeZcb{}}
+		\PYGxcode{p}{\PYGxcodeZcb{}}
+		\PYGxcode{n}{ch} \PYGxcode{o}{=} \PYGxcode{o}{*}\PYGxcode{n}{S} \PYGxcode{o}{++}\PYGxcode{p}{;}
+		\PYGxcode{k}{return} \PYGxcode{n+nb}{true}\PYGxcode{p}{;}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+	\PYGxcode{k+kr}{\PYGxcodeZus{}\PYGxcodeZus{}inline} \PYGxcode{k+kt}{bool} \PYGxcode{n+nf}{getint}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{x}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+		\PYGxcode{k+kt}{char} \PYGxcode{n}{ch}\PYGxcode{p}{;}
+		\PYGxcode{k}{for} \PYGxcode{p}{(;} \PYGxcode{n}{getchar}\PYGxcode{p}{(}\PYGxcode{n}{ch}\PYGxcode{p}{)} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{p}{(}\PYGxcode{n}{ch} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}0\PYGxcodeZsq{}} \PYGxcode{o}{||} \PYGxcode{n}{ch} \PYGxcode{o}{\PYGxcodeZgt{}} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}9\PYGxcodeZsq{}}\PYGxcode{p}{);} \PYGxcode{p}{);}
+		\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{ch} \PYGxcode{o}{==} \PYGxcode{n}{EOF}\PYGxcode{p}{)} \PYGxcode{k}{return} \PYGxcode{n+nb}{false}\PYGxcode{p}{;}
+		\PYGxcode{n}{x} \PYGxcode{o}{=} \PYGxcode{n}{ch} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}0\PYGxcodeZsq{}}\PYGxcode{p}{;}
+		\PYGxcode{k}{for} \PYGxcode{p}{(;} \PYGxcode{n}{getchar}\PYGxcode{p}{(}\PYGxcode{n}{ch}\PYGxcode{p}{),} \PYGxcode{n}{ch} \PYGxcode{o}{\PYGxcodeZgt{}=} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}0\PYGxcodeZsq{}} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{n}{ch} \PYGxcode{o}{\PYGxcodeZlt{}=} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}9\PYGxcodeZsq{}}\PYGxcode{p}{;} \PYGxcode{p}{)}
+			\PYGxcode{n}{x} \PYGxcode{o}{=} \PYGxcode{n}{x} \PYGxcode{o}{*} \PYGxcode{l+m+mi}{10} \PYGxcode{o}{+} \PYGxcode{n}{ch} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{l+s+sc}{\PYGxcodeZsq{}0\PYGxcodeZsq{}}\PYGxcode{p}{;}
+		\PYGxcode{k}{return} \PYGxcode{n+nb}{true}\PYGxcode{p}{;}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{n}{Reader}\PYGxcode{o}{::}\PYGxcode{n}{getint}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{);}
+\PYGxcode{n}{Reader}\PYGxcode{o}{::}\PYGxcode{n}{getint}\PYGxcode{p}{(}\PYGxcode{n}{y}\PYGxcode{p}{);}
+\end{Verbatim}

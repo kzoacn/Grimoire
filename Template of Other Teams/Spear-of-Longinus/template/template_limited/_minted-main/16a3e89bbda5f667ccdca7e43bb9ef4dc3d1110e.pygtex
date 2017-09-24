@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{c+c1}{//merge Ax=B and ax=b to A\PYGxcodeZsq{}x=B\PYGxcodeZsq{}}
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{merge}\PYGxcode{p}{(}\PYGxcode{n}{LL} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{A}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{B}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{n}{a}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{n}{b}\PYGxcode{p}{)\PYGxcodeZob{}}
+    \PYGxcode{n}{LL} \PYGxcode{n}{x}\PYGxcode{p}{,}\PYGxcode{n}{y}\PYGxcode{p}{;}
+    \PYGxcode{n}{sol}\PYGxcode{p}{(}\PYGxcode{n}{A}\PYGxcode{p}{,}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{n}{a}\PYGxcode{p}{,}\PYGxcode{n}{b}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{n}{B}\PYGxcode{p}{,}\PYGxcode{n}{x}\PYGxcode{p}{,}\PYGxcode{n}{y}\PYGxcode{p}{);}
+    \PYGxcode{n}{A}\PYGxcode{o}{=}\PYGxcode{n}{lcm}\PYGxcode{p}{(}\PYGxcode{n}{A}\PYGxcode{p}{,}\PYGxcode{n}{a}\PYGxcode{p}{);} 
+    \PYGxcode{n}{B}\PYGxcode{o}{=}\PYGxcode{p}{(}\PYGxcode{n}{a}\PYGxcode{o}{*}\PYGxcode{n}{y}\PYGxcode{o}{+}\PYGxcode{n}{b}\PYGxcode{p}{)}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{A}\PYGxcode{p}{;}
+    \PYGxcode{n}{B}\PYGxcode{o}{=}\PYGxcode{p}{(}\PYGxcode{n}{B}\PYGxcode{o}{+}\PYGxcode{n}{A}\PYGxcode{p}{)}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{A}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

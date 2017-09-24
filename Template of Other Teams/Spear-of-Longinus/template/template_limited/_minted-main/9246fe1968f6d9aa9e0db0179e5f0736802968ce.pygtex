@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kt}{int} \PYGxcode{n+nf}{solve}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{year}\PYGxcode{p}{,} \PYGxcode{k+kt}{int} \PYGxcode{n}{month}\PYGxcode{p}{,} \PYGxcode{k+kt}{int} \PYGxcode{n}{day}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k+kt}{int} \PYGxcode{n}{answer}\PYGxcode{p}{;}
+    \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{month} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{1} \PYGxcode{o}{||} \PYGxcode{n}{month} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{2}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{n}{month} \PYGxcode{o}{+=} \PYGxcode{l+m+mi}{12}\PYGxcode{p}{;}
+        \PYGxcode{n}{year}\PYGxcode{o}{\PYGxcodeZhy{}\PYGxcodeZhy{}}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k}{if} \PYGxcode{p}{((}\PYGxcode{n}{year} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{l+m+mi}{1752}\PYGxcode{p}{)} \PYGxcode{o}{||} \PYGxcode{p}{(}\PYGxcode{n}{year} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{1752} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{n}{month} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{l+m+mi}{9}\PYGxcode{p}{)} \PYGxcode{o}{||}
+        \PYGxcode{p}{(}\PYGxcode{n}{year} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{1752} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{n}{month} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{9} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{n}{day} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{l+m+mi}{3}\PYGxcode{p}{))} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{n}{answer} \PYGxcode{o}{=} \PYGxcode{p}{(}\PYGxcode{n}{day} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{2} \PYGxcode{o}{*} \PYGxcode{n}{month} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{3} \PYGxcode{o}{*} \PYGxcode{p}{(}\PYGxcode{n}{month} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{5} \PYGxcode{o}{+} \PYGxcode{n}{year} \PYGxcode{o}{+} \PYGxcode{n}{year} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{4} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{5}\PYGxcode{p}{)} \PYGxcode{o}{\PYGxcodeZpc{}} \PYGxcode{l+m+mi}{7}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}} \PYGxcode{k}{else} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{n}{answer} \PYGxcode{o}{=} \PYGxcode{p}{(}\PYGxcode{n}{day} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{2} \PYGxcode{o}{*} \PYGxcode{n}{month} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{3} \PYGxcode{o}{*} \PYGxcode{p}{(}\PYGxcode{n}{month} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{5} \PYGxcode{o}{+} \PYGxcode{n}{year} \PYGxcode{o}{+} \PYGxcode{n}{year} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{4}
+               \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{n}{year} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{100} \PYGxcode{o}{+} \PYGxcode{n}{year} \PYGxcode{o}{/} \PYGxcode{l+m+mi}{400}\PYGxcode{p}{)} \PYGxcode{o}{\PYGxcodeZpc{}} \PYGxcode{l+m+mi}{7}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k}{return} \PYGxcode{n}{answer}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

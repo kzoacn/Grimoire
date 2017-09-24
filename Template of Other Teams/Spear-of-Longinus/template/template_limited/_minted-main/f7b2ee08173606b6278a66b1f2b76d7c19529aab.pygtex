@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{n}{LL} \PYGxcode{n+nf}{multiplyMod}\PYGxcode{p}{(}\PYGxcode{n}{LL} \PYGxcode{n}{a}\PYGxcode{p}{,} \PYGxcode{n}{LL} \PYGxcode{n}{b}\PYGxcode{p}{,} \PYGxcode{n}{LL} \PYGxcode{n}{P}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}} \PYGxcode{c+c1}{// `需要保证 a 和 b 非负`}
+	\PYGxcode{n}{LL} \PYGxcode{n}{t} \PYGxcode{o}{=} \PYGxcode{p}{(}\PYGxcode{n}{a} \PYGxcode{o}{*} \PYGxcode{n}{b} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{n}{LL}\PYGxcode{p}{((}\PYGxcode{k+kt}{long} \PYGxcode{k+kt}{double}\PYGxcode{p}{)}\PYGxcode{n}{a} \PYGxcode{o}{/} \PYGxcode{n}{P} \PYGxcode{o}{*} \PYGxcode{n}{b} \PYGxcode{o}{+} \PYGxcode{l+m+mf}{1e\PYGxcodeZhy{}3}\PYGxcode{p}{)} \PYGxcode{o}{*} \PYGxcode{n}{P}\PYGxcode{p}{)} \PYGxcode{o}{\PYGxcodeZpc{}} \PYGxcode{n}{P}\PYGxcode{p}{;}
+	\PYGxcode{k}{return} \PYGxcode{n}{t} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{l+m+mi}{0} \PYGxcode{o}{:} \PYGxcode{n}{t} \PYGxcode{o}{+} \PYGxcode{n+nl}{P} \PYGxcode{p}{:} \PYGxcode{n}{t}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

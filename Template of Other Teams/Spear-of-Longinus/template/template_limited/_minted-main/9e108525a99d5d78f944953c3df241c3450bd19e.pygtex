@@ -1,0 +1,36 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kd}{public} \PYGxcode{k+kd}{class} \PYGxcode{n+nc}{Main} \PYGxcode{o}{\PYGxcodeZob{}}
+    \PYGxcode{k+kd}{public} \PYGxcode{k+kd}{static} \PYGxcode{k+kt}{void} \PYGxcode{n+nf}{main}\PYGxcode{o}{(}\PYGxcode{n}{String}\PYGxcode{o}{[]} \PYGxcode{n}{args}\PYGxcode{o}{)} \PYGxcode{o}{\PYGxcodeZob{}}
+        \PYGxcode{n}{InputReader} \PYGxcode{n}{in} \PYGxcode{o}{=} \PYGxcode{k}{new} \PYGxcode{n}{InputReader}\PYGxcode{o}{(}\PYGxcode{n}{System}\PYGxcode{o}{.}\PYGxcode{n+na}{in}\PYGxcode{o}{);}
+        \PYGxcode{n}{PrintWriter} \PYGxcode{n}{out} \PYGxcode{o}{=} \PYGxcode{k}{new} \PYGxcode{n}{PrintWriter}\PYGxcode{o}{(}\PYGxcode{n}{System}\PYGxcode{o}{.}\PYGxcode{n+na}{out}\PYGxcode{o}{);}
+    \PYGxcode{o}{\PYGxcodeZcb{}}
+\PYGxcode{o}{\PYGxcodeZcb{}}
+\PYGxcode{k+kd}{public} \PYGxcode{k+kd}{static} \PYGxcode{k+kd}{class} \PYGxcode{n+nc}{cmp} \PYGxcode{k+kd}{implements} \PYGxcode{n}{Comparator}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{n}{edge}\PYGxcode{o}{\PYGxcodeZgt{}\PYGxcodeZob{}}
+	\PYGxcode{k+kd}{public} \PYGxcode{k+kt}{int} \PYGxcode{n+nf}{compare}\PYGxcode{o}{(}\PYGxcode{n}{edge} \PYGxcode{n}{a}\PYGxcode{o}{,}\PYGxcode{n}{edge} \PYGxcode{n}{b}\PYGxcode{o}{)\PYGxcodeZob{}}
+		\PYGxcode{k}{if}\PYGxcode{o}{(}\PYGxcode{n}{a}\PYGxcode{o}{.}\PYGxcode{n+na}{w}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{n}{b}\PYGxcode{o}{.}\PYGxcode{n+na}{w}\PYGxcode{o}{)}\PYGxcode{k}{return} \PYGxcode{l+m+mi}{1}\PYGxcode{o}{;}
+		\PYGxcode{k}{if}\PYGxcode{o}{(}\PYGxcode{n}{a}\PYGxcode{o}{.}\PYGxcode{n+na}{w}\PYGxcode{o}{\PYGxcodeZgt{}}\PYGxcode{n}{b}\PYGxcode{o}{.}\PYGxcode{n+na}{w}\PYGxcode{o}{)}\PYGxcode{k}{return} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{o}{;}
+		\PYGxcode{k}{return} \PYGxcode{l+m+mi}{0}\PYGxcode{o}{;}
+	\PYGxcode{o}{\PYGxcodeZcb{}}
+\PYGxcode{o}{\PYGxcodeZcb{}}
+\PYGxcode{k+kd}{class} \PYGxcode{n+nc}{InputReader} \PYGxcode{o}{\PYGxcodeZob{}}
+    \PYGxcode{k+kd}{public} \PYGxcode{n}{BufferedReader} \PYGxcode{n}{reader}\PYGxcode{o}{;}
+    \PYGxcode{k+kd}{public} \PYGxcode{n}{StringTokenizer} \PYGxcode{n}{tokenizer}\PYGxcode{o}{;}
+    \PYGxcode{k+kd}{public} \PYGxcode{n+nf}{InputReader}\PYGxcode{o}{(}\PYGxcode{n}{InputStream} \PYGxcode{n}{stream}\PYGxcode{o}{)} \PYGxcode{o}{\PYGxcodeZob{}}
+        \PYGxcode{n}{reader} \PYGxcode{o}{=} \PYGxcode{k}{new} \PYGxcode{n}{BufferedReader}\PYGxcode{o}{(}\PYGxcode{k}{new} \PYGxcode{n}{InputStreamReader}\PYGxcode{o}{(}\PYGxcode{n}{stream}\PYGxcode{o}{),} \PYGxcode{l+m+mi}{32768}\PYGxcode{o}{);}
+        \PYGxcode{n}{tokenizer} \PYGxcode{o}{=} \PYGxcode{k+kc}{null}\PYGxcode{o}{;}
+    \PYGxcode{o}{\PYGxcodeZcb{}}
+    \PYGxcode{k+kd}{public} \PYGxcode{n}{String} \PYGxcode{n+nf}{next}\PYGxcode{o}{()} \PYGxcode{o}{\PYGxcodeZob{}}
+        \PYGxcode{k}{while} \PYGxcode{o}{(}\PYGxcode{n}{tokenizer} \PYGxcode{o}{==} \PYGxcode{k+kc}{null} \PYGxcode{o}{||} \PYGxcode{o}{!}\PYGxcode{n}{tokenizer}\PYGxcode{o}{.}\PYGxcode{n+na}{hasMoreTokens}\PYGxcode{o}{())} \PYGxcode{o}{\PYGxcodeZob{}}
+            \PYGxcode{k}{try} \PYGxcode{o}{\PYGxcodeZob{}}
+                \PYGxcode{n}{tokenizer} \PYGxcode{o}{=} \PYGxcode{k}{new} \PYGxcode{n}{StringTokenizer}\PYGxcode{o}{(}\PYGxcode{n}{reader}\PYGxcode{o}{.}\PYGxcode{n+na}{readLine}\PYGxcode{o}{());}
+            \PYGxcode{o}{\PYGxcodeZcb{}} \PYGxcode{k}{catch} \PYGxcode{o}{(}\PYGxcode{n}{IOException} \PYGxcode{n}{e}\PYGxcode{o}{)} \PYGxcode{o}{\PYGxcodeZob{}}
+                \PYGxcode{k}{throw} \PYGxcode{k}{new} \PYGxcode{n}{RuntimeException}\PYGxcode{o}{(}\PYGxcode{n}{e}\PYGxcode{o}{);}
+            \PYGxcode{o}{\PYGxcodeZcb{}}
+        \PYGxcode{o}{\PYGxcodeZcb{}}
+        \PYGxcode{k}{return} \PYGxcode{n}{tokenizer}\PYGxcode{o}{.}\PYGxcode{n+na}{nextToken}\PYGxcode{o}{();}
+    \PYGxcode{o}{\PYGxcodeZcb{}}
+    \PYGxcode{k+kd}{public} \PYGxcode{k+kt}{int} \PYGxcode{n+nf}{nextInt}\PYGxcode{o}{()} \PYGxcode{o}{\PYGxcodeZob{}}
+        \PYGxcode{k}{return} \PYGxcode{n}{Integer}\PYGxcode{o}{.}\PYGxcode{n+na}{parseInt}\PYGxcode{o}{(}\PYGxcode{n}{next}\PYGxcode{o}{());}
+    \PYGxcode{o}{\PYGxcodeZcb{}}
+\PYGxcode{o}{\PYGxcodeZcb{}}
+\end{Verbatim}

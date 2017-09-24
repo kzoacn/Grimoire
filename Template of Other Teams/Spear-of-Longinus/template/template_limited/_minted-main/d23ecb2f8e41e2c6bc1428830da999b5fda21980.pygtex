@@ -1,0 +1,45 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kt}{int} \PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{],} \PYGxcode{n}{dist}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{];}
+\PYGxcode{k+kt}{bool} \PYGxcode{n}{visit}\PYGxcode{p}{[}\PYGxcode{n}{N}\PYGxcode{p}{];}
+
+\PYGxcode{k+kt}{int} \PYGxcode{n+nf}{solve}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{n}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k+kt}{int} \PYGxcode{n}{answer} \PYGxcode{o}{=} \PYGxcode{n}{INT\PYGxcodeZus{}MAX}\PYGxcode{p}{;}
+    \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{i}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{i}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k}{while} \PYGxcode{p}{(}\PYGxcode{n}{n} \PYGxcode{o}{\PYGxcodeZgt{}} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{k+kt}{int} \PYGxcode{n}{max} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+        \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{i}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+            \PYGxcode{n}{dist}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]]} \PYGxcode{o}{=} \PYGxcode{n}{graph}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{]][}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]];}
+            \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{dist}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]]} \PYGxcode{o}{\PYGxcodeZgt{}} \PYGxcode{n}{dist}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{max}\PYGxcode{p}{]])} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{n}{max} \PYGxcode{o}{=} \PYGxcode{n}{i}\PYGxcode{p}{;}
+            \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{k+kt}{int} \PYGxcode{n}{prev} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+        \PYGxcode{n}{memset}\PYGxcode{p}{(}\PYGxcode{n}{visit}\PYGxcode{p}{,} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{,} \PYGxcode{k}{sizeof}\PYGxcode{p}{(}\PYGxcode{n}{visit}\PYGxcode{p}{));}
+        \PYGxcode{n}{visit}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{]]} \PYGxcode{o}{=} \PYGxcode{n+nb}{true}\PYGxcode{p}{;}
+        \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{i}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+            \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{i} \PYGxcode{o}{==} \PYGxcode{n}{n} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{n}{answer} \PYGxcode{o}{=} \PYGxcode{n}{std}\PYGxcode{o}{::}\PYGxcode{n}{min}\PYGxcode{p}{(}\PYGxcode{n}{answer}\PYGxcode{p}{,} \PYGxcode{n}{dist}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{max}\PYGxcode{p}{]]);}
+                \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{k} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{k} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{k}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                    \PYGxcode{n}{graph}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{k}\PYGxcode{p}{]][}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{prev}\PYGxcode{p}{]]} \PYGxcode{o}{=}
+                        \PYGxcode{p}{(}\PYGxcode{n}{graph}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{prev}\PYGxcode{p}{]][}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{k}\PYGxcode{p}{]]} \PYGxcode{o}{+=} \PYGxcode{n}{graph}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{k}\PYGxcode{p}{]][}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{max}\PYGxcode{p}{]]);}
+                \PYGxcode{p}{\PYGxcodeZcb{}}
+                \PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{max}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{o}{\PYGxcodeZhy{}\PYGxcodeZhy{}}\PYGxcode{n}{n}\PYGxcode{p}{];}
+            \PYGxcode{p}{\PYGxcodeZcb{}}
+            \PYGxcode{n}{visit}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{max}\PYGxcode{p}{]]} \PYGxcode{o}{=} \PYGxcode{n+nb}{true}\PYGxcode{p}{;}
+            \PYGxcode{n}{prev} \PYGxcode{o}{=} \PYGxcode{n}{max}\PYGxcode{p}{;}
+            \PYGxcode{n}{max} \PYGxcode{o}{=} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+            \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{j} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{n}{j} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{o}{++}\PYGxcode{n}{j}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+                \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{o}{!}\PYGxcode{n}{visit}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{j}\PYGxcode{p}{]])} \PYGxcode{p}{\PYGxcodeZob{}}
+                    \PYGxcode{n}{dist}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{j}\PYGxcode{p}{]]} \PYGxcode{o}{+=} \PYGxcode{n}{graph}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{prev}\PYGxcode{p}{]][}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{j}\PYGxcode{p}{]];}
+                    \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{max} \PYGxcode{o}{==} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1} \PYGxcode{o}{||} \PYGxcode{n}{dist}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{max}\PYGxcode{p}{]]} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{dist}\PYGxcode{p}{[}\PYGxcode{n}{node}\PYGxcode{p}{[}\PYGxcode{n}{j}\PYGxcode{p}{]])} \PYGxcode{p}{\PYGxcodeZob{}}
+                        \PYGxcode{n}{max} \PYGxcode{o}{=} \PYGxcode{n}{j}\PYGxcode{p}{;}
+                    \PYGxcode{p}{\PYGxcodeZcb{}}
+                \PYGxcode{p}{\PYGxcodeZcb{}}
+            \PYGxcode{p}{\PYGxcodeZcb{}}
+        \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+    \PYGxcode{k}{return} \PYGxcode{n}{answer}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

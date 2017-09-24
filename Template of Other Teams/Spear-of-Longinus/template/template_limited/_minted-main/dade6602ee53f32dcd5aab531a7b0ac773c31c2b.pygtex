@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{n}{vector}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{k+kt}{int}\PYGxcode{o}{\PYGxcodeZgt{}}\PYGxcode{n}{G}\PYGxcode{p}{[}\PYGxcode{n}{maxn}\PYGxcode{p}{];}
+\PYGxcode{k+kt}{int} \PYGxcode{n}{Link}\PYGxcode{p}{[}\PYGxcode{n}{maxn}\PYGxcode{p}{],}\PYGxcode{n}{vis}\PYGxcode{p}{[}\PYGxcode{n}{maxn}\PYGxcode{p}{],}\PYGxcode{n}{T}\PYGxcode{p}{;}
+\PYGxcode{k+kt}{bool} \PYGxcode{n+nf}{find}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{x}\PYGxcode{p}{)\PYGxcodeZob{}}
+	\PYGxcode{k}{for}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}\PYGxcode{n}{i}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{n}{G}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{size}\PYGxcode{p}{();}\PYGxcode{n}{i}\PYGxcode{o}{++}\PYGxcode{p}{)\PYGxcodeZob{}}
+		\PYGxcode{k+kt}{int} \PYGxcode{n}{v}\PYGxcode{o}{=}\PYGxcode{n}{G}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{][}\PYGxcode{n}{i}\PYGxcode{p}{];}
+		\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{vis}\PYGxcode{p}{[}\PYGxcode{n}{v}\PYGxcode{p}{]}\PYGxcode{o}{==}\PYGxcode{n}{T}\PYGxcode{p}{)}\PYGxcode{k}{continue}\PYGxcode{p}{;}
+		\PYGxcode{n}{vis}\PYGxcode{p}{[}\PYGxcode{n}{v}\PYGxcode{p}{]}\PYGxcode{o}{=}\PYGxcode{n}{T}\PYGxcode{p}{;}
+		\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{o}{!}\PYGxcode{n}{Link}\PYGxcode{p}{[}\PYGxcode{n}{v}\PYGxcode{p}{]}\PYGxcode{o}{||}\PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{Link}\PYGxcode{p}{[}\PYGxcode{n}{v}\PYGxcode{p}{]))\PYGxcodeZob{}}
+			\PYGxcode{n}{Link}\PYGxcode{p}{[}\PYGxcode{n}{v}\PYGxcode{p}{]}\PYGxcode{o}{=}\PYGxcode{n}{x}\PYGxcode{p}{;}
+			\PYGxcode{k}{return} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} 
+		\PYGxcode{p}{\PYGxcodeZcb{}}
+	\PYGxcode{p}{\PYGxcodeZcb{}}\PYGxcode{k}{return} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{k+kt}{int} \PYGxcode{n+nf}{Hungarian}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{n}\PYGxcode{p}{)\PYGxcodeZob{}}
+	\PYGxcode{k+kt}{int} \PYGxcode{n}{ans}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+	\PYGxcode{n}{memset}\PYGxcode{p}{(}\PYGxcode{n}{Link}\PYGxcode{p}{,}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{,}\PYGxcode{k}{sizeof} \PYGxcode{n}{Link}\PYGxcode{p}{);}
+	\PYGxcode{k}{for}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}\PYGxcode{n}{i}\PYGxcode{o}{\PYGxcodeZlt{}=}\PYGxcode{n}{n}\PYGxcode{p}{;}\PYGxcode{n}{i}\PYGxcode{o}{++}\PYGxcode{p}{)\PYGxcodeZob{}}
+		\PYGxcode{n}{T}\PYGxcode{o}{++}\PYGxcode{p}{;}
+		\PYGxcode{n}{ans}\PYGxcode{o}{+=}\PYGxcode{n}{find}\PYGxcode{p}{(}\PYGxcode{n}{i}\PYGxcode{p}{);}
+	\PYGxcode{p}{\PYGxcodeZcb{}}\PYGxcode{k}{return} \PYGxcode{n}{ans}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

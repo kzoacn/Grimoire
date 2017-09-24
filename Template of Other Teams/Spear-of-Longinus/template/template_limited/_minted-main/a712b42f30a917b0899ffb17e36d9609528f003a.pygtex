@@ -1,0 +1,45 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{c+c1}{///求割点，割点向每个点双连通分量连边}
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{Dfs}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{x}\PYGxcode{p}{,} \PYGxcode{k+kt}{int} \PYGxcode{n}{lst}\PYGxcode{p}{)\PYGxcodeZob{}}
+	\PYGxcode{n}{dfn}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{o}{++}\PYGxcode{n}{dfc}\PYGxcode{p}{;}
+	\PYGxcode{n}{low}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{dfn}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{];}
+	\PYGxcode{n}{stack}\PYGxcode{p}{[}\PYGxcode{o}{++}\PYGxcode{n}{cnt}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{x}\PYGxcode{p}{;}
+	\PYGxcode{k+kt}{int} \PYGxcode{n}{son} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+
+	\PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{n}{g}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{];} \PYGxcode{n}{i}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{n}{nxt}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{])\PYGxcodeZob{}}
+		\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{o}{!}\PYGxcode{n}{dfn}\PYGxcode{p}{[}\PYGxcode{n}{adj}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]])\PYGxcodeZob{}}
+			\PYGxcode{o}{++}\PYGxcode{n}{son}\PYGxcode{p}{;}
+			\PYGxcode{n}{Dfs}\PYGxcode{p}{(}\PYGxcode{n}{adj}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{],} \PYGxcode{n}{i}\PYGxcode{p}{);}
+			\PYGxcode{n}{low}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{min}\PYGxcode{p}{(}\PYGxcode{n}{low}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{],} \PYGxcode{n}{low}\PYGxcode{p}{[}\PYGxcode{n}{adj}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]]);}
+			\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{low}\PYGxcode{p}{[}\PYGxcode{n}{adj}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]]} \PYGxcode{o}{\PYGxcodeZgt{}=} \PYGxcode{n}{dfn}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{])\PYGxcodeZob{}}
+				\PYGxcode{k+kt}{int} \PYGxcode{n}{Tmp}\PYGxcode{p}{;}
+				\PYGxcode{n}{iscut}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+				\PYGxcode{o}{++}\PYGxcode{n}{block}\PYGxcode{p}{;}
+				\PYGxcode{n}{E}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{push\PYGxcodeZus{}back}\PYGxcode{p}{(}\PYGxcode{n}{block} \PYGxcode{o}{+} \PYGxcode{n}{n}\PYGxcode{p}{);}
+				\PYGxcode{k}{do}\PYGxcode{p}{\PYGxcodeZob{}}
+					\PYGxcode{n}{Tmp} \PYGxcode{o}{=} \PYGxcode{n}{stack}\PYGxcode{p}{[}\PYGxcode{n}{cnt} \PYGxcode{o}{\PYGxcodeZhy{}\PYGxcodeZhy{}}\PYGxcode{p}{];}
+					\PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{Tmp}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{block} \PYGxcode{o}{+} \PYGxcode{n}{n}\PYGxcode{p}{;}
+
+					\PYGxcode{n}{E}\PYGxcode{p}{[}\PYGxcode{n}{Tmp}\PYGxcode{p}{].}\PYGxcode{n}{push\PYGxcodeZus{}back}\PYGxcode{p}{(}\PYGxcode{n}{block} \PYGxcode{o}{+} \PYGxcode{n}{n}\PYGxcode{p}{);}
+				\PYGxcode{p}{\PYGxcodeZcb{}}\PYGxcode{k}{while} \PYGxcode{p}{(}\PYGxcode{n}{Tmp} \PYGxcode{o}{!=} \PYGxcode{n}{adj}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]);}
+			\PYGxcode{p}{\PYGxcodeZcb{}}
+		\PYGxcode{p}{\PYGxcodeZcb{}}
+		\PYGxcode{k}{else}
+		\PYGxcode{k}{if} \PYGxcode{p}{((}\PYGxcode{n}{i}  \PYGxcode{o}{\PYGxcodeZca{}} \PYGxcode{n}{lst}\PYGxcode{p}{)} \PYGxcode{o}{!=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{n}{low}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{min}\PYGxcode{p}{(}\PYGxcode{n}{low}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{],} \PYGxcode{n}{dfn}\PYGxcode{p}{[}\PYGxcode{n}{adj}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]]);}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+	\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{x} \PYGxcode{o}{==} \PYGxcode{n}{Root} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{n}{son} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{n}{iscut}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{,} \PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{E}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{][}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{];}
+	\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{x} \PYGxcode{o}{==} \PYGxcode{n}{Root} \PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}} \PYGxcode{n}{son} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{)\PYGxcodeZob{}}
+		\PYGxcode{o}{++}\PYGxcode{n}{block}\PYGxcode{p}{;}
+		\PYGxcode{n}{belong}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{]} \PYGxcode{o}{=} \PYGxcode{n}{block} \PYGxcode{o}{+} \PYGxcode{n}{n}\PYGxcode{p}{;}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+	\PYGxcode{n}{tot} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}\PYGxcode{c+c1}{//!!!!!!!!!!!!!!!!!!!!!!!!!!!1}
+	\PYGxcode{n}{block} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+	\PYGxcode{n}{cnt} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+	\PYGxcode{n}{dfc} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+	\PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}=} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{n}{i}\PYGxcode{o}{++}\PYGxcode{p}{)}
+		\PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{dfn}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{]} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{)\PYGxcodeZob{}}
+			\PYGxcode{n}{Root} \PYGxcode{o}{=} \PYGxcode{n}{i}\PYGxcode{p}{;}
+			\PYGxcode{n}{Dfs}\PYGxcode{p}{(}\PYGxcode{n}{i}\PYGxcode{p}{,} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{);}
+		\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

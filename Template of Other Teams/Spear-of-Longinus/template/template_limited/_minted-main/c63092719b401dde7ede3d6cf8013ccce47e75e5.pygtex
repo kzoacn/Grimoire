@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{solve}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{n}\PYGxcode{p}{,} \PYGxcode{k+kt}{int} \PYGxcode{n}{k}\PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+    \PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{comb} \PYGxcode{o}{=} \PYGxcode{p}{(}\PYGxcode{l+m+mi}{1} \PYGxcode{o}{\PYGxcodeZlt{}\PYGxcodeZlt{}} \PYGxcode{n}{k}\PYGxcode{p}{)} \PYGxcode{o}{\PYGxcodeZhy{}} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;} \PYGxcode{n}{comb} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{p}{(}\PYGxcode{l+m+mi}{1} \PYGxcode{o}{\PYGxcodeZlt{}\PYGxcodeZlt{}} \PYGxcode{n}{n}\PYGxcode{p}{);} \PYGxcode{p}{)} \PYGxcode{p}{\PYGxcodeZob{}}
+        \PYGxcode{c+c1}{// ...}
+        \PYGxcode{k+kt}{int} \PYGxcode{n}{x} \PYGxcode{o}{=} \PYGxcode{n}{comb} \PYGxcode{o}{\PYGxcodeZam{}} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{n}{comb}\PYGxcode{p}{,} \PYGxcode{n}{y} \PYGxcode{o}{=} \PYGxcode{n}{comb} \PYGxcode{o}{+} \PYGxcode{n}{x}\PYGxcode{p}{;}
+        \PYGxcode{n}{comb} \PYGxcode{o}{=} \PYGxcode{p}{(((}\PYGxcode{n}{comb} \PYGxcode{o}{\PYGxcodeZam{}} \PYGxcode{o}{\PYGxcodeZti{}}\PYGxcode{n}{y}\PYGxcode{p}{)} \PYGxcode{o}{/} \PYGxcode{n}{x}\PYGxcode{p}{)} \PYGxcode{o}{\PYGxcodeZgt{}\PYGxcodeZgt{}} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{)} \PYGxcode{o}{|} \PYGxcode{n}{y}\PYGxcode{p}{;}
+    \PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

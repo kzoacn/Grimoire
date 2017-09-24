@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{k+kt}{int} \PYGxcode{n+nf}{Merge}\PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{x}\PYGxcode{p}{,} \PYGxcode{k+kt}{int} \PYGxcode{n}{y}\PYGxcode{p}{)\PYGxcodeZob{}}
+  \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{x} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{0} \PYGxcode{o}{||} \PYGxcode{n}{y} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{)} \PYGxcode{k}{return} \PYGxcode{n}{x} \PYGxcode{o}{+} \PYGxcode{n}{y}\PYGxcode{p}{;}
+  \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Key} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{y}\PYGxcode{p}{].}\PYGxcode{n}{Key}\PYGxcode{p}{)} \PYGxcode{n}{swap}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{p}{,} \PYGxcode{n}{y}\PYGxcode{p}{);}
+  \PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Ri} \PYGxcode{o}{=} \PYGxcode{n}{Merge}\PYGxcode{p}{(}\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Ri}\PYGxcode{p}{,} \PYGxcode{n}{y}\PYGxcode{p}{);}
+  \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Le}\PYGxcode{p}{].}\PYGxcode{n}{Dis} \PYGxcode{o}{\PYGxcodeZlt{}} \PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Ri}\PYGxcode{p}{].}\PYGxcode{n}{Dis}\PYGxcode{p}{)} \PYGxcode{n}{swap}\PYGxcode{p}{(}\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Le}\PYGxcode{p}{,} \PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Ri}\PYGxcode{p}{);}
+  \PYGxcode{k}{if} \PYGxcode{p}{(}\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Ri} \PYGxcode{o}{==} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{)} \PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Dis} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+  \PYGxcode{k}{else} \PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Dis} \PYGxcode{o}{=} \PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{x}\PYGxcode{p}{].}\PYGxcode{n}{Ri}\PYGxcode{p}{].}\PYGxcode{n}{Dis} \PYGxcode{o}{+} \PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+  \PYGxcode{k}{return} \PYGxcode{n}{x}\PYGxcode{p}{;}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+
+\PYGxcode{k}{for} \PYGxcode{p}{(}\PYGxcode{k+kt}{int} \PYGxcode{n}{i} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;} \PYGxcode{n}{i} \PYGxcode{o}{\PYGxcodeZlt{}=} \PYGxcode{n}{n}\PYGxcode{p}{;} \PYGxcode{n}{i}\PYGxcode{o}{++}\PYGxcode{p}{)\PYGxcodeZob{}}
+	\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{].}\PYGxcode{n}{Le} \PYGxcode{o}{=} \PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{].}\PYGxcode{n}{Ri} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+	\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{].}\PYGxcode{n}{Dis} \PYGxcode{o}{=} \PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}
+	\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{].}\PYGxcode{n}{Key} \PYGxcode{o}{=} \PYGxcode{n}{Cost}\PYGxcode{p}{[}\PYGxcode{n}{i}\PYGxcode{p}{];}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{n}{Heap}\PYGxcode{p}{[}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{].}\PYGxcode{n}{Dis} \PYGxcode{o}{=} \PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+\end{Verbatim}

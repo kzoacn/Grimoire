@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{n}{LL} \PYGxcode{n+nf}{exgcd}\PYGxcode{p}{(}\PYGxcode{n}{LL} \PYGxcode{n}{a}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{n}{b}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{x}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{o}{\PYGxcodeZam{}}\PYGxcode{n}{y}\PYGxcode{p}{)\PYGxcodeZob{}}
+	\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{o}{!}\PYGxcode{n}{b}\PYGxcode{p}{)\PYGxcodeZob{}}
+		\PYGxcode{n}{x}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}\PYGxcode{n}{y}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{0}\PYGxcode{p}{;}\PYGxcode{k}{return} \PYGxcode{n}{a}\PYGxcode{p}{;}
+	\PYGxcode{p}{\PYGxcodeZcb{}}\PYGxcode{k}{else}\PYGxcode{p}{\PYGxcodeZob{}}
+		\PYGxcode{n}{LL} \PYGxcode{n}{d}\PYGxcode{o}{=}\PYGxcode{n}{exgcd}\PYGxcode{p}{(}\PYGxcode{n}{b}\PYGxcode{p}{,}\PYGxcode{n}{a}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{b}\PYGxcode{p}{,}\PYGxcode{n}{x}\PYGxcode{p}{,}\PYGxcode{n}{y}\PYGxcode{p}{);}
+		\PYGxcode{n}{LL} \PYGxcode{n}{t}\PYGxcode{o}{=}\PYGxcode{n}{x}\PYGxcode{p}{;}\PYGxcode{n}{x}\PYGxcode{o}{=}\PYGxcode{n}{y}\PYGxcode{p}{;}\PYGxcode{n}{y}\PYGxcode{o}{=}\PYGxcode{n}{t}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{n}{a}\PYGxcode{o}{/}\PYGxcode{n}{b}\PYGxcode{o}{*}\PYGxcode{n}{y}\PYGxcode{p}{;}
+		\PYGxcode{k}{return} \PYGxcode{n}{d}\PYGxcode{p}{;}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}

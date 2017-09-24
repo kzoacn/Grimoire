@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGxcode{n}{LL} \PYGxcode{n+nf}{prho}\PYGxcode{p}{(}\PYGxcode{n}{LL} \PYGxcode{n}{n}\PYGxcode{p}{,}\PYGxcode{n}{LL} \PYGxcode{n}{c}\PYGxcode{p}{)\PYGxcodeZob{}}
+	\PYGxcode{n}{LL} \PYGxcode{n}{i}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{,}\PYGxcode{n}{k}\PYGxcode{o}{=}\PYGxcode{l+m+mi}{2}\PYGxcode{p}{,}\PYGxcode{n}{x}\PYGxcode{o}{=}\PYGxcode{n}{rand}\PYGxcode{p}{()}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{p}{(}\PYGxcode{n}{n}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)}\PYGxcode{o}{+}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{,}\PYGxcode{n}{y}\PYGxcode{o}{=}\PYGxcode{n}{x}\PYGxcode{p}{;}
+	\PYGxcode{k}{while}\PYGxcode{p}{(}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)\PYGxcodeZob{}}
+		\PYGxcode{n}{i}\PYGxcode{o}{++}\PYGxcode{p}{;}\PYGxcode{n}{x}\PYGxcode{o}{=}\PYGxcode{p}{(}\PYGxcode{n}{x}\PYGxcode{o}{*}\PYGxcode{n}{x}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{n}\PYGxcode{o}{+}\PYGxcode{n}{c}\PYGxcode{p}{)}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{n}\PYGxcode{p}{;}
+		\PYGxcode{n}{LL} \PYGxcode{n}{d}\PYGxcode{o}{=}\PYGxcode{n}{\PYGxcodeZus{}\PYGxcodeZus{}gcd}\PYGxcode{p}{((}\PYGxcode{n}{y}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{n}{x}\PYGxcode{o}{+}\PYGxcode{n}{n}\PYGxcode{p}{)}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{n}{n}\PYGxcode{p}{,}\PYGxcode{n}{n}\PYGxcode{p}{);}
+		\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{d}\PYGxcode{o}{\PYGxcodeZgt{}}\PYGxcode{l+m+mi}{1}\PYGxcode{o}{\PYGxcodeZam{}\PYGxcodeZam{}}\PYGxcode{n}{d}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{n}{n}\PYGxcode{p}{)}\PYGxcode{k}{return} \PYGxcode{n}{d}\PYGxcode{p}{;}
+		\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{y}\PYGxcode{o}{==}\PYGxcode{n}{x}\PYGxcode{p}{)}\PYGxcode{k}{return} \PYGxcode{n}{n}\PYGxcode{p}{;}
+		\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{i}\PYGxcode{o}{==}\PYGxcode{n}{k}\PYGxcode{p}{)}\PYGxcode{n}{y}\PYGxcode{o}{=}\PYGxcode{n}{x}\PYGxcode{p}{,}\PYGxcode{n}{k}\PYGxcode{o}{\PYGxcodeZlt{}\PYGxcodeZlt{}=}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{;}
+	\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\PYGxcode{k+kt}{void} \PYGxcode{n+nf}{factor}\PYGxcode{p}{(}\PYGxcode{n}{LL} \PYGxcode{n}{n}\PYGxcode{p}{,}\PYGxcode{n}{vector}\PYGxcode{o}{\PYGxcodeZlt{}}\PYGxcode{n}{LL}\PYGxcode{o}{\PYGxcodeZgt{}\PYGxcodeZam{}}\PYGxcode{n}{fat}\PYGxcode{p}{)\PYGxcodeZob{}}
+	\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{n}\PYGxcode{o}{==}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)}\PYGxcode{k}{return}\PYGxcode{p}{;}
+	\PYGxcode{k}{if}\PYGxcode{p}{(}\PYGxcode{n}{isprime}\PYGxcode{p}{(}\PYGxcode{n}{n}\PYGxcode{p}{))\PYGxcodeZob{}}
+		\PYGxcode{n}{fat}\PYGxcode{p}{.}\PYGxcode{n}{push\PYGxcodeZus{}back}\PYGxcode{p}{(}\PYGxcode{n}{n}\PYGxcode{p}{);}
+		\PYGxcode{k}{return}\PYGxcode{p}{;}
+	\PYGxcode{p}{\PYGxcodeZcb{}}\PYGxcode{n}{LL} \PYGxcode{n}{p}\PYGxcode{o}{=}\PYGxcode{n}{n}\PYGxcode{p}{;}
+	\PYGxcode{k}{while}\PYGxcode{p}{(}\PYGxcode{n}{p}\PYGxcode{o}{\PYGxcodeZgt{}=}\PYGxcode{n}{n}\PYGxcode{p}{)}\PYGxcode{n}{p}\PYGxcode{o}{=}\PYGxcode{n}{prho}\PYGxcode{p}{(}\PYGxcode{n}{p}\PYGxcode{p}{,}\PYGxcode{n}{rand}\PYGxcode{p}{()}\PYGxcode{o}{\PYGxcodeZpc{}}\PYGxcode{p}{(}\PYGxcode{n}{n}\PYGxcode{o}{\PYGxcodeZhy{}}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{)}\PYGxcode{o}{+}\PYGxcode{l+m+mi}{1}\PYGxcode{p}{);}
+	\PYGxcode{n}{factor}\PYGxcode{p}{(}\PYGxcode{n}{p}\PYGxcode{p}{,}\PYGxcode{n}{fat}\PYGxcode{p}{);}
+	\PYGxcode{n}{factor}\PYGxcode{p}{(}\PYGxcode{n}{n}\PYGxcode{o}{/}\PYGxcode{n}{p}\PYGxcode{p}{,}\PYGxcode{n}{fat}\PYGxcode{p}{);}
+\PYGxcode{p}{\PYGxcodeZcb{}}
+\end{Verbatim}
