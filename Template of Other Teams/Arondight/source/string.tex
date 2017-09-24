@@ -1,0 +1,14 @@
+\chapter{字符串}
+\section{后缀数组}
+\inputminted{cpp}{\source/string/suffix-array.cpp}
+\section{后缀自动机}
+\inputminted{cpp}{\source/string/suffix-automaton.cpp}
+\section{EX后缀自动机}
+\inputminted{cpp}{\source/string/ex-suffix-automaton.cpp}
+\section{后缀树}
+\begin{enumerate}
+	\item 边上的字符区间是左闭右开区间；
+	\item 如果要建立关于多个串的后缀树，请用不同的分隔符，并且对于每个叶子结点，去掉和它父亲的连边上出现的第一个分隔符之后的所有字符；
+\end{enumerate}
+\section{回文自动机}
+\inputminted{cpp}{\source/string/palindromic-tree.cpp}

@@ -1,0 +1,69 @@
+import java.math.*;
+import java.util.*;
+import java.io.*;
+
+class InputReader {
+	public BufferedReader reader;
+	public StringTokenizer tokenizer;
+	
+	public InputReader(InputStream stream) {
+		reader = new BufferedReader(new InputStreamReader(stream), 32768);
+		tokenizer = null;
+	}
+	
+	public String next() {
+		while (tokenizer == null || !tokenizer.hasMoreTokens()) {
+			try {
+				tokenizer = new StringTokenizer(reader.readLine());
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+		}
+	}
+}
+
+public class Main {
+	static public void main(String arg[]) throws IOException {
+		St
+		Scanner cin = new Scanner(System.in);
+		int caseCnt = cin.nextInt();
+		int[] sa = new int [1000005];
+		int[] rk = new int [1000005];
+		BigInteger[][] dp = new BigInteger[100005][26];
+		for (int kase = 1; kase <= caseCnt; ++kase) {
+			int n = cin.nextInt();
+			for (int i = 1; i <= n; ++i) {
+				//scanf("%d", sa + i); rk[sa[i]] = i;
+				sa[i] = cin.nextInt();
+				rk[sa[i]] = i;
+			}
+			rk[n + 1] = 0;
+			
+			for (int i = 0; i < 26; ++i) {
+				//dp[n][i] = 26 - i;
+				dp[n][i] = BigInteger.valueOf(26 - i);
+			}
+			
+			for (int i = n - 1; i > 0; --i) {
+				for (int j = 0; j < 26; ++j) {
+					if (rk[sa[i] + 1] < rk[sa[i + 1] + 1])
+						dp[i][j] = dp[i + 1][j];
+					else
+						//dp[i][j] = j < 25 ? dp[i + 1][j + 1] : 0;
+						if (j < 25) {
+							dp[i][j] = dp[i + 1][j + 1];
+						} else {
+							dp[i][j] = BigInteger.ZERO;
+						}
+				}
+				for (int j = 24; j >= 0; --j) {
+					//dp[i][j] += dp[i][j + 1];
+					dp[i][j] = dp[i][j].add(dp[i][j+1]);
+				}
+			}
+			
+			//printf("%llu\n", dp[1][0]);
+			System.out.println(dp[1][0]);
+		}
+	}
+}

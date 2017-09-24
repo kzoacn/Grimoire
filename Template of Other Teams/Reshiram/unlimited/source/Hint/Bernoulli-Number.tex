@@ -1,0 +1,8 @@
+\begin{enumerate}
+	\item 初始化：$B_0(n) = 1$
+	\item 递推公式：
+	\[B_m(n) = n^m - \sum_{k = 0}^{m - 1}\binom{m}{k} \frac{B_k(n)}{m - k + 1}\]
+	\item 应用：
+	\[\sum_{k = 1}^{n} k^m = \frac{1}{m + 1}\sum_{k = 0}^{m}\binom{m + 1}{k}n^{m + 1 - k}\]
+\end{enumerate}
+

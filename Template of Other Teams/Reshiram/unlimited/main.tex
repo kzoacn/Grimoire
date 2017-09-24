@@ -1,0 +1,388 @@
+\documentclass[a4paper,openany]{book}
+%\usepackage{ctex}
+\usepackage{bm}
+\usepackage{longtable}
+%\usepackage[fleqn]{amsmath}
+\usepackage{harpoon}
+\usepackage{fontspec}
+\usepackage{listings}
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{cmap}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{xeCJK}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{indentfirst}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage[cache=false]{minted}
+\usepackage{pdfpages}
+\allowdisplaybreaks
+
+%\setlength{\parindent}{0em}
+%\setlength{\mathindent}{0pt}
+
+\newfontfamily\Courier{Courier New}
+\renewcommand{\theFancyVerbLine}{\rmfamily\scriptsize\arabic{FancyVerbLine}}
+\newcommand{\cppcode}[1]{
+    \inputminted[mathescape,
+    			 tabsize=2,
+    			 linenos,
+    			 %frame=single,
+    			 framesep=2mm,
+    			 breakaftergroup=true,
+    			 breakautoindent=true,
+    			 breakbytoken=true,
+    			 breaklines=true,
+    			 fontsize=\small
+    ]{cpp}{source/#1}
+}
+\newcommand{\javacode}[1]{
+    \inputminted[mathescape,
+    			 tabsize=2,
+    			 linenos,
+    			 %frame=single,
+    			 framesep=2mm,
+    			 breakaftergroup=true,
+    			 breakautoindent=true,
+    			 breakbytoken=true,
+    			 breaklines=true,
+    			 fontsize=\small
+    ]{java}{source/#1}
+}
+\newcommand{\vimcode}[1]{
+    \inputminted[mathescape,
+    			 tabsize=2,
+    			 linenos,
+    			 %frame=single,
+    			 framesep=2mm,
+    			 breakaftergroup=true,
+    			 breakautoindent=true,
+    			 breakbytoken=true,
+    			 breaklines=true,
+    			 fontsize=\small
+    ]{vim}{source/#1}
+}
+\begin{document}	
+	\title{\textbf{\LARGE{Standard Code Library}}}
+	\author{Shanghai Jiao Tong University, Reshiram}
+	\date{October, 2016}
+	\maketitle
+	\tableofcontents
+	\begin{spacing}{0.9}
+	\chapter{计算几何}
+		\section{二维几何基础}
+		\cppcode{Geometry-Algorithm/Basic2D.cpp}
+		\section{快速凸包}
+		\cppcode{Geometry-Algorithm/Convex-Hull.cpp}
+		\section{半平面交}
+		\cppcode{Geometry-Algorithm/Half-Plane-Intersection.cpp}
+		\section{三角形的心}
+		\cppcode{Geometry-Algorithm/Triangle-Core.cpp}
+		\section{圆与多边形面积交}
+		\cppcode{Geometry-Algorithm/Circle-Polygon-Intersection.cpp}
+		\section{圆并求面积}
+		\noindent \textbf{注意事项：}复杂度$\mathcal{O}(n^2\log n)$
+		\cppcode{Geometry-Algorithm/Circle-Union.cpp}
+		%\section{最近点对}
+		\section{最小覆盖圆}
+		\cppcode{Geometry-Algorithm/Minimum-Coverage-Circle.cpp}
+		\section{最小覆盖球}
+		\cppcode{Geometry-Algorithm/Minimum-Coverage-Ball.cpp}
+		\section{三维几何基础}
+		\cppcode{Geometry-Algorithm/Basic3D.cpp}
+		\section{三维凸包}
+		\cppcode{Geometry-Algorithm/Convex-Hull-3D.cpp}
+		\section{三维绕轴旋转}
+		\noindent \textbf{注意事项：}逆时针绕轴AB旋转$\theta$角。
+		\cppcode{Geometry-Algorithm/Rotate-3D.cpp}
+		\section{Delaunay三角剖分}
+		\cppcode{Geometry-Algorithm/Delaunay-Decomposition.cpp}
+		%\section{求四点外接球}
+	\chapter{图论}
+		\section{点双连通分量}
+		\cppcode{Graph-Algorithm/Double-Connected-Component.cpp}
+		\section{Hungary求最大匹配}
+		\cppcode{Graph-Algorithm/Maximum-Matching-Hungary.cpp}
+		\section{Hopcoft-Karp求最大匹配}
+		\cppcode{Graph-Algorithm/Maximum-Matching-Hopcroft-Karp.cpp}
+		\section{KM带权匹配}
+		\noindent \textbf{注意事项：}最小权完美匹配，复杂度为$\mathcal{O}(|V|^3)$。
+		\cppcode{Graph-Algorithm/Maximum-Weight-Matching.cpp}
+		\section{稀疏图最大流}
+		\noindent \textbf{注意事项：}适用于比较稀疏的一般图。
+		\cppcode{Graph-Algorithm/Maximum-Flow-ISAP.cpp}
+		\section{稠密图最大流}
+		\noindent \textbf{注意事项：}适用于二分图以及一些比较稠密的、增广路径比较短的图。
+		\cppcode{Graph-Algorithm/Maximum-Flow-Dinic.cpp}
+		\section{稀疏图费用流}
+		\cppcode{Graph-Algorithm/Minimum-Cost-Maxflow-SPFA.cpp}
+		\section{稠密图费用流}
+		\cppcode{Graph-Algorithm/Minimum-Cost-Maxflow-ZKW.cpp}
+		\section{2-SAT问题}
+		\cppcode{Graph-Algorithm/Two-Satisfiability.cpp}
+		\section{有根树的同构}
+		\cppcode{Graph-Algorithm/Rooted-Tree-Isomorphism.cpp}
+		\section{Dominator Tree}
+		\cppcode{Graph-Algorithm/Dominator-Tree.cpp}
+		\section{哈密尔顿回路（ORE 性质的图）}
+		\cppcode{Graph-Algorithm/Hamiltonian-Circuit-Ore.cpp}
+		\section{无向图最小割}
+		\cppcode{Graph-Algorithm/Minimum-Cut-Stoer-Wagner.cpp}
+		\section{弦图判定}
+		\cppcode{Graph-Algorithm/Chord-Graph-Judgement.cpp}
+		\section{弦图求最大团}
+		\cppcode{Graph-Algorithm/Chord-Graph-Group-Counter.cpp}
+		\section{最大团搜索}
+		\cppcode{Graph-Algorithm/Maximum-Clique-Search.cpp}
+		\section{极大团计数}
+		\cppcode{Graph-Algorithm/Maximum-Clique-Count.cpp}
+		\section{最小树形图}
+		\cppcode{Graph-Algorithm/Chu-Liu-Algorithm.cpp}
+		\section{带花树}
+		\cppcode{Graph-Algorithm/Maximum-Matching-Blossom.cpp}
+		\section{度限制生成树}
+		\cppcode{Graph-Algorithm/Minimum-Spanning-Tree-With-Degree-Limit.cpp}
+	\chapter{数论及代数}
+		\section{快速求逆}
+		\cppcode{Mathematical-Algorithm/Quick-Reverse.cpp}
+		\section{魔幻多项式}
+			\subsection*{快速傅里叶变换}
+			\noindent \textbf{注意事项：}请实现复数类Complex，并注意快速傅里叶变换精度较差，建议使用快速数论变换。
+			\cppcode{Mathematical-Algorithm/Fast-Fourier-Transform.cpp}
+			\subsection*{光速数论变换}
+			\noindent \textbf{注意事项：}$\mathrm{MOD}$应该为一个特殊的质数$2^n + 1$且$n$应该要足够大，$\mathrm{PRT}$为这个质数的原根。
+			\cppcode{Mathematical-Algorithm/Number-Theory-Transform.cpp}
+			\subsection*{牛顿迭代法}
+			\noindent \textbf{问题描述：}给出多项式$G(x)$，求解多项式$F(x)$满足：
+			\[G(F(x)) \equiv 0 \pmod {x^n}\]
+			答案只需要精确到$F(x) \bmod {x^n}$即可。\par
+			\noindent \textbf{实现原理：}考虑倍增，假设有：
+			\[G(F_t(x)) \equiv 0 \pmod{x^t}\]
+			对$G(F_{t + 1}(x))$在模$x^{2t}$意义下进行Taylor展开：
+			\[G(F_{t + 1}(x)) \equiv G(F_t(x)) + \dfrac{G'(F_t(x))}{1!}(F_{t + 1}(x) - F_t(x)) \pmod{x^{2t}}\]
+			那么就有：
+			\[F_{t + 1}(x) \equiv F_t(x) - \dfrac{G(F_t(x))}{G'(F_t(x))} \pmod{x^{2t}}\]
+			\noindent \textbf{注意事项：}$G(F(x))$的常数项系数必然为0，这个可以作为求解的初始条件；
+			\subsection*{多项式求逆}
+			\noindent \textbf{原理：}令$G(x) = x * A - 1$（其中$A$是一个多项式系数），根据牛顿迭代法有：
+			\begin{displaymath}
+				\begin{split}
+					F_{t + 1}(x) &\equiv F_t(x) - \dfrac{F_t(x) * A(x) - 1}{A(x)} \\
+								 &\equiv 2F_t(x) - F_t(x)^2 * A(x)\pmod{x^{2t}}
+				\end{split}
+			\end{displaymath}
+			\noindent \textbf{注意事项：}
+			\begin{enumerate}
+				\item $F(x)$的常数项系数必然不为0，否则没有逆元；
+				\item 复杂度是$O(n \log n)$但是常数比较大（$10^5$大概需要0.3秒左右）；
+				\item 传入的两个数组必须不同，但传入的次数界没有必要是2的次幂；
+			\end{enumerate}
+			\cppcode{Mathematical-Algorithm/Polynomial-Inverse.cpp}
+			\subsection*{多项式取指数和对数}
+			\noindent \textbf{作用：}给出一个多项式$A(x)$，求一个多项式$F(x)$满足$e^A(x) - F(x) \equiv 0 \pmod{x^n}$。\par
+			\noindent \textbf{原理：}令$G(x) = \ln x - A$（其中$A$是一个多项式系数），根据牛顿迭代法有：
+			\[F_{t + 1}(x) \equiv F_t(x) - F_t(x)(\ln {F_t(x)} - A(x)) \pmod{x^{2t}}\]
+			求$\ln {F_t(x)}$可以用先求导再积分的办法，即：
+			\[\ln A(x) = \int \dfrac{F'(x)}{F(x)}~\mathrm{d}x\]
+			多项式的求导和积分可以在$O(n)$的时间内完成，因此总复杂度为$O(n \log n)$。\par
+			\noindent \textbf{应用：}加速多项式快速幂。\par
+			\noindent \textbf{注意事项：}
+			\begin{enumerate}
+				\item 进行$\log$的多项式必须保证常数项系数为1，否则必须要先求出$\log a[0]$是多少；
+				\item 传入的两个数组必须不同，但传入的次数界没有必要是2的次幂；
+				\item 常数比较大，$10^5$的数据求指数和对数分别需要0.37s和0.85s左右的时间，注意这里\Courier{memset}几乎不占用时。
+			\end{enumerate}
+			\cppcode{Mathematical-Algorithm/Polynomial-ExpAndLn.cpp}
+			\subsection*{多项式除法}
+			\noindent \textbf{作用：}给出两个多项式$A(x)$和$B(x)$，求两个多项式$D(x)$和$R(x)$满足：
+			\[A(x) \equiv D(x)B(x) + R(x) \pmod{x^n}\]
+			\noindent \textbf{注意事项：}
+			\begin{enumerate}
+				\item 常数比较大概为6倍FFT的时间，即大约$10^5$的数据0.07s左右；
+				\item 传入两个多项式的次数界，没有必要是2的次幂，但是要保证除数多项式不为0。
+			\end{enumerate}
+			\cppcode{Mathematical-Algorithm/Polynomial-Division.cpp}
+		%\section{快速沃尔什变换}
+		\section{线性递推数列求第$n$项}
+		\cppcode{Mathematical-Algorithm/Linear-Recurrence.cpp}
+		\section{线性规划}
+		\noindent \textbf{注意事项：}使用单纯形法求解：
+		\[max\{c_{1 \times m} \cdot x_{m \times 1} \ | \ x_{m \times 1} \geq 0_{m \times 1}, a_{n \times m} \cdot x_{m \times 1} \leq b_{n \times 1}\}\]
+		\cppcode{Mathematical-Algorithm/Simplex.cpp}
+		%\section{Schreier-Sims}
+		\section{中国剩余定理}
+		\noindent \textbf{注意事项：}$p_i$无需两两互质
+		\cppcode{Mathematical-Algorithm/Chinese-Remainder-Theorem.cpp}
+		\section{直线下整点个数}
+		\noindent \textbf{注意事项：}返回结果为：
+		$$\sum_{0 \leq i < n} \lfloor \frac{a + b \cdot i}{m} \rfloor$$
+		即直线下整点个数。
+		\cppcode{Mathematical-Algorithm/Lattice-Counter.cpp}
+		\section{闪电素数判定}
+		\cppcode{Mathematical-Algorithm/Miller-Rabin.cpp}
+		\section{闪电质因数分解}
+		\cppcode{Mathematical-Algorithm/Pollard-Rho.cpp}
+		\section{⾃适应⾟普森}
+		\cppcode{Mathematical-Algorithm/Self-Adjusting-Simpson.cpp}
+		\section{二次剩余}
+		\cppcode{Mathematical-Algorithm/Quad-Remainder.cpp}
+		\section{Pell 方程}
+		\cppcode{Mathematical-Algorithm/Pell.cpp}
+		\section{原根相关}
+		\begin{enumerate}
+			\item 模$m$有原根的充要条件：$m = 2, 4, p^a, 2p^a$，其中$p$是奇素数；
+			\item 求任意数$p$原根的方法：对$\phi(p)$因式分解，即$\phi(p) = p_1^{r_1}p_2^{r_2}\cdots p_k^{r_k}$，若恒成立：
+			\[g^{\frac{p - 1}{g}} \neq 1 \pmod{p}\]
+			那么$g$就是$p$的原根。
+			\item 若模$m$有原根，那么它一共有$\Phi(\Phi(m))$个原根。
+		\end{enumerate}
+	\chapter{字符串}
+		\section{广义后缀自动机}
+		\noindent \textbf{注意事项：}空间是插入字符串总长度的2倍并请注意字符集大小。
+		\cppcode{String-Algorithm/Generalized-Suffix-Automaton.cpp}
+		\section{后缀数组}
+		\noindent \textbf{注意事项：}$\mathcal{O}(n\log n)$倍增构造。
+		\cppcode{String-Algorithm/Suffix-Array.cpp}
+		\section{回文自动机}
+		\noindent \textbf{注意事项：}请注意字符集大小。
+		\cppcode{String-Algorithm/Palindromic-Automaton.cpp}
+		\section{Manacher}
+		\noindent \textbf{注意事项：}1-based算法，请注意下表。
+		\cppcode{String-Algorithm/Manacher.cpp}
+		\section{循环串的最小表示}
+		\noindent \textbf{注意事项：}0-Based算法，请注意下标。
+		\cppcode{String-Algorithm/Minimum-Representation.cpp}
+		\section{后缀树}
+		\noindent \textbf{注意事项：}
+		\begin{enumerate}
+			\item \indent 边上的字符区间是左闭右开区间；
+			\item \indent 如果要建立关于多个串的后缀树，请用不同的分隔符，并且对于每个叶子结点，去掉和它父亲的连边上出现的第一个分隔符之后的所有字符；
+		\end{enumerate}
+		\cppcode{String-Algorithm/Suffix-Tree.cpp}
+	\chapter{数据结构}
+		\section{树链剖分}
+		\subsection*{点操作版本}
+		\cppcode{Data-Structure/Heavy-Light-Decomposition-Point.cpp}
+		\subsection*{边操作版本}
+		\cppcode{Data-Structure/Heavy-Light-Decomposition-Chain.cpp}
+		\section{Link Cut Tree}
+		\cppcode{Data-Structure/Link-Cut-Tree.cpp}
+		\section{可持久化平衡树}
+		\cppcode{Data-Structure/Persistent-Treap.cpp}
+		\section{可持久化左偏树}
+		\cppcode{Data-Structure/Leftist-Heap.cpp}
+		\section{Splay Tree}
+		\subsection*{区间操作版本}
+		\cppcode{Data-Structure/Splay-Interval.cpp}
+		\subsection*{序列操作版本}
+		\cppcode{Data-Structure/Splay-Sequence.cpp}
+		\section{k-d Tree}
+		\cppcode{Data-Structure/K-d-Tree.cpp}
+	\chapter{杂项算法}
+		\section{Dancing Links}
+		\cppcode{Incidental-Algorithm/Dancing-Links.cpp}
+		\section{日期公式}
+		\cppcode{Incidental-Algorithm/Date-Lemma.cpp}
+		\section{环状最长公共子序列}
+		\cppcode{Incidental-Algorithm/Cycle-Longest.cpp}
+		\section{经纬度球面距离}
+		\cppcode{Incidental-Algorithm/Ball-Distance.cpp}
+		\section{长方体表面两点最短距离}
+		\cppcode{Incidental-Algorithm/Minimum-Distance-Cube.cpp}
+	\chapter{其他}
+		\section{Java Hints}
+		\javacode{Hint/Java-Hints.java}
+		\section{vimrc}
+		\vimcode{Hint/vimrc}
+		\section{常用结论}
+			\subsection{上下界网络流}
+			$B(u,v)$表示边$(u,v)$流量的下界，$C(u,v)$表示边$(u,v)$流量的上界，$F(u,v)$表示边$(u,v)$的流量。
+			设$G(u,v) = F(u,v) - B(u,v)$，显然有
+			$$0 \leq G(u,v) \leq C(u,v)-B(u,v)$$
+			\subsubsection*{无源汇的上下界可行流}
+			建立超级源点$S^*$和超级汇点$T^*$，对于原图每条边$(u,v)$在新网络中连如下三条边：$S^* \rightarrow v$，容量为$B(u,v)$；$u \rightarrow T^*$，容量为$B(u,v)$；$u \rightarrow v$，容量为$C(u,v) - B(u,v)$。最后求新网络的最大流，判断从超级源点$S^*$出发的边是否都满流即可，边$(u,v)$的最终解中的实际流量为$G(u,v)+B(u,v)$。
+			\subsubsection*{有源汇的上下界可行流}
+			从汇点$T$到源点$S$连一条上界为$\infty$，下界为$0$的边。按照\textbf{无源汇的上下界可行流}一样做即可，流量即为$T \rightarrow S$边上的流量。
+			\subsubsection*{有源汇的上下界最大流}
+			\begin{enumerate}
+				\item 在\textbf{有源汇的上下界可行流}中，从汇点$T$到源点$S$的边改为连一条上界为$\infty$，下届为$x$的边。$x$满足二分性质，找到最大的$x$使得新网络存在\textbf{无源汇的上下界可行流}即为原图的最大流。
+				\item 从汇点$T$到源点$S$连一条上界为$\infty$，下界为$0$的边，变成无源汇的网络。按照\textbf{无源汇的上下界可行流}的方法，建立超级源点$S^*$和超级汇点$T^*$，求一遍$S^* \rightarrow T^*$的最大流，再将从汇点$T$到源点$S$的这条边拆掉，求一次$S \rightarrow T$的最大流即可。
+			\end{enumerate}
+			\subsubsection*{有源汇的上下界最小流}
+			\begin{enumerate}
+				\item 在\textbf{有源汇的上下界可行流}中，从汇点$T$到源点$S$的边改为连一条上界为$x$，下界为$0$的边。$x$满足二分性质，找到最小的$x$使得新网络存在\textbf{无源汇的上下界可行流}即为原图的最小流。
+				\item 按照\textbf{无源汇的上下界可行流}的方法，建立超级源点$S^*$与超级汇点$T^*$，求一遍$S^* \rightarrow T^*$的最大流，但是注意这一次不加上汇点$T$到源点$S$的这条边，即不使之改为无源汇的网络去求解。求完后，再加上那条汇点$T$到源点$S$上界$\infty$的边。因为这条边下界为$0$，所以$S^*$，$T^*$无影响，再直接求一次$S^* \rightarrow T^*$的最大流。若超级源点$S^*$出发的边全部满流，则$T \rightarrow S$边上的流量即为原图的最小流，否则无解。
+			\end{enumerate}
+			\subsection*{上下界费用流}
+			\noindent \textbf{来源：BZOJ 3876}
+			\noindent 设汇$t$，源$s$，超级源$S$，超级汇$T$，本质是每条边的下界为1，上界为MAX，跑一遍有源汇的上下界最小费用最小流。（因为上界无穷大，所以只要满足所有下界的最小费用最小流）
+			\begin{enumerate}
+				\item 对每个点$x$：从$x$到$t$连一条费用为0，流量为MAX的边，表示可以任意停止当前的剧情（接下来的剧情从更优的路径去走，画个样例就知道了）
+				\item 对于每一条边权为z的边x->y：
+				\begin{itemize}
+					\item 从S到y连一条流量为1，费用为z的边，代表这条边至少要被走一次。
+					\item 从x到y连一条流量为MAX，费用为z的边，代表这条边除了至少走的一次之外还可以随便走。
+					\item 从x到T连一条流量为1，费用为0的边。（注意是每一条x->y的边都连，或者你可以记下x的出边数Kx，连一次流量为Kx，费用为0的边）。
+				\end{itemize}
+			\end{enumerate}
+			建完图后从S到T跑一遍费用流，即可。（当前跑出来的就是满足上下界的最小费用最小流了）
+			\subsection{弦图相关}
+			\begin{enumerate}
+				\item[1.] 团数 $\leq$ 色数 , 弦图团数 = 色数
+				\item[2.] 设 $next(v)$ 表示 $N(v)$ 中最前的点 . 
+				令 w* 表示所有满足 $A \in B$ 的 w 中最后的一个点 , 
+				判断 $v \cup N(v)$ 是否为极大团 , 
+				只需判断是否存在一个 w, 
+				满足 $Next(w)=v$ 且 $|N(v)| + 1 \leq |N(w)|$ 即可 . 
+				\item[3.] 最小染色 : 完美消除序列从后往前依次给每个点染色 , 
+				给每个点染上可以染的最小的颜色
+				\item[4.] 最大独立集 : 完美消除序列从前往后能选就选
+				\item[5.] 弦图最大独立集数 $=$ 最小团覆盖数 , 
+				最小团覆盖 : 
+				设最大独立集为 $\{p_1,p_2, \dots ,p_t\}$, 
+				则 $\{p_1\cup N(p_1), \dots , p_t \cup N(p_t)\}$ 
+				为最小团覆盖
+			\end{enumerate}
+			\subsection{Bernoulli数}
+				\input{source/Hint/Bernoulli-Number.tex}
+		\section{常见错误}
+		\begin{spacing}{0.6}
+		\begin{enumerate}
+			\item 数组或者变量类型开错，例如将double开成int；
+			\item 函数忘记返回返回值；
+			\item 初始化数组没有初始化完全；
+			\item 对空间限制判断不足导致MLE；
+		\end{enumerate}
+		\end{spacing}
+		\section{测试列表}
+		\begin{spacing}{0.6}
+		\begin{enumerate}
+			\item 检测评测机是否开O2；
+			\item 检测\_\_int128以及\_\_float128是否能够使用；
+			\item 检测是否能够使用C++11；
+			\item 检测是否能够使用Ext Lib；
+			\item 检测程序运行所能使用的内存大小；
+			\item 检测程序运行所能使用的栈大小；
+			\item 检测是否有代码长度限制；
+			\item 检测是否能够正常返Runtime Error（assertion、return 1、空指针）；
+			\item 查清楚厕所方位和打印机方位；
+		\end{enumerate}
+		\end{spacing}
+		\section{博弈游戏}
+		\input{source/Hint/Game-Theory.tex}
+		\section{常用数学公式}
+		\input{source/Hint/Mathematical-Lemma.tex}
+		\section{附录}
+		\subsection{NTT素数及原根列表}
+		\input{source/Appendix/NFT-Primes.tex}
+		\includepdf[pages=-]{source/Appendix/cheat.pdf}
+	\end{spacing}
+\end{document}

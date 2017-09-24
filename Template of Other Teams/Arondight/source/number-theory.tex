@@ -1,0 +1,26 @@
+\chapter{数论}
+\section{$O(m^2\log n)$求线性递推数列第n项}
+Given $a_0, a_1, \ldots, a_{m - 1}$\\
+	$a_n = c_0 \times a_{n - m} + \cdots + c_{m - 1} \times a_{n - 1}$\\
+	Solve for $a_n = v_0 \times a_0 + v_1 \times a_1 + \cdots + v_{m - 1} \times a_{m - 1}$\\
+\inputminted{cpp}{\source/number-theory/linear-recurrence.cpp}
+\section{求逆元}
+\inputminted{cpp}{\source/number-theory/get-inversion.cpp}
+\section{中国剩余定理}
+\inputminted{cpp}{\source/number-theory/chinese-remainder-theorem.cpp}
+\section{魔法CRT}
+\inputminted{cpp}{\source/number-theory/magic-crt.cpp}
+\section{素性测试}
+\inputminted{cpp}{\source/number-theory/primality-test.cpp}
+\section{质因数分解}
+\inputminted{cpp}{\source/number-theory/pollards-rho-algorithm.cpp}
+\section{线下整点}
+\inputminted{cpp}{\source/number-theory/integer-lattice-under-segment.cpp}
+\section{原根相关}
+	\begin{enumerate}
+		\item 模$m$有原根的充要条件：$m = 2, 4, p^a, 2p^a$，其中$p$是奇素数；
+		\item 求任意数$p$原根的方法：对$\phi(p)$因式分解，即$\phi(p) = p_1^{r_1}p_2^{r_2}\cdots p_k^{r_k}$，若恒成立：
+			\[g^{\frac{p - 1}{g}} \neq 1 \pmod{p}\]
+				那么$g$就是$p$的原根。
+		\item 若模$m$有原根，那么它一共有$\Phi(\Phi(m))$个原根。
+	\end{enumerate}

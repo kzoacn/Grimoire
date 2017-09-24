@@ -1,0 +1,10 @@
+import java.math.*;
+import java.util.*;
+
+public class Main {
+	static public void main(String arg[]) {
+		Scanner cin = new Scanner(System.in);
+		int cs;
+		
+	}
+}

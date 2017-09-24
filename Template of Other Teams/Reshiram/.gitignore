@@ -1,0 +1,6 @@
+# Tex Temporary File
+*.aux
+*.toc
+*.bak
+*.log
+makefile
