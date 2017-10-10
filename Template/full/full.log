@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  19 SEP 2017 20:35
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  24 SEP 2017 11:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1883,19 +1883,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [2
 
-] (./full.toc)
+] (./full.toc
+[3])
 \tf@toc=\write6
 \openout6 = `full.toc'.
 
-(../source.tex (../source/algebra.tex [3]
+ (../source.tex (../source/algebra.tex
 
 LaTeX Font Warning: Font shape `EU1/FandolSong-Regular(1)/m/sl' undefined
 (Font)              using `EU1/FandolSong-Regular(1)/m/n' instead on input line
  1.
 
-[4
-
-]
+[4]
 Chapter 1.
 *************************************************
 * fontspec warning: "script-not-exist"
@@ -1960,7 +1959,9 @@ makeatother\\endinput\n \"); f.close();")...executed.
 . <->"STXihei/OT:script=latn;language=DFLT;embolden=4;"
 . - 'bold small caps'  (bx/sc) with NFSS spec.: 
 .................................................
-[5])
+[5
+
+])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2181,8 +2182,50 @@ xdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatoth
 er\\endinput\n \"); f.close();")...executed.
 
 (./full.mintedmd5)
-(./_minted-full/b3469cd083484781ea7a4fb6e26e65a76a67c1ae.pygtex))
-(../source/hints.tex [31] [32
+(./_minted-full/b3469cd083484781ea7a4fb6e26e65a76a67c1ae.pygtex)
+\openout5 = `full.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
+intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/s
+tring/SuffixAutomaton_array.cpp\", \"rb\"); hasher.update(f.read()); f.close();
+ f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123
+) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + 
+\"\\makeatother\\endinput\n \"); f.close();")...executed.
+
+
+(./full.mintedmd5)
+(./_minted-full/b07ace6e1957ca8aef8ae8723d922864ac43d222.pygtex [31])
+\openout5 = `full.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
+intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/s
+tring/SuffixAutomaton_pointer.cpp\", \"rb\"); hasher.update(f.read()); f.close(
+); f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(1
+23) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro 
++ \"\\makeatother\\endinput\n \"); f.close();")...executed.
+
+
+(./full.mintedmd5)
+(./_minted-full/d4a0440512a2563f3dfff7bdb22126eae5c6a48e.pygtex [32])
+\openout5 = `full.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
+intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/s
+tring/EX_SuffixAutomaton_pointer.cpp\", \"rb\"); hasher.update(f.read()); f.clo
+se(); f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + ch
+r(123) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + mac
+ro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
+
+
+(./full.mintedmd5)
+(./_minted-full/f98f79b20de35cee62aba19b4adb9d6acb525f34.pygtex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]))
+(../source/hints.tex [35] [36
 
 ]
 Chapter 5.
@@ -2211,13 +2254,25 @@ makeatother\\endinput\n \"); f.close();")...executed.
 (./_minted-full/f0e30ad4a2189489f2bd4b035ff575bf79cfb6c4.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33])))
+ [37])
+\openout5 = `full.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
+intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/h
+ints/STL-memory-release.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f =
+ open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + 
+hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\
+makeatother\\endinput\n \"); f.close();")...executed.
+
+
+(./full.mintedmd5)
+(./_minted-full/f0e30ad4a2189489f2bd4b035ff575bf79cfb6c4.pygtex)))
 runsystem(rm "full.mintedcmd")...executed.
 
 runsystem(rm "full.mintedmd5")...executed.
 
-
-[34] (./full.aux)
+ [38]
+(./full.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.21748pt have occurred.
@@ -2227,12 +2282,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 26891 strings out of 493638
- 526519 string characters out of 6146796
- 574761 words of memory out of 5000000
- 29784 multiletter control sequences out of 15000+600000
+ 26913 strings out of 493638
+ 527430 string characters out of 6146796
+ 574957 words of memory out of 5000000
+ 29787 multiletter control sequences out of 15000+600000
  21144 words of font info for 126 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 65i,10n,87p,10437b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,10n,87p,10437b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on full.pdf (34 pages).
+Output written on full.pdf (38 pages).

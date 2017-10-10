@@ -18,6 +18,12 @@
 \contentsline {section}{\numberline {3.7}必经点dominator tree}{27}
 \contentsline {chapter}{\numberline {4}字符串}{31}
 \contentsline {section}{\numberline {4.1}Manacher}{31}
-\contentsline {chapter}{\numberline {5}技巧}{33}
-\contentsline {section}{\numberline {5.1}无敌的读入优化}{33}
-\contentsline {section}{\numberline {5.2}真正释放STL内存}{34}
+\contentsline {section}{\numberline {4.2}数组版后缀自动机}{31}
+\contentsline {section}{\numberline {4.3}指针版后缀自动机}{32}
+\contentsline {section}{\numberline {4.4}广义后缀自动机}{34}
+\contentsline {chapter}{\numberline {5}技巧}{37}
+\contentsline {section}{\numberline {5.1}无敌的读入优化}{37}
+\contentsline {section}{\numberline {5.2}真正释放STL内存}{38}
+\contentsline {section}{\numberline {5.3}梅森旋转算法}{38}
+\contentsline {section}{\numberline {5.4}32-bit/64-bit随机素数}{38}
+\contentsline {section}{\numberline {5.5}NTT 素数及其原根}{38}

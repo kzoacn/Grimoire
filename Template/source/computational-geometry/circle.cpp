@@ -6,7 +6,7 @@ struct C{
 };
 // 求圆与直线的交点
 //turn90() P(-y,x)
-double fix(double x){return sgn(x)?x:0;}
+double fix(double x){return x>=0?x:0;}
 bool intersect(C a, L l, P &p1, P &p2) { 
 	double x = ((l.a - a.o)^ (l.b - l.a)),
 		y = (l.b - l.a).len2(),

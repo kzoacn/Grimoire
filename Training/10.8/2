@@ -1,0 +1,2 @@
+g++ -std=c++11  -Wall -DLOCAL    H.cpp   -o H
+<builtin>: recipe for target 'H' failed
