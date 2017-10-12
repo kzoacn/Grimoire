@@ -86,39 +86,3 @@ struct Treap{
 	int kth(int x){return kth(root,x);}
 	void deb(){deb(root);puts("");}
 }T;
-int main(){
-    srand(12121);  
-    int m;  
-    scanf("%d",&m);
-    while(m--){  
-        int opt,x;  
-        scanf("%d",&opt);  
-        switch(opt){  
-            case 1:  
-                scanf("%d",&x);  
-                T.insert(x);  
-                break;  
-            case 2:  
-                scanf("%d",&x);  
-                T.del(x);  
-                break;  
-            case 3:  
-                scanf("%d",&x);  
-                printf("%d\n",T.rank(x)+1);  
-                break;  
-            case 4:               
-                scanf("%d",&x);  
-                printf("%d\n",T.kth(x));  
-                break;  
-            case 5:  
-                scanf("%d",&x);  
-                printf("%d\n",T.pre(x));  
-                break;  
-            case 6:  
-                scanf("%d",&x);  
-                printf("%d\n",T.nxt(x));  
-                break;    
-        }  
-    }  
-	return 0;
-}
