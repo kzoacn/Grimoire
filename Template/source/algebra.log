@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.1)  1 AUG 2017 20:23
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  15 OCT 2017 16:01
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
-**algebra.tex -shell-escape
+**algebra.tex
 (./algebra.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
@@ -22,17 +22,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \chapter{‰
-              ª£Êï∞}
+l.1 \chapter{‰ª£
+                Êï∞}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no ‰ in font nullfont!
-Missing character: There is no ª in font nullfont!
-Missing character: There is no £ in font nullfont!
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no ï in font nullfont!
-Missing character: There is no ∞ in font nullfont!
+Missing character: There is no ‰ª£ in font nullfont!
+Missing character: There is no Êï∞ in font nullfont!
 ! Undefined control sequence.
 l.2 \section
             {$O(n^2\log n)$Ê±ÇÁ∫øÊÄßÈÄíÊé®Êï∞ÂàóÁ¨¨nÈ°π}
@@ -46,34 +42,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no ± in font nullfont!
-Missing character: There is no Ç in font nullfont!
-Missing character: There is no Á in font nullfont!
-Missing character: There is no ∫ in font nullfont!
-Missing character: There is no ø in font nullfont!
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no Ä in font nullfont!
-Missing character: There is no ß in font nullfont!
-Missing character: There is no È in font nullfont!
-Missing character: There is no Ä in font nullfont!
-Missing character: There is no í in font nullfont!
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no é in font nullfont!
-Missing character: There is no ® in font nullfont!
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no ï in font nullfont!
-Missing character: There is no ∞ in font nullfont!
-Missing character: There is no Â in font nullfont!
-Missing character: There is no à in font nullfont!
-Missing character: There is no ó in font nullfont!
-Missing character: There is no Á in font nullfont!
-Missing character: There is no ¨ in font nullfont!
-Missing character: There is no ¨ in font nullfont!
+Missing character: There is no Ê±Ç in font nullfont!
+Missing character: There is no Á∫ø in font nullfont!
+Missing character: There is no ÊÄß in font nullfont!
+Missing character: There is no ÈÄí in font nullfont!
+Missing character: There is no Êé® in font nullfont!
+Missing character: There is no Êï∞ in font nullfont!
+Missing character: There is no Âàó in font nullfont!
+Missing character: There is no Á¨¨ in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no È in font nullfont!
-Missing character: There is no ° in font nullfont!
-Missing character: There is no π in font nullfont!
+Missing character: There is no È°π in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
@@ -131,46 +109,27 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no p in font nullfont!
 ! Undefined control sequence.
 l.8 \section
-            {Èó™ÁîµÊï∞ËÆ∫ÂèòÊç¢‰∏éÈ≠îÂäõCRT}
+            {‰ªªÊÑèÊ®°Êï∞Âø´ÈÄüÂÇÖÈáåÂè∂ÂèòÊç¢}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no È in font nullfont!
-Missing character: There is no ó in font nullfont!
-Missing character: There is no ™ in font nullfont!
-Missing character: There is no Á in font nullfont!
-Missing character: There is no î in font nullfont!
-Missing character: There is no µ in font nullfont!
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no ï in font nullfont!
-Missing character: There is no ∞ in font nullfont!
-Missing character: There is no Ë in font nullfont!
-Missing character: There is no Æ in font nullfont!
-Missing character: There is no ∫ in font nullfont!
-Missing character: There is no Â in font nullfont!
-Missing character: There is no è in font nullfont!
-Missing character: There is no ò in font nullfont!
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no ç in font nullfont!
-Missing character: There is no ¢ in font nullfont!
-Missing character: There is no ‰ in font nullfont!
-Missing character: There is no ∏ in font nullfont!
-Missing character: There is no é in font nullfont!
-Missing character: There is no È in font nullfont!
-Missing character: There is no ≠ in font nullfont!
-Missing character: There is no î in font nullfont!
-Missing character: There is no Â in font nullfont!
-Missing character: There is no ä in font nullfont!
-Missing character: There is no õ in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no R in font nullfont!
-Missing character: There is no T in font nullfont!
+Missing character: There is no ‰ªª in font nullfont!
+Missing character: There is no ÊÑè in font nullfont!
+Missing character: There is no Ê®° in font nullfont!
+Missing character: There is no Êï∞ in font nullfont!
+Missing character: There is no Âø´ in font nullfont!
+Missing character: There is no ÈÄü in font nullfont!
+Missing character: There is no ÂÇÖ in font nullfont!
+Missing character: There is no Èáå in font nullfont!
+Missing character: There is no Âè∂ in font nullfont!
+Missing character: There is no Âèò in font nullfont!
+Missing character: There is no Êç¢ in font nullfont!
 ! Undefined control sequence.
 l.9 \inputminted
-                {cpp}{\source/algebra/NTT+CRT.cpp}
+                {cpp}{\source/algebra/FFT_1e9+7.cpp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -182,7 +141,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no p in font nullfont!
 ! Undefined control sequence.
 l.9 \inputminted{cpp}{\source
-                             /algebra/NTT+CRT.cpp}
+                             /algebra/FFT_1e9+7.cpp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -198,19 +157,82 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no N in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no T in font nullfont!
-Missing character: There is no T in font nullfont!
-Missing character: There is no + in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no R in font nullfont!
-Missing character: There is no T in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 \inputminted{cpp}{\source/algebra/FFT_
+                                          1e9+7.cpp}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.9 ...tminted{cpp}{\source/algebra/FFT_1e9+7.cpp}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
 ! Undefined control sequence.
 l.10 \section
+             {Âø´ÈÄüÂÇÖÈáåÂè∂ÂèòÊç¢}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.11 \inputminted
+                 {cpp}{\source/algebra/FFT.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.11 \inputminted{cpp}{\source
+                              /algebra/FFT.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.12 \section
+             {Èó™ÁîµÊï∞ËÆ∫ÂèòÊç¢‰∏éÈ≠îÂäõCRT}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 \inputminted
+                 {cpp}{\source/algebra/NTT+CRT.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 \inputminted{cpp}{\source
+                              /algebra/NTT+CRT.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.14 \section
              {Â§öÈ°πÂºèÊ±ÇÈÄÜ}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -218,21 +240,208 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no Â in font nullfont!
-Missing character: There is no § in font nullfont!
-Missing character: There is no ö in font nullfont!
-Missing character: There is no È in font nullfont!
-Missing character: There is no ° in font nullfont!
-Missing character: There is no π in font nullfont!
-Missing character: There is no Â in font nullfont!
-Missing character: There is no º in font nullfont!
-Missing character: There is no è in font nullfont!
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no ± in font nullfont!
-Missing character: There is no Ç in font nullfont!
-Missing character: There is no È in font nullfont!
-Missing character: There is no Ä in font nullfont!
-Missing character: There is no Ü in font nullfont!
+Missing character: There is no Âø´ in font cmr10!
+Missing character: There is no ÈÄü in font cmr10!
+Missing character: There is no ÂÇÖ in font cmr10!
+Missing character: There is no Èáå in font cmr10!
+Missing character: There is no Âè∂ in font cmr10!
+Missing character: There is no Âèò in font cmr10!
+Missing character: There is no Êç¢ in font cmr10!
+Missing character: There is no Èó™ in font cmr10!
+Missing character: There is no Áîµ in font cmr10!
+Missing character: There is no Êï∞ in font cmr10!
+Missing character: There is no ËÆ∫ in font cmr10!
+Missing character: There is no Âèò in font cmr10!
+Missing character: There is no Êç¢ in font cmr10!
+Missing character: There is no ‰∏é in font cmr10!
+Missing character: There is no È≠î in font cmr10!
+Missing character: There is no Âäõ in font cmr10!
+Missing character: There is no Â§ö in font cmr10!
+Missing character: There is no È°π in font cmr10!
+Missing character: There is no Âºè in font cmr10!
+Missing character: There is no Ê±Ç in font cmr10!
+Missing character: There is no ÈÄÜ in font cmr10!
+Missing character: There is no a in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no b in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 ... is the polynomial such that $a * b \equiv
+                                                   1 (\mod x^n) $
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.15 ...polynomial such that $a * b \equiv 1 (\mod
+                                                   x^n) $
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 \inputminted
+                 {cpp}{\source/algebra/polynomial-inverse.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+! Undefined control sequence.
+l.16 \inputminted{cpp}{\source
+                              /algebra/polynomial-inverse.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no / in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+! Undefined control sequence.
+l.17 \section
+             {Â§öÈ°πÂºèÈô§Ê≥ï}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no Â§ö in font nullfont!
+Missing character: There is no È°π in font nullfont!
+Missing character: There is no Âºè in font nullfont!
+Missing character: There is no Èô§ in font nullfont!
+Missing character: There is no Ê≥ï in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+l.19 \inputminted
+                 {cpp}{\source/algebra/polynomial-divide.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+! Undefined control sequence.
+l.19 \inputminted{cpp}{\source
+                              /algebra/polynomial-divide.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no / in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+! Undefined control sequence.
+l.20 \section
+             {Â§öÈ°πÂºèÂèñÊåáÊï∞ÂèñÂØπÊï∞}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no Â§ö in font nullfont!
+Missing character: There is no È°π in font nullfont!
+Missing character: There is no Âºè in font nullfont!
+Missing character: There is no Âèñ in font nullfont!
+Missing character: There is no Êåá in font nullfont!
+Missing character: There is no Êï∞ in font nullfont!
+Missing character: There is no Âèñ in font nullfont!
+Missing character: There is no ÂØπ in font nullfont!
+Missing character: There is no Êï∞ in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
@@ -279,8 +488,19 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.11 ...polynomial such that $a * b \equiv 1 (\mod
-                                                   x^n) $
+l.21 ...e polynomial such that $b \equiv e^a (\mod
+                                                   x^n)$ or $b \equiv \ln a ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+l.21 ...v e^a (\mod x^n)$ or $b \equiv \ln a (\mod
+                                                   x^n)$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -288,8 +508,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.12 \inputminted
-                 {cpp}{\source/algebra/polynomial-inverse.cpp}
+l.22 \inputminted
+                 {cpp}{\source/algebra/polynomial-expandln.cpp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -300,8 +520,8 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no p in font nullfont!
 ! Undefined control sequence.
-l.12 \inputminted{cpp}{\source
-                              /algebra/polynomial-inverse.cpp}
+l.22 \inputminted{cpp}{\source
+                              /algebra/polynomial-expandln.cpp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -328,44 +548,37 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no - in font nullfont!
-Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no p in font nullfont!
 ! Undefined control sequence.
-l.13 \section
-             {Â§öÈ°πÂºèÈô§Ê≥ï}
+l.23 \section
+             {Âø´ÈÄüÊ≤ÉÂ∞î‰ªÄÂèòÊç¢}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no Â in font nullfont!
-Missing character: There is no § in font nullfont!
-Missing character: There is no ö in font nullfont!
-Missing character: There is no È in font nullfont!
-Missing character: There is no ° in font nullfont!
-Missing character: There is no π in font nullfont!
-Missing character: There is no Â in font nullfont!
-Missing character: There is no º in font nullfont!
-Missing character: There is no è in font nullfont!
-Missing character: There is no È in font nullfont!
-Missing character: There is no ô in font nullfont!
-Missing character: There is no § in font nullfont!
-Missing character: There is no Ê in font nullfont!
-Missing character: There is no ≥ in font nullfont!
-Missing character: There is no ï in font nullfont!
+Missing character: There is no Âø´ in font nullfont!
+Missing character: There is no ÈÄü in font nullfont!
+Missing character: There is no Ê≤É in font nullfont!
+Missing character: There is no Â∞î in font nullfont!
+Missing character: There is no ‰ªÄ in font nullfont!
+Missing character: There is no Âèò in font nullfont!
+Missing character: There is no Êç¢ in font nullfont!
 ! Undefined control sequence.
-l.14 \inputminted
-                 {cpp\source/algebra/polynomial-divide.cpp}
+l.24 \inputminted
+                 {cpp}{\source/algebra/FWT.cpp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -376,8 +589,8 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no p in font nullfont!
 ! Undefined control sequence.
-l.14 \inputminted{cpp\source
-                            /algebra/polynomial-divide.cpp}
+l.24 \inputminted{cpp}{\source
+                              /algebra/FWT.cpp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -393,54 +606,26 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no p in font nullfont!
 )
-Missing character: There is no - in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-
 ! Emergency stop.
-<*> algebra.tex -shell-escape
-                             
+<*> algebra.tex
+               
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 7 strings out of 493029
- 162 string characters out of 6136235
- 53068 words of memory out of 5000000
- 3643 multiletter control sequences out of 15000+600000
+ 6 strings out of 493638
+ 70 string characters out of 6146796
+ 54572 words of memory out of 5000000
+ 3507 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 18i,2n,12p,114b,58s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 1328 hyphenation exceptions out of 8191
+ 18i,2n,12p,126b,58s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

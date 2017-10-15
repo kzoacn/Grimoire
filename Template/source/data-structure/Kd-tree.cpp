@@ -131,7 +131,7 @@ node* rebuild(node *&t){
 	return build(tmp,1,top,0);
 }
 #define siz(x) (x?x->siz:0)
-void Add(node *&t,const P &p,int d=0){//调用前re=0;调用后rebuild(re);
+void Add(node *&t,const P &p,int d=0){//璋冪敤鍓峳e=0;璋冪敤鍚巖ebuild(re);
 	D=d;
 	if(!t){
 		t=newnode();
@@ -197,7 +197,7 @@ void Q(node *t,const Rec &R){
 }
 
 priority_queue<pair<long long, int> > kNN;
-void query(node *t, const P &p, int k, int d = 0) {//用钱清空kNN
+void query(node *t, const P &p, int k, int d = 0) {//鐢ㄩ挶娓呯┖kNN
     D=d;
     if (!t || ((int)kNN.size() == k && t->rec.dis(p) > kNN.top().first)) {
         return;
