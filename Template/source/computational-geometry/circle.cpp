@@ -50,7 +50,7 @@ vector<L> extan(const C &c1, const C &c2) {
 		P p = (c1.o * -c2.r + c2.o * c1.r) / (c1.r - c2.r);
 		P p1, p2, q1, q2;
 		if (tang(c1, p, p1, p2) && tang(c2, p, q1, q2)) {
-			if (c1.r < c2.r) swap(p1, p2), swap(q1, q2);
+//			if (c1.r < c2.r) swap(p1, p2), swap(q1, q2);
 			ret.push_back(L(p1, q1));
 			ret.push_back(L(p2, q2));
 		}
