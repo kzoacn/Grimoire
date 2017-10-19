@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  17 OCT 2017 20:08
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  19 OCT 2017 12:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1921,7 +1921,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Font Warning: Font shape `EU1/FandolSong-Regular(1)/m/sl' undefined
 (Font)              using `EU1/FandolSong-Regular(1)/m/n' instead on input line
- 61.
+ 62.
 
 [4])
 \tf@toc=\write6
@@ -2352,6 +2352,18 @@ raph-theory/biconnected-graph-edge -jzh.cpp\", \"rb\"); hasher.update(f.read())
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
 intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/g
+raph-theory/two-satisfiability.cpp\", \"rb\"); hasher.update(f.read()); f.close
+(); f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(
+123) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro
+ + \"\\makeatother\\endinput\n \"); f.close();")...executed.
+
+
+(./full.mintedmd5)
+(./_minted-full/a7e9f478697ab59399c270c9440b2615bbd8562a.pygtex [31])
+\openout5 = `full.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
+intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/g
 raph-theory/Hopcroft-Karp.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
  = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) 
 + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"
@@ -2359,7 +2371,7 @@ raph-theory/Hopcroft-Karp.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
 
 
 (./full.mintedmd5)
-(./_minted-full/622c963ebceea9e99e91094d73cbb0f58a18e45f.pygtex [31])
+(./_minted-full/622c963ebceea9e99e91094d73cbb0f58a18e45f.pygtex [32])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2371,10 +2383,13 @@ raph-theory/general-matching.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/c97b724db6bfb1bffb9ebb02b35ff58b0a5c870f.pygtex [32]
+(./_minted-full/c97b724db6bfb1bffb9ebb02b35ff58b0a5c870f.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33])
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2389,9 +2404,6 @@ raph-theory/weighted_blossom.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 (./_minted-full/40dd504c94ff484b73d33f16b12981a4c713225f.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2401,7 +2413,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38])
+ [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2413,7 +2428,7 @@ raph-theory/StoerWagner_O(V^3).cpp\", \"rb\"); hasher.update(f.read()); f.close
 
 
 (./full.mintedmd5)
-(./_minted-full/5e34b27f34fa8b59676cd87d6f02596433211900.pygtex [39])
+(./_minted-full/5e34b27f34fa8b59676cd87d6f02596433211900.pygtex [40])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2425,10 +2440,7 @@ raph-theory/weighted_blossom.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/40dd504c94ff484b73d33f16b12981a4c713225f.pygtex [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
+(./_minted-full/40dd504c94ff484b73d33f16b12981a4c713225f.pygtex [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
@@ -2437,7 +2449,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44])
+ [44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2449,10 +2464,10 @@ keatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/3525afb4679814898ef0e68297c192c345753c92.pygtex [45]
+(./_minted-full/3525afb4679814898ef0e68297c192c345753c92.pygtex [46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46])
+ [47])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2464,16 +2479,16 @@ raph-theory/Kth-minimum-path.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/306604aa8d97efb95858b02266a7bd26e5f11155.pygtex [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
+(./_minted-full/306604aa8d97efb95858b02266a7bd26e5f11155.pygtex [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50])
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2485,7 +2500,7 @@ other\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/eb5e573f46f9114a7227fb97ff38bf9ba2090481.pygtex [51])
+(./_minted-full/eb5e573f46f9114a7227fb97ff38bf9ba2090481.pygtex [52])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2497,7 +2512,7 @@ other\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/fff7558a09e93eda36fb39735af43b3d150fc800.pygtex [52])
+(./_minted-full/fff7558a09e93eda36fb39735af43b3d150fc800.pygtex [53])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2521,13 +2536,11 @@ ro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/b1990d8b9e2a2ccbe4036fbf7e0f9897c779881e.pygtex [53]
+(./_minted-full/b1990d8b9e2a2ccbe4036fbf7e0f9897c779881e.pygtex [54]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]))
-(../source/data-structure.tex [55] [56
-
-]
+ [55]))
+(../source/data-structure.tex [56]
 Chapter 4.
 \openout5 = `full.mintedcmd'.
 
@@ -2539,7 +2552,9 @@ sher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\ma
 keatother\\endinput\n \"); f.close();")...executed.
 
 (./full.mintedmd5)
-(./_minted-full/462770ba94df28dfd95721b4094eab3dd27bf29c.pygtex [57]
+(./_minted-full/462770ba94df28dfd95721b4094eab3dd27bf29c.pygtex [57
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [58]
@@ -2773,7 +2788,7 @@ omputational-geometry/circle.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/b00c3f483e721fd6ddb9065b965a9a2a6225c9ec.pygtex [83]
+(./_minted-full/a72f44293ddfbad7fbc558e36c04f9c91117f9e6.pygtex [83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [84])
@@ -3160,12 +3175,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 28280 strings out of 493638
- 555708 string characters out of 6146796
- 603423 words of memory out of 5000000
- 30863 multiletter control sequences out of 15000+600000
+ 28286 strings out of 493638
+ 555961 string characters out of 6146796
+ 603256 words of memory out of 5000000
+ 30864 multiletter control sequences out of 15000+600000
  21176 words of font info for 130 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 65i,18n,87p,10431b,933s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,18n,87p,10431b,937s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on full.pdf (116 pages).

@@ -30,17 +30,18 @@
 \contentsline {section}{\numberline {3.3}坚固无敌的边双 -zzq}{27}
 \contentsline {section}{\numberline {3.4}坚固无敌的点双 -jzh}{28}
 \contentsline {section}{\numberline {3.5}坚固无敌的边双 -jzh}{30}
-\contentsline {section}{\numberline {3.6}闪电二分图匹配}{31}
-\contentsline {section}{\numberline {3.7}一般图匹配}{32}
-\contentsline {section}{\numberline {3.8}一般最大权匹配}{35}
-\contentsline {section}{\numberline {3.9}无向图最小割}{39}
-\contentsline {section}{\numberline {3.10}最大带权带花树}{40}
-\contentsline {section}{\numberline {3.11}必经点Dominator-tree}{45}
-\contentsline {section}{\numberline {3.12}K短路}{47}
-\contentsline {section}{\numberline {3.13}最大团搜索}{51}
-\contentsline {section}{\numberline {3.14}极大团计数}{52}
-\contentsline {section}{\numberline {3.15}欧拉回路}{53}
-\contentsline {section}{\numberline {3.16}朱刘最小树形图}{53}
+\contentsline {section}{\numberline {3.6}2-sat}{31}
+\contentsline {section}{\numberline {3.7}闪电二分图匹配}{32}
+\contentsline {section}{\numberline {3.8}一般图匹配}{34}
+\contentsline {section}{\numberline {3.9}一般最大权匹配}{36}
+\contentsline {section}{\numberline {3.10}无向图最小割}{40}
+\contentsline {section}{\numberline {3.11}最大带权带花树}{41}
+\contentsline {section}{\numberline {3.12}必经点Dominator-tree}{46}
+\contentsline {section}{\numberline {3.13}K短路}{48}
+\contentsline {section}{\numberline {3.14}最大团搜索}{52}
+\contentsline {section}{\numberline {3.15}极大团计数}{53}
+\contentsline {section}{\numberline {3.16}欧拉回路}{54}
+\contentsline {section}{\numberline {3.17}朱刘最小树形图}{54}
 \contentsline {chapter}{\numberline {4}数据结构}{57}
 \contentsline {section}{\numberline {4.1}Kd-tree}{57}
 \contentsline {section}{\numberline {4.2}LCT}{62}
