@@ -96,3 +96,15 @@ bool in_tri(P pt,P *p){
 	}
 	return true;
 }
+
+vector<P> convexCut(const vector<P>&ps, L l) { // 用半平面 l 的逆时针方向去切凸多边形
+	vector<P> qs; 
+	int n = ps.size();
+	for (int i = 0; i < n; ++i) {
+		Point p1 = ps[i], p2 = ps[(i + 1) % n];
+		int d1 = sgn(l.b * (p1 - l.a)), d2 = sign(l.b * (p2 - l.a));
+		if (d1 >= 0) qs.push_back(p1);
+		if (d1 * d2 < 0) qs.push_back(intersect(L(p1, p2 - p1), l));
+	}
+	return qs;
+}
