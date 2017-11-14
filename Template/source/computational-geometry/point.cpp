@@ -87,11 +87,11 @@ bool segIntersect(L l1,L l2){//strictly
 		return true;
 	return false;
 }
-bool in_tri(P pt,P *p){
+bool in_tri(P pt,P *p){//change p
 	if((p[1]-p[0])*(p[2]-p[0])<0)
 		reverse(p,p+3);
 	for(int i=0;i<3;i++){
-		if(!onLeft(pt,L(p[i],p[(i+1)%3])))
+		if(dir(pt,L(p[i],p[(i+1)%3]))==1)
 			return false;
 	}
 	return true;
