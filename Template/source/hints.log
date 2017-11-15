@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  15 OCT 2017 20:03
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  9 NOV 2017 18:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -180,7 +180,7 @@ Missing character: There is no 算 in font nullfont!
 Missing character: There is no 法 in font nullfont!
 ! Undefined control sequence.
 l.7 \inputminted
-                {cpp}{\source/hints/STL-memory-release.cpp}
+                {cpp}{\source/hints/mersenne-twister.cpp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -192,7 +192,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no p in font nullfont!
 ! Undefined control sequence.
 l.7 \inputminted{cpp}{\source
-                             /hints/STL-memory-release.cpp}
+                             /hints/mersenne-twister.cpp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -206,24 +206,22 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no T in font nullfont!
-Missing character: There is no L in font nullfont!
-Missing character: There is no - in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no p in font nullfont!

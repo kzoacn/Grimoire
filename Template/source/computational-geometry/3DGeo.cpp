@@ -1,5 +1,3 @@
-
-
 struct P {
 	double x, y, z;
 	P(){}
@@ -10,37 +8,25 @@ struct P {
 	double len(){
 		return sqrt(x*x+y*y+z*z);
 	}
-	void read(){
-		scanf("%lf%lf%lf",&x,&y,&z);
-	}
-	void print(){	
-		fprintf(stderr,"(%f,%f,%f)\n",x,y,z);
-	}
-
-}info[1005];
-
+};
 bool operator==(P a,P b){
 	return sgn(a.x-b.x)==0 && sgn(a.y-b.y)==0 && sgn(a.z-b.z)==0 ;
 }
-
 bool operator<(P a,P b){
 	return sgn(a.x-b.x) ? a.x<b.x :(sgn(a.y-b.y)?a.y<b.y :a.z<b.z);
 }
-
 P operator+(P a,P b){
 	return P(a.x+b.x,a.y+b.y,a.z+b.z);
 }
 P operator-(P a,P b){
 	return P(a.x-b.x,a.y-b.y,a.z-b.z);
 }
-
 P operator*(P a,double b){
 	return P(a.x*b,a.y*b,a.z*b);
 }
 P operator/(P a,double b){
 	return P(a.x/b,a.y/b,a.z/b);
 }
-
 P operator*(const P &a, const P &b) {
 	return P(a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x);
 }
