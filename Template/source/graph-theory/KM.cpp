@@ -12,7 +12,6 @@ int ex_A[MAXN], ex_B[MAXN];
 bool vis_A[MAXN], vis_B[MAXN];
 int match[MAXN];
 int slack[MAXN];
-
 bool DFS(int now) {
 	vis_A[now] = 1;
 	for (int i = 1; i <= n; ++i) {
@@ -32,17 +31,14 @@ bool DFS(int now) {
 	
 	return 0;
 }
-
 int KM() {
 	memset(match, 0, sizeof match);
 	memset(ex_B, 0, sizeof ex_B);
-	
 	for (int i = 1; i <= n; ++i) {
 		ex_A[i] = -INF;
 		for (int j = 1; j <= n; ++j) if (e[i][j])
 			ex_A[i] = std::max(ex_A[i], val[i][j]);
 	}
-	
 	for (int i = 1; i <= n; ++i) {
 		for (int j = 1; j <= n; ++j) slack[j] = INF;
 		while (1) {
@@ -60,7 +56,6 @@ int KM() {
 			}
 		}
 	}
-	
 	int res = 0;
 	for (int i = 1; i <= n; ++i)
 		res += val[match[i]][i];

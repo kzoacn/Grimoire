@@ -1,10 +1,8 @@
 int stamp, comps, top;
 int dfn[N], low[N], comp[N], stack[N];
-
 void add(int x, int a, int y, int b) {
     edge[x << 1 | a].push_back(y << 1 | b);
 }
-
 void tarjan(int x) {
     dfn[x] = low[x] = ++stamp;
     stack[top++] = x;
@@ -25,7 +23,6 @@ void tarjan(int x) {
         } while (stack[top] != x);
     }
 }
-
 bool solve() {
     int counter = n + n + 1;
     stamp = top = comps = 0;

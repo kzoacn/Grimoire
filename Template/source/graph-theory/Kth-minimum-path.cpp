@@ -17,7 +17,6 @@ struct GivenEdge {  //edge given from origin input
     GivenEdge() {};
     GivenEdge(int _u, int _v, int _w): u(_u), v(_v), w(_w) {};
 } edge[MAXM];
-
 struct Edge {
     int v, nxt, w;
     Edge() {};
@@ -69,11 +68,9 @@ inline void dij(int S) {  //dij in original graph, spfa if needed
         }
     }
 }
-
 inline bool cmp_dep(int p, int q) {
     return dep[p] < dep[q];
 }
-
 struct Heap {
     LL key;
     int id, lc, rc, dist;
@@ -124,9 +121,7 @@ int main() {
 		scanf("%d%d%d", &u, &v, &w);
 		edge[i] = {u, v, w};
 	}
-	N = ;
-    S = ;
-    T = ;
+	N = ; S = ; T = ;
     memset(adj, 0, sizeof(*adj) * (N + 1));
     cnt = 0;
     for (int i = 1; i <= m; ++i) {

@@ -1,0 +1,42 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{k}{const} \PYG{k+kt}{unsigned} \PYG{k+kt}{long} \PYG{k+kt}{long} \PYG{n}{MAGIC} \PYG{o}{=} \PYG{l+m+mi}{4423}\PYG{p}{;}
+
+\PYG{k+kt}{unsigned} \PYG{k+kt}{long} \PYG{k+kt}{long} \PYG{n}{magic}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];}
+\PYG{n}{std}\PYG{o}{::}\PYG{n}{pair}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{unsigned} \PYG{k+kt}{long} \PYG{k+kt}{long}\PYG{p}{,} \PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{hash}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];}
+
+\PYG{k+kt}{void} \PYG{n+nf}{solve}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{root}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{magic}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{n}\PYG{p}{;} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{magic}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{magic}\PYG{p}{[}\PYG{n}{i} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{*} \PYG{n}{MAGIC}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{std}\PYG{o}{::}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{queue}\PYG{p}{;}
+    \PYG{n}{queue}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{root}\PYG{p}{);}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{head} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{head} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{queue}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{o}{++}\PYG{n}{head}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{x} \PYG{o}{=} \PYG{n}{queue}\PYG{p}{[}\PYG{n}{head}\PYG{p}{];}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{son}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{size}\PYG{p}{();} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k+kt}{int} \PYG{n}{y} \PYG{o}{=} \PYG{n}{son}\PYG{p}{[}\PYG{n}{x}\PYG{p}{][}\PYG{n}{i}\PYG{p}{];}
+            \PYG{n}{queue}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{y}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{index} \PYG{o}{=} \PYG{n}{n} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{index} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{n}{index}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{x} \PYG{o}{=} \PYG{n}{queue}\PYG{p}{[}\PYG{n}{index}\PYG{p}{];}
+        \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]} \PYG{o}{=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{make\PYGZus{}pair}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{);}
+
+        \PYG{n}{std}\PYG{o}{::}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{std}\PYG{o}{::}\PYG{n}{pair}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{unsigned} \PYG{k+kt}{long} \PYG{k+kt}{long}\PYG{p}{,} \PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZgt{}} \PYG{n}{value}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{son}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{size}\PYG{p}{();} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k+kt}{int} \PYG{n}{y} \PYG{o}{=} \PYG{n}{son}\PYG{p}{[}\PYG{n}{x}\PYG{p}{][}\PYG{n}{i}\PYG{p}{];}
+            \PYG{n}{value}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{hash}\PYG{p}{[}\PYG{n}{y}\PYG{p}{]);}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{n}{std}\PYG{o}{::}\PYG{n}{sort}\PYG{p}{(}\PYG{n}{value}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(),} \PYG{n}{value}\PYG{p}{.}\PYG{n}{end}\PYG{p}{());}
+
+        \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{first} \PYG{o}{=} \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{first} \PYG{o}{*} \PYG{n}{magic}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{l+m+mi}{37}\PYG{p}{;}
+        \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{second}\PYG{o}{++}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{value}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{first} \PYG{o}{=} \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{first} \PYG{o}{*} \PYG{n}{magic}\PYG{p}{[}\PYG{n}{value}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{second}\PYG{p}{]} \PYG{o}{+} \PYG{n}{value}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{first}\PYG{p}{;}
+            \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{second} \PYG{o}{+=} \PYG{n}{value}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{second}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{first} \PYG{o}{=} \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{first} \PYG{o}{*} \PYG{n}{magic}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{l+m+mi}{41}\PYG{p}{;}
+        \PYG{n}{hash}\PYG{p}{[}\PYG{n}{x}\PYG{p}{].}\PYG{n}{second}\PYG{o}{++}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
