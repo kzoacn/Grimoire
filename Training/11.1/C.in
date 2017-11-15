@@ -1,0 +1,22 @@
+2
+3 4
+5 Serval Raccoon Fennec Alpaca Moose
+4 Serval Raccoon Alpaca Moose
+1 Serval
+1 Fennec
+1 Serval
+1 1 0 1
+0 0 0 0
+1 0 0 0
+5 5
+11 A B C D E F G H I J K
+3 A B K
+4 A B D E
+5 A B K D E
+10 A B K D E F G H I J
+4 B D E K
+0 0 1 1 1
+1 0 1 0 1
+1 1 1 1 1
+0 0 1 0 1
+1 0 1 1 1

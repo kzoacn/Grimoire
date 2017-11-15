@@ -1,0 +1,37 @@
+namespace a {
+  function y {
+    y;
+  }
+  
+  function z {
+    y;
+  }
+  
+  function x {
+  	a.b.x;
+  }
+  
+  namespace b {
+    function x {
+      y;
+      a.y;
+    }
+    function y {
+      x;
+      y;
+      z;
+    }
+  }
+}
+
+function x {
+  x;
+  a.x;
+  a.b.x;
+  y;
+  a.y;
+  a.b.y;
+  z;
+  a.z;
+  a.b.z;
+}

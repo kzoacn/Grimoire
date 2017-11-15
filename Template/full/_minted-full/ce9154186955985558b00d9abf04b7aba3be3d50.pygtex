@@ -1,0 +1,82 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{k}{struct} \PYG{n}{P} \PYG{p}{\PYGZob{}}
+	\PYG{k+kt}{double} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{z}\PYG{p}{;}
+	\PYG{n}{P}\PYG{p}{()\PYGZob{}\PYGZcb{}}
+	\PYG{n}{P}\PYG{p}{(}\PYG{k+kt}{double} \PYG{n}{\PYGZus{}x}\PYG{p}{,}\PYG{k+kt}{double} \PYG{n}{\PYGZus{}y}\PYG{p}{,}\PYG{k+kt}{double} \PYG{n}{\PYGZus{}z}\PYG{p}{)}\PYG{o}{:}\PYG{n}{x}\PYG{p}{(}\PYG{n}{\PYGZus{}x}\PYG{p}{),}\PYG{n}{y}\PYG{p}{(}\PYG{n}{\PYGZus{}y}\PYG{p}{),}\PYG{n}{z}\PYG{p}{(}\PYG{n}{\PYGZus{}z}\PYG{p}{)\PYGZob{}\PYGZcb{}}
+	\PYG{k+kt}{double} \PYG{n}{len2}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{return} \PYG{p}{(}\PYG{n}{x}\PYG{o}{*}\PYG{n}{x}\PYG{o}{+}\PYG{n}{y}\PYG{o}{*}\PYG{n}{y}\PYG{o}{+}\PYG{n}{z}\PYG{o}{*}\PYG{n}{z}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kt}{double} \PYG{n}{len}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{x}\PYG{o}{*}\PYG{n}{x}\PYG{o}{+}\PYG{n}{y}\PYG{o}{*}\PYG{n}{y}\PYG{o}{+}\PYG{n}{z}\PYG{o}{*}\PYG{n}{z}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{};}
+\PYG{k+kt}{bool} \PYG{k}{operator}\PYG{o}{==}\PYG{p}{(}\PYG{n}{P} \PYG{n}{a}\PYG{p}{,}\PYG{n}{P} \PYG{n}{b}\PYG{p}{)\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{sgn}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)}\PYG{o}{==}\PYG{l+m+mi}{0} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{sgn}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)}\PYG{o}{==}\PYG{l+m+mi}{0} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{sgn}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{z}\PYG{p}{)}\PYG{o}{==}\PYG{l+m+mi}{0} \PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{bool} \PYG{k}{operator}\PYG{o}{\PYGZlt{}}\PYG{p}{(}\PYG{n}{P} \PYG{n}{a}\PYG{p}{,}\PYG{n}{P} \PYG{n}{b}\PYG{p}{)\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{sgn}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)} \PYG{o}{?} \PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZlt{}}\PYG{n}{b}\PYG{p}{.}\PYG{n+nl}{x} \PYG{p}{:(}\PYG{n}{sgn}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)}\PYG{o}{?}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZlt{}}\PYG{n}{b}\PYG{p}{.}\PYG{n+nl}{y} \PYG{p}{:}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{o}{\PYGZlt{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{z}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{P} \PYG{k}{operator}\PYG{o}{+}\PYG{p}{(}\PYG{n}{P} \PYG{n}{a}\PYG{p}{,}\PYG{n}{P} \PYG{n}{b}\PYG{p}{)\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{P}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{+}\PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{,}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{+}\PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{,}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{o}{+}\PYG{n}{b}\PYG{p}{.}\PYG{n}{z}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{P} \PYG{k}{operator}\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{n}{P} \PYG{n}{a}\PYG{p}{,}\PYG{n}{P} \PYG{n}{b}\PYG{p}{)\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{P}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{,}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{,}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{z}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{P} \PYG{k}{operator}\PYG{o}{*}\PYG{p}{(}\PYG{n}{P} \PYG{n}{a}\PYG{p}{,}\PYG{k+kt}{double} \PYG{n}{b}\PYG{p}{)\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{P}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{*}\PYG{n}{b}\PYG{p}{,}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{*}\PYG{n}{b}\PYG{p}{,}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{o}{*}\PYG{n}{b}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{P} \PYG{k}{operator}\PYG{o}{/}\PYG{p}{(}\PYG{n}{P} \PYG{n}{a}\PYG{p}{,}\PYG{k+kt}{double} \PYG{n}{b}\PYG{p}{)\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{P}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{/}\PYG{n}{b}\PYG{p}{,}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{/}\PYG{n}{b}\PYG{p}{,}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{o}{/}\PYG{n}{b}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{P} \PYG{k}{operator}\PYG{o}{*}\PYG{p}{(}\PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{a}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{P}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y} \PYG{o}{*} \PYG{n}{b}\PYG{p}{.}\PYG{n}{z} \PYG{o}{\PYGZhy{}} \PYG{n}{a}\PYG{p}{.}\PYG{n}{z} \PYG{o}{*} \PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{,} \PYG{n}{a}\PYG{p}{.}\PYG{n}{z} \PYG{o}{*} \PYG{n}{b}\PYG{p}{.}\PYG{n}{x} \PYG{o}{\PYGZhy{}} \PYG{n}{a}\PYG{p}{.}\PYG{n}{x} \PYG{o}{*} \PYG{n}{b}\PYG{p}{.}\PYG{n}{z}\PYG{p}{,} \PYG{n}{a}\PYG{p}{.}\PYG{n}{x} \PYG{o}{*} \PYG{n}{b}\PYG{p}{.}\PYG{n}{y} \PYG{o}{\PYGZhy{}} \PYG{n}{a}\PYG{p}{.}\PYG{n}{y} \PYG{o}{*} \PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{double} \PYG{k}{operator}\PYG{o}{\PYGZca{}}\PYG{p}{(}\PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{a}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{*}\PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{o}{+}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{*}\PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{o}{+}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{o}{*}\PYG{n}{b}\PYG{p}{.}\PYG{n}{z}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{double} \PYG{n}{dis}\PYG{p}{(}\PYG{n}{P} \PYG{n}{a}\PYG{p}{,}\PYG{n}{P} \PYG{n}{b}\PYG{p}{)\PYGZob{}}\PYG{k}{return} \PYG{p}{(}\PYG{n}{b}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{).}\PYG{n}{len}\PYG{p}{();\PYGZcb{}}
+\PYG{k+kt}{double} \PYG{n}{dis2}\PYG{p}{(}\PYG{n}{P} \PYG{n}{a}\PYG{p}{,}\PYG{n}{P} \PYG{n}{b}\PYG{p}{)\PYGZob{}}\PYG{k}{return} \PYG{p}{(}\PYG{n}{b}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{).}\PYG{n}{len2}\PYG{p}{();\PYGZcb{}}
+
+
+\PYG{c+c1}{// 平面法向量 : 平面上两个向量叉积}
+\PYG{c+c1}{// 点共平面 : 平面上一点与之的向量点积法向量为 0}
+\PYG{c+c1}{// 点在线段 ( 直线 ) 上 : 共线且两边点积非正}
+\PYG{c+c1}{// 点在三角形内 ( 不包含边界，需再判断是与某条边共线 )}
+\PYG{k+kt}{bool} \PYG{n}{in\PYGZus{}tri}\PYG{p}{(}\PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{a}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{b}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{c}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{sgn}\PYG{p}{(((}\PYG{n}{a} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{a} \PYG{o}{\PYGZhy{}} \PYG{n}{c}\PYG{p}{)).}\PYG{n}{len}\PYG{p}{()} \PYG{o}{\PYGZhy{}} \PYG{p}{((}\PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{n}{a}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{p}{)).}\PYG{n}{len}\PYG{p}{()} \PYG{o}{\PYGZhy{}} \PYG{p}{((}\PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{n}{c}\PYG{p}{)).}\PYG{n}{len}\PYG{p}{()} \PYG{o}{\PYGZhy{}} \PYG{p}{((}\PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{n}{c}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{n}{a}\PYG{p}{)).}\PYG{n}{len}\PYG{p}{())} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{// 共平面的两点是否在这平面上一条直线的同侧}
+\PYG{k+kt}{bool} \PYG{n}{sameSide}\PYG{p}{(}\PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{a}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{b}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{p0}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{p1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+	\PYG{k}{return} \PYG{n}{sgn}\PYG{p}{(((}\PYG{n}{a} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p0} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{p}{))} \PYG{o}{\PYGZca{}} \PYG{p}{((}\PYG{n}{a} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p1} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{p}{)))} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{// 两点在平面同侧 : 点积法向量符号相同}
+\PYG{c+c1}{// 两直线平行 / 垂直 : 同二维}
+\PYG{c+c1}{// 平面平行 / 垂直 : 判断法向量}
+\PYG{c+c1}{// 线面垂直 : 法向量和直线平行}
+\PYG{c+c1}{// 判断空间线段是否相交 : 四点共面两线段不平行相互在异侧}
+\PYG{c+c1}{// 线段和三角形是否相交 : 线段在三角形平面不同侧 三角形任意两点在线段和第三点组成的平面的不同侧}
+\PYG{c+c1}{// 求空间直线交点}
+\PYG{n}{P} \PYG{n}{intersect}\PYG{p}{(}\PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{a0}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{b0}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{a1}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{b1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+
+\PYG{k+kt}{double} \PYG{n}{t} \PYG{o}{=} \PYG{p}{((}\PYG{n}{a0}\PYG{p}{.}\PYG{n}{x} \PYG{o}{\PYGZhy{}} \PYG{n}{a1}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)} \PYG{o}{*} \PYG{p}{(}\PYG{n}{a1}\PYG{p}{.}\PYG{n}{y} \PYG{o}{\PYGZhy{}} \PYG{n}{b1}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{p}{(}\PYG{n}{a0}\PYG{p}{.}\PYG{n}{y} \PYG{o}{\PYGZhy{}} \PYG{n}{a1}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)} \PYG{o}{*} \PYG{p}{(}\PYG{n}{a1}\PYG{p}{.}\PYG{n}{x} \PYG{o}{\PYGZhy{}} \PYG{n}{b1}\PYG{p}{.}\PYG{n}{x}\PYG{p}{))} \PYG{o}{/} \PYG{p}{((}\PYG{n}{a0}\PYG{p}{.}\PYG{n}{x} \PYG{o}{\PYGZhy{}} \PYG{n}{b0}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)} \PYG{o}{*} \PYG{p}{(}\PYG{n}{a1}\PYG{p}{.}\PYG{n}{y} \PYG{o}{\PYGZhy{}} \PYG{n}{b1}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{p}{(}\PYG{n}{a0}\PYG{p}{.}\PYG{n}{y} \PYG{o}{\PYGZhy{}} \PYG{n}{b0}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)} \PYG{o}{*} \PYG{p}{(}\PYG{n}{a1}\PYG{p}{.}\PYG{n}{x} \PYG{o}{\PYGZhy{}} \PYG{n}{b1}\PYG{p}{.}\PYG{n}{x}\PYG{p}{));}
+
+	\PYG{c+c1}{//double t = ((a0.x \PYGZhy{} a1.x) * (a1.y \PYGZhy{} b1.y) \PYGZhy{} (a0.y \PYGZhy{} a1.y) * (a1.x \PYGZhy{} b1.x)) / ((a0.x \PYGZhy{} b0.x) * (a1.y \PYGZhy{} b1.y) \PYGZhy{} (a0.y \PYGZhy{} b0.y) * (a1.x \PYGZhy{} b1.x));}
+	\PYG{k}{return} \PYG{n}{a0} \PYG{o}{+} \PYG{p}{(}\PYG{n}{b0} \PYG{o}{\PYGZhy{}} \PYG{n}{a0}\PYG{p}{)} \PYG{o}{*} \PYG{n}{t}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{// 求平面和直线的交点}
+\PYG{n}{P} \PYG{n}{intersect}\PYG{p}{(}\PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{a}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{b}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{c}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{l0}\PYG{p}{,} \PYG{k}{const} \PYG{n}{P} \PYG{o}{\PYGZam{}}\PYG{n}{l1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+
+	\PYG{n}{P} \PYG{n}{p} \PYG{o}{=} \PYG{p}{(}\PYG{n}{b}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{c}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{);} \PYG{c+c1}{// 平面法向量}
+	\PYG{k+kt}{double} \PYG{n}{t} \PYG{o}{=} \PYG{p}{(}\PYG{n}{p}\PYG{o}{\PYGZca{}}\PYG{p}{(}\PYG{n}{a}\PYG{o}{\PYGZhy{}}\PYG{n}{l0}\PYG{p}{))} \PYG{o}{/} \PYG{p}{(}\PYG{n}{p}\PYG{o}{\PYGZca{}}\PYG{p}{(}\PYG{n}{l1}\PYG{o}{\PYGZhy{}}\PYG{n}{l0}\PYG{p}{));}
+	\PYG{k}{return} \PYG{n}{l0} \PYG{o}{+} \PYG{p}{(}\PYG{n}{l1} \PYG{o}{\PYGZhy{}} \PYG{n}{l0}\PYG{p}{)} \PYG{o}{*} \PYG{n}{t}\PYG{p}{;}
+\PYG{c+c1}{//	P p = pVec(a, b, c); // 平面法向量}
+\PYG{c+c1}{//	double t = (p.x * (a.x \PYGZhy{} l0.x) + p.y * (a.y \PYGZhy{} l0.y) + p.z * (a.z \PYGZhy{} l0.z)) / (p.x * (l1.x \PYGZhy{} l0.x) + p.y * (l1.y \PYGZhy{} l0.y) + p.z * (l1.z \PYGZhy{} l0.z));}
+\PYG{c+c1}{//	return l0 + (l1 \PYGZhy{} l0) * t;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{// 求平面交线 : 取不平行的一条直线的一个交点，以及法向量叉积得到直线方向}
+\PYG{c+c1}{// 点到直线距离 : 叉积得到三角形的面积除以底边}
+\PYG{c+c1}{// 点到平面距离 : 点积法向量}
+\PYG{c+c1}{// 直线间距离 : 平行时随便取一点求距离，否则叉积方向向量得到方向点积计算长度}
+\PYG{c+c1}{// 直线夹角 : 点积 平面夹角 : 法向量点积}
+\end{Verbatim}
