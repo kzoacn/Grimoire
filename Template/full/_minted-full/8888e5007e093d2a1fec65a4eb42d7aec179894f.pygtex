@@ -1,4 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{//清点清边要两倍}
 \PYG{k+kt}{int} \PYG{n}{stamp}\PYG{p}{,} \PYG{n}{comps}\PYG{p}{,} \PYG{n}{top}\PYG{p}{;}
 \PYG{k+kt}{int} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{low}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{comp}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{stack}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];}
 \PYG{k+kt}{void} \PYG{n+nf}{add}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{y}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}

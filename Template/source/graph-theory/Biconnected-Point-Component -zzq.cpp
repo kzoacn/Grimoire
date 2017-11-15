@@ -1,17 +1,12 @@
 typedef std::pair<int, int> pii;
 #define mkpair std::make_pair
-
 int n, m;
 std::vector<int> G[MAXN];
-
 int dfn[MAXN], low[MAXN], bcc_id[MAXN], bcc_cnt, stamp;
 bool iscut[MAXN];
-
 std::vector<int> bcc[MAXN]; // Unnecessary
-
 pii stk[MAXN]; int stk_top;
 // Use a handwritten structure to get higher efficiency
-
 void Tarjan(int now, int fa) {
 	int child = 0;
 	dfn[now] = low[now] = ++stamp;
@@ -43,8 +38,7 @@ void Tarjan(int now, int fa) {
 			low[now] = std::min(low[now], dfn[to]);
 		}
 	}
-	if (!fa && child == 1)
-		iscut[now] = 0;
+	if (!fa && child == 1) iscut[now] = 0;
 }
 
 void PBCC() {
@@ -53,7 +47,6 @@ void PBCC() {
 	memset(iscut, 0, sizeof iscut);
 	memset(bcc_id, 0, sizeof bcc_id);
 	stamp = bcc_cnt = stk_top = 0;
-	
 	for (int i = 1; i <= n; ++i)
 		if (!dfn[i]) Tarjan(i, 0);
 }

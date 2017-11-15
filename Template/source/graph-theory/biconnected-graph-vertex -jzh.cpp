@@ -35,9 +35,7 @@ struct BCC {  // N = N0 + M0. Remember to call init(&raw_graph).
 						compress_cut[compress_to[u]] = 1;
 					}
 					int cc = forest.new_node();
-					if (cut[u]) {
-						forest.bi_ins(compress_to[u], cc);
-					}
+					if (cut[u]) forest.bi_ins(compress_to[u], cc);
 					compress_cut[cc] = 0;
 					//BCC_component[cc].clear();
 					do {
@@ -67,8 +65,7 @@ struct BCC {  // N = N0 + M0. Remember to call init(&raw_graph).
 		for (int e = g->adj[u]; ~e; e = g->nxt[e]) {
 			int v = g -> v[e];
 			if (!vis[v]) {
-				++d;
-				dfs(v, e);
+				++d; dfs(v, e);
 			}
 		}
 		return pe == -1 ? d > 1 : 0;

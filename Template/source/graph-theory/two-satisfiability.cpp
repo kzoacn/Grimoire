@@ -1,3 +1,4 @@
+//清点清边要两倍
 int stamp, comps, top;
 int dfn[N], low[N], comp[N], stack[N];
 void add(int x, int a, int y, int b) {

@@ -36,9 +36,7 @@
 						\PYG{n}{compress\PYGZus{}cut}\PYG{p}{[}\PYG{n}{compress\PYGZus{}to}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]]} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
 					\PYG{p}{\PYGZcb{}}
 					\PYG{k+kt}{int} \PYG{n}{cc} \PYG{o}{=} \PYG{n}{forest}\PYG{p}{.}\PYG{n}{new\PYGZus{}node}\PYG{p}{();}
-					\PYG{k}{if} \PYG{p}{(}\PYG{n}{cut}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{p}{\PYGZob{}}
-						\PYG{n}{forest}\PYG{p}{.}\PYG{n}{bi\PYGZus{}ins}\PYG{p}{(}\PYG{n}{compress\PYGZus{}to}\PYG{p}{[}\PYG{n}{u}\PYG{p}{],} \PYG{n}{cc}\PYG{p}{);}
-					\PYG{p}{\PYGZcb{}}
+					\PYG{k}{if} \PYG{p}{(}\PYG{n}{cut}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{n}{forest}\PYG{p}{.}\PYG{n}{bi\PYGZus{}ins}\PYG{p}{(}\PYG{n}{compress\PYGZus{}to}\PYG{p}{[}\PYG{n}{u}\PYG{p}{],} \PYG{n}{cc}\PYG{p}{);}
 					\PYG{n}{compress\PYGZus{}cut}\PYG{p}{[}\PYG{n}{cc}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
 					\PYG{c+c1}{//BCC\PYGZus{}component[cc].clear();}
 					\PYG{k}{do} \PYG{p}{\PYGZob{}}
@@ -68,8 +66,7 @@
 		\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{e} \PYG{o}{=} \PYG{n}{g}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{adj}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];} \PYG{o}{\PYGZti{}}\PYG{n}{e}\PYG{p}{;} \PYG{n}{e} \PYG{o}{=} \PYG{n}{g}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{nxt}\PYG{p}{[}\PYG{n}{e}\PYG{p}{])} \PYG{p}{\PYGZob{}}
 			\PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{n}{g} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{v}\PYG{p}{[}\PYG{n}{e}\PYG{p}{];}
 			\PYG{k}{if} \PYG{p}{(}\PYG{o}{!}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{v}\PYG{p}{])} \PYG{p}{\PYGZob{}}
-				\PYG{o}{++}\PYG{n}{d}\PYG{p}{;}
-				\PYG{n}{dfs}\PYG{p}{(}\PYG{n}{v}\PYG{p}{,} \PYG{n}{e}\PYG{p}{);}
+				\PYG{o}{++}\PYG{n}{d}\PYG{p}{;} \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{v}\PYG{p}{,} \PYG{n}{e}\PYG{p}{);}
 			\PYG{p}{\PYGZcb{}}
 		\PYG{p}{\PYGZcb{}}
 		\PYG{k}{return} \PYG{n}{pe} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{?} \PYG{n}{d} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{1} \PYG{o}{:} \PYG{l+m+mi}{0}\PYG{p}{;}

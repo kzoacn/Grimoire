@@ -1,37 +1,5 @@
-double eps(1e-8);
-int sign(const double & x) {
-	return (x > eps) - (x + eps < 0);
-}
 bool equal(const double & x, const double & y) {
 	return x + eps > y and y + eps > x;
-}
-struct Point {
-	double x, y, z;
-	Point() {
-	}
-	Point(const double & x, const double & y, const double & z) : x(x), y(y), z(z){
-	}
-	void scan() {
-		scanf("%lf%lf%lf", &x, &y, &z);
-	}
-	double sqrlen() const {
-		return x * x + y * y + z * z;
-	}
-	double len() const {
-		return sqrt(sqrlen());
-	}
-	void print() const {
-		printf("(%lf %lf %lf)\n", x, y, z);
-	}
-} a[33];
-Point operator + (const Point & a, const Point & b) {
-	return Point(a.x + b.x, a.y + b.y, a.z + b.z);
-}
-Point operator - (const Point & a, const Point & b) {
-	return Point(a.x - b.x, a.y - b.y, a.z - b.z);
-}
-Point operator * (const double & x, const Point & a) {
-	return Point(x * a.x, x * a.y, x * a.z);
 }
 double operator % (const Point & a, const Point & b) {
 	return a.x * b.x + a.y * b.y + a.z * b.z;
@@ -40,21 +8,7 @@ Point operator * (const Point & a, const Point & b) {
 	return Point(a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x);
 }
 struct Circle {
-	double r;
-	Point o;
-	Circle() {
-		o.x = o.y = o.z = r = 0;
-	}
-	Circle(const Point & o, const double & r) : o(o), r(r) {
-	}
-	void scan() {
-		o.scan();
-		scanf("%lf", &r);
-	}
-	void print() const {
-		o.print();
-		printf("%lf\n", r);
-	}
+	double r; Point o;
 };
 struct Plane {
 	Point nor;
@@ -123,17 +77,8 @@ Circle miniBall(int n) {
 }
 int main() {
 	int n;
-	for(;;) {
-		scanf("%d", &n);
-		if(!n) {
-			break;
-		}
-		for(int i(0); i < n; i++) {
-			a[i].scan();
-		}
-		sort(a, a + n);
-		n = unique(a, a + n) - a;
-		vec.clear();
-		printf("%.10f\n", miniBall(n).r);
-	}
+	sort(a, a + n);
+	n = unique(a, a + n) - a;
+	vec.clear();
+	printf("%.10f\n", miniBall(n).r);
 }

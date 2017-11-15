@@ -82,8 +82,6 @@ inline int FindMax() {
 	for (int i = 0; i < n; ++i) 
 		if (match[i] == -1 && FindAP(i)) AP();
 	int ans = 0;
-	for (int i = 0; i < n; ++i) {
-		ans += (match[i] != -1);
-	}
+	for (int i = 0; i < n; ++i) ans += (match[i] != -1);
 	return ans;
 }

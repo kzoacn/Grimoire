@@ -1,7 +1,6 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
 \PYG{c+c1}{//solve(s, n, raw\PYGZus{}g): s is the root and base accords to base of raw\PYGZus{}g}
 \PYG{c+c1}{//idom[x] will be x if x does not have a dominator,and will be \PYGZhy{}1 if x is not reachable from s.}
-
 \PYG{k}{struct} \PYG{n}{dominator\PYGZus{}tree} \PYG{p}{\PYGZob{}}
 	\PYG{k+kt}{int} \PYG{n}{base}\PYG{p}{,} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{sdom}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{idom}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{id}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{f}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{fa}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{smin}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{stamp}\PYG{p}{;}
 	\PYG{n}{Graph} \PYG{o}{*}\PYG{n}{g}\PYG{p}{;}
@@ -9,10 +8,7 @@
 		\PYG{n}{id}\PYG{p}{[}\PYG{n}{dfn}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{stamp}\PYG{o}{++}\PYG{p}{]} \PYG{o}{=} \PYG{n}{u}\PYG{p}{;}
 		\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{g} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{adj}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];} \PYG{o}{\PYGZti{}}\PYG{n}{i}\PYG{p}{;} \PYG{n}{i} \PYG{o}{=} \PYG{n}{g} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{nxt}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])} \PYG{p}{\PYGZob{}}
 			\PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{n}{g} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{v}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
-			\PYG{k}{if} \PYG{p}{(}\PYG{n}{dfn}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-				\PYG{n}{f}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n}{u}\PYG{p}{;}
-				\PYG{n}{predfs}\PYG{p}{(}\PYG{n}{v}\PYG{p}{);}
-			\PYG{p}{\PYGZcb{}}
+			\PYG{k}{if} \PYG{p}{(}\PYG{n}{dfn}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{n}{f}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n}{u}\PYG{p}{,} \PYG{n}{predfs}\PYG{p}{(}\PYG{n}{v}\PYG{p}{);}
 		\PYG{p}{\PYGZcb{}}
 	\PYG{p}{\PYGZcb{}}
 	\PYG{k+kt}{int} \PYG{n+nf}{getfa}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{)} \PYG{p}{\PYGZob{}}

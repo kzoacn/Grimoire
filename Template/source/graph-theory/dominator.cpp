@@ -1,6 +1,5 @@
 //solve(s, n, raw_g): s is the root and base accords to base of raw_g
 //idom[x] will be x if x does not have a dominator,and will be -1 if x is not reachable from s.
-
 struct dominator_tree {
 	int base, dfn[N], sdom[N], idom[N], id[N], f[N], fa[N], smin[N], stamp;
 	Graph *g;
@@ -8,10 +7,7 @@ struct dominator_tree {
 		id[dfn[u] = stamp++] = u;
 		for (int i = g -> adj[u]; ~i; i = g -> nxt[i]) {
 			int v = g -> v[i];
-			if (dfn[v] < 0) {
-				f[v] = u;
-				predfs(v);
-			}
+			if (dfn[v] < 0) f[v] = u, predfs(v);
 		}
 	}
 	int getfa(int u) {

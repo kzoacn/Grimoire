@@ -1,104 +1,103 @@
-\contentsline {chapter}{\numberline {1}代数}{7}
-\contentsline {section}{\numberline {1.1}$O(n^2\qopname \relax o{log}n)$求线性递推数列第n项}{7}
-\contentsline {section}{\numberline {1.2}任意模数快速傅里叶变换}{8}
-\contentsline {section}{\numberline {1.3}快速傅里叶变换}{8}
-\contentsline {section}{\numberline {1.4}闪电数论变换与魔力CRT}{9}
-\contentsline {section}{\numberline {1.5}多项式求逆}{10}
-\contentsline {section}{\numberline {1.6}多项式除法}{10}
-\contentsline {section}{\numberline {1.7}多项式取指数取对数}{11}
-\contentsline {section}{\numberline {1.8}快速沃尔什变换}{12}
-\contentsline {section}{\numberline {1.9}单纯形}{13}
-\contentsline {chapter}{\numberline {2}数论}{15}
-\contentsline {section}{\numberline {2.1}大整数相乘取模}{15}
-\contentsline {section}{\numberline {2.2}EX-GCD}{15}
-\contentsline {section}{\numberline {2.3}Miller-rabin}{15}
-\contentsline {section}{\numberline {2.4}Pollard-rho.cpp}{16}
-\contentsline {section}{\numberline {2.5}非互质CRT}{16}
-\contentsline {section}{\numberline {2.6}非互质CRT -zky}{16}
-\contentsline {section}{\numberline {2.7}Pell方程}{17}
-\contentsline {section}{\numberline {2.8}Simpson}{17}
-\contentsline {section}{\numberline {2.9}解一元三次方程}{18}
-\contentsline {section}{\numberline {2.10}线段下整点}{18}
-\contentsline {section}{\numberline {2.11}线性同余不等式}{18}
-\contentsline {section}{\numberline {2.12}EX-BSGS -zzq}{18}
-\contentsline {section}{\numberline {2.13}EX-BSGS -zky}{19}
-\contentsline {section}{\numberline {2.14}分治乘法}{20}
-\contentsline {section}{\numberline {2.15}组合数模$p^k$}{20}
-\contentsline {chapter}{\numberline {3}图论}{21}
-\contentsline {section}{\numberline {3.1}图论基础}{21}
-\contentsline {section}{\numberline {3.2}坚固无敌的点双 -zzq}{21}
-\contentsline {section}{\numberline {3.3}坚固无敌的边双 -zzq}{22}
-\contentsline {section}{\numberline {3.4}坚固无敌的点双 -jzh}{23}
-\contentsline {section}{\numberline {3.5}坚固无敌的边双 -jzh}{25}
-\contentsline {section}{\numberline {3.6}2-sat}{26}
-\contentsline {section}{\numberline {3.7}闪电二分图匹配}{27}
-\contentsline {section}{\numberline {3.8}一般图匹配}{27}
-\contentsline {section}{\numberline {3.9}一般图最大权匹配}{29}
-\contentsline {section}{\numberline {3.10}有根树hash}{33}
-\contentsline {section}{\numberline {3.11}无向图最小割}{33}
-\contentsline {section}{\numberline {3.12}必经点Dominator-tree}{34}
-\contentsline {section}{\numberline {3.13}K短路}{35}
-\contentsline {section}{\numberline {3.14}最大团搜索}{39}
-\contentsline {section}{\numberline {3.15}极大团计数}{39}
-\contentsline {section}{\numberline {3.16}欧拉回路}{40}
-\contentsline {section}{\numberline {3.17}朱刘最小树形图}{40}
-\contentsline {chapter}{\numberline {4}数据结构}{43}
-\contentsline {section}{\numberline {4.1}Kd-tree}{43}
-\contentsline {section}{\numberline {4.2}LCT}{46}
-\contentsline {section}{\numberline {4.3}树状数组上二分第ｋ大}{48}
-\contentsline {section}{\numberline {4.4}Treap}{48}
-\contentsline {section}{\numberline {4.5}FHQ-Treap}{49}
-\contentsline {section}{\numberline {4.6}真-FHQTreap}{51}
-\contentsline {section}{\numberline {4.7}带修改莫队上树}{53}
-\contentsline {section}{\numberline {4.8}虚树}{54}
-\contentsline {chapter}{\numberline {5}字符串}{55}
-\contentsline {section}{\numberline {5.1}Manacher}{55}
-\contentsline {section}{\numberline {5.2}指针版回文自动机}{55}
-\contentsline {section}{\numberline {5.3}数组版后缀自动机}{56}
-\contentsline {section}{\numberline {5.4}指针版后缀自动机}{57}
-\contentsline {section}{\numberline {5.5}广义后缀自动机}{58}
-\contentsline {section}{\numberline {5.6}后缀数组}{59}
-\contentsline {section}{\numberline {5.7}最小表示法}{60}
-\contentsline {chapter}{\numberline {6}计算几何}{61}
-\contentsline {section}{\numberline {6.1}点类}{61}
-\contentsline {section}{\numberline {6.2}圆基础}{63}
-\contentsline {section}{\numberline {6.3}点在多边形内}{64}
-\contentsline {section}{\numberline {6.4}二维最小覆盖圆}{64}
-\contentsline {section}{\numberline {6.5}半平面交}{65}
-\contentsline {section}{\numberline {6.6}求凸包}{66}
-\contentsline {section}{\numberline {6.7}凸包游戏}{66}
-\contentsline {section}{\numberline {6.8}平面最近点}{68}
-\contentsline {section}{\numberline {6.9}无敌面积并（多圆多多边形)，$n^3$}{69}
-\contentsline {section}{\numberline {6.10}Farmland}{70}
-\contentsline {section}{\numberline {6.11}三维基础}{72}
-\contentsline {section}{\numberline {6.12}三维凸包}{74}
-\contentsline {section}{\numberline {6.13}三角剖分与V图}{76}
-\contentsline {section}{\numberline {6.14}三维最小覆盖球}{78}
-\contentsline {section}{\numberline {6.15}空间四点外接球}{80}
-\contentsline {chapter}{\numberline {7}技巧}{81}
-\contentsline {section}{\numberline {7.1}无敌的读入优化}{81}
-\contentsline {section}{\numberline {7.2}真正释放STL内存}{81}
-\contentsline {section}{\numberline {7.3}梅森旋转算法}{81}
-\contentsline {section}{\numberline {7.4}蔡勒公式}{82}
-\contentsline {section}{\numberline {7.5}开栈}{82}
-\contentsline {section}{\numberline {7.6}Size为ｋ的子集}{82}
-\contentsline {section}{\numberline {7.7}长方体表面两点最短距离}{82}
-\contentsline {section}{\numberline {7.8}经纬度求球面最短距离}{83}
-\contentsline {section}{\numberline {7.9}32-bit/64-bit随机素数}{83}
-\contentsline {section}{\numberline {7.10}NTT 素数及其原根}{83}
-\contentsline {section}{\numberline {7.11}Formulas}{83}
-\contentsline {subsection}{\numberline {7.11.1}Arithmetic Function}{83}
-\contentsline {subsection}{\numberline {7.11.2}Binomial Coefficients}{84}
-\contentsline {subsection}{\numberline {7.11.3}Fibonacci Numbers}{85}
-\contentsline {subsection}{\numberline {7.11.4}Stirling Cycle Numbers}{85}
-\contentsline {subsection}{\numberline {7.11.5}Stirling Subset Numbers}{85}
-\contentsline {subsection}{\numberline {7.11.6}Eulerian Numbers}{85}
-\contentsline {subsection}{\numberline {7.11.7}Harmonic Numbers}{85}
-\contentsline {subsection}{\numberline {7.11.8}Pentagonal Number Theorem}{86}
-\contentsline {subsection}{\numberline {7.11.9}Bell Numbers}{86}
-\contentsline {subsection}{\numberline {7.11.10}Bernoulli Numbers}{86}
-\contentsline {subsection}{\numberline {7.11.11}Tetrahedron Volume}{86}
-\contentsline {subsection}{\numberline {7.11.12}BEST Thoerem}{86}
-\contentsline {subsection}{\numberline {7.11.13}重心}{86}
-\contentsline {subsection}{\numberline {7.11.14}Others}{86}
-\contentsline {section}{\numberline {7.12}Java}{90}
+\contentsline {chapter}{\numberline {1}代数}{5}
+\contentsline {section}{\numberline {1.1}$O(n^2\qopname \relax o{log}n)$求线性递推数列第n项}{5}
+\contentsline {section}{\numberline {1.2}任意模数快速傅里叶变换}{6}
+\contentsline {section}{\numberline {1.3}快速傅里叶变换}{6}
+\contentsline {section}{\numberline {1.4}闪电数论变换与魔力CRT}{7}
+\contentsline {section}{\numberline {1.5}多项式求逆}{8}
+\contentsline {section}{\numberline {1.6}多项式除法}{8}
+\contentsline {section}{\numberline {1.7}多项式取指数取对数}{9}
+\contentsline {section}{\numberline {1.8}快速沃尔什变换}{10}
+\contentsline {section}{\numberline {1.9}单纯形}{11}
+\contentsline {chapter}{\numberline {2}数论}{13}
+\contentsline {section}{\numberline {2.1}大整数相乘取模}{13}
+\contentsline {section}{\numberline {2.2}EX-GCD}{13}
+\contentsline {section}{\numberline {2.3}Miller-rabin}{13}
+\contentsline {section}{\numberline {2.4}Pollard-rho.cpp}{14}
+\contentsline {section}{\numberline {2.5}非互质CRT}{14}
+\contentsline {section}{\numberline {2.6}非互质CRT -zky}{14}
+\contentsline {section}{\numberline {2.7}Pell方程}{15}
+\contentsline {section}{\numberline {2.8}Simpson}{15}
+\contentsline {section}{\numberline {2.9}解一元三次方程}{16}
+\contentsline {section}{\numberline {2.10}线段下整点}{16}
+\contentsline {section}{\numberline {2.11}线性同余不等式}{16}
+\contentsline {section}{\numberline {2.12}EX-BSGS -zzq}{16}
+\contentsline {section}{\numberline {2.13}EX-BSGS -zky}{17}
+\contentsline {section}{\numberline {2.14}分治乘法}{18}
+\contentsline {section}{\numberline {2.15}组合数模$p^k$}{18}
+\contentsline {chapter}{\numberline {3}图论}{19}
+\contentsline {section}{\numberline {3.1}图论基础}{19}
+\contentsline {section}{\numberline {3.2}坚固无敌的点双 -zzq}{19}
+\contentsline {section}{\numberline {3.3}坚固无敌的边双 -zzq}{20}
+\contentsline {section}{\numberline {3.4}坚固无敌的点双 -jzh}{21}
+\contentsline {section}{\numberline {3.5}坚固无敌的边双 -jzh}{22}
+\contentsline {section}{\numberline {3.6}2-sat}{23}
+\contentsline {section}{\numberline {3.7}闪电二分图匹配}{24}
+\contentsline {section}{\numberline {3.8}一般图匹配}{25}
+\contentsline {section}{\numberline {3.9}一般图最大权匹配}{26}
+\contentsline {section}{\numberline {3.10}有根树hash}{30}
+\contentsline {section}{\numberline {3.11}无向图最小割}{31}
+\contentsline {section}{\numberline {3.12}必经点Dominator-tree}{31}
+\contentsline {section}{\numberline {3.13}K短路}{33}
+\contentsline {section}{\numberline {3.14}最大团搜索}{36}
+\contentsline {section}{\numberline {3.15}极大团计数}{37}
+\contentsline {section}{\numberline {3.16}欧拉回路}{38}
+\contentsline {section}{\numberline {3.17}朱刘最小树形图}{38}
+\contentsline {chapter}{\numberline {4}数据结构}{41}
+\contentsline {section}{\numberline {4.1}Kd-tree}{41}
+\contentsline {section}{\numberline {4.2}LCT}{44}
+\contentsline {section}{\numberline {4.3}树状数组上二分第ｋ大}{46}
+\contentsline {section}{\numberline {4.4}Treap}{46}
+\contentsline {section}{\numberline {4.5}FHQ-Treap}{47}
+\contentsline {section}{\numberline {4.6}真-FHQTreap}{49}
+\contentsline {section}{\numberline {4.7}带修改莫队上树}{51}
+\contentsline {section}{\numberline {4.8}虚树}{52}
+\contentsline {chapter}{\numberline {5}字符串}{53}
+\contentsline {section}{\numberline {5.1}Manacher}{53}
+\contentsline {section}{\numberline {5.2}指针版回文自动机}{53}
+\contentsline {section}{\numberline {5.3}后缀数组}{54}
+\contentsline {section}{\numberline {5.4}最小表示法}{55}
+\contentsline {chapter}{\numberline {6}计算几何}{57}
+\contentsline {section}{\numberline {6.1}点类}{57}
+\contentsline {section}{\numberline {6.2}圆基础}{59}
+\contentsline {section}{\numberline {6.3}点在多边形内}{60}
+\contentsline {section}{\numberline {6.4}二维最小覆盖圆}{60}
+\contentsline {section}{\numberline {6.5}圆并}{61}
+\contentsline {section}{\numberline {6.6}经典阿波罗尼斯圆}{64}
+\contentsline {section}{\numberline {6.7}半平面交}{64}
+\contentsline {section}{\numberline {6.8}求凸包}{65}
+\contentsline {section}{\numberline {6.9}凸包游戏}{65}
+\contentsline {section}{\numberline {6.10}平面最近点}{67}
+\contentsline {section}{\numberline {6.11}无敌面积并（多圆多多边形)，$n^3$}{67}
+\contentsline {section}{\numberline {6.12}Farmland}{69}
+\contentsline {section}{\numberline {6.13}三维基础}{71}
+\contentsline {section}{\numberline {6.14}三维凸包}{73}
+\contentsline {section}{\numberline {6.15}三角剖分与V图}{74}
+\contentsline {section}{\numberline {6.16}三维最小覆盖球}{76}
+\contentsline {section}{\numberline {6.17}空间四点外接球}{78}
+\contentsline {chapter}{\numberline {7}技巧}{79}
+\contentsline {section}{\numberline {7.1}无敌的读入优化}{79}
+\contentsline {section}{\numberline {7.2}真正释放STL内存}{79}
+\contentsline {section}{\numberline {7.3}梅森旋转算法}{79}
+\contentsline {section}{\numberline {7.4}蔡勒公式}{80}
+\contentsline {section}{\numberline {7.5}开栈}{80}
+\contentsline {section}{\numberline {7.6}Size为ｋ的子集}{80}
+\contentsline {section}{\numberline {7.7}长方体表面两点最短距离}{80}
+\contentsline {section}{\numberline {7.8}经纬度求球面最短距离}{81}
+\contentsline {section}{\numberline {7.9}32-bit/64-bit随机素数}{81}
+\contentsline {section}{\numberline {7.10}NTT 素数及其原根}{81}
+\contentsline {section}{\numberline {7.11}Formulas}{81}
+\contentsline {subsection}{\numberline {7.11.1}Arithmetic Function}{81}
+\contentsline {subsection}{\numberline {7.11.2}Binomial Coefficients}{82}
+\contentsline {subsection}{\numberline {7.11.3}Fibonacci Numbers}{83}
+\contentsline {subsection}{\numberline {7.11.4}Stirling Cycle Numbers}{83}
+\contentsline {subsection}{\numberline {7.11.5}Stirling Subset Numbers}{83}
+\contentsline {subsection}{\numberline {7.11.6}Eulerian Numbers}{83}
+\contentsline {subsection}{\numberline {7.11.7}Harmonic Numbers}{83}
+\contentsline {subsection}{\numberline {7.11.8}Pentagonal Number Theorem}{84}
+\contentsline {subsection}{\numberline {7.11.9}Bell Numbers}{84}
+\contentsline {subsection}{\numberline {7.11.10}Bernoulli Numbers}{84}
+\contentsline {subsection}{\numberline {7.11.11}Tetrahedron Volume}{84}
+\contentsline {subsection}{\numberline {7.11.12}BEST Thoerem}{84}
+\contentsline {subsection}{\numberline {7.11.13}重心}{84}
+\contentsline {subsection}{\numberline {7.11.14}Others}{84}
+\contentsline {section}{\numberline {7.12}Java}{88}

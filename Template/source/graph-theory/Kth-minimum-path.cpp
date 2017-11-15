@@ -11,7 +11,6 @@ bool used[MAXN];
 int n, m, cnt, S, T, Kth, N;// m is number of all edges
 int rt[MAXN], seq[MAXN], adj[MAXN], from[MAXN], dep[MAXN];
 LL dist[MAXN], w[MAXM], ans[MAXK];
-
 struct GivenEdge {  //edge given from origin input
     int u, v, w;
     GivenEdge() {};
@@ -22,31 +21,22 @@ struct Edge {
     Edge() {};
     Edge(int _v, int _nxt, int _w): v(_v), nxt(_nxt), w(_w) {};
 } e[MAXM];
-
 inline void addedge(int u, int v, int w) {
     e[++cnt] = Edge(v, adj[u], w); adj[u] = cnt;
 }
-
 inline void dij(int S) {  //dij in original graph, spfa if needed
     for (int i = 1; i <= N; ++i) {
-        dist[i] = INF;
-        dep[i] = INF;
-        used[i] = false;
-        from[i] = 0;
+        dist[i] = INF; dep[i] = INF; used[i] = false; from[i] = 0;
     }
     static priority_queue<pair<LL, int>, vector<pair<LL, int> >, greater<pair<LL, int> > > hp;
     while (!hp.empty()) hp.pop();
     hp.push(make_pair(dist[S] = 0, S));
     dep[S] = 1;
     while (!hp.empty()) {
-        pair<LL, int> now = hp.top();
+        pair<LL, int> now = hp.top(); hp.pop();
         int u = now.second;
-        hp.pop();
-        if (used[u]) {
-        	continue;
-        } else {
-        	used[u] = true;
-        }
+        if (used[u]) continue;
+        	else used[u] = true;
         for (int p = adj[u]; p; p = e[p].nxt) {
             int v = e[p].v;
             if (dist[u] + e[p].w < dist[v]) {  //different when max or min
@@ -111,9 +101,7 @@ inline int merge_full(int u, int v) {
     hp[nownode].dist = hp[hp[nownode].rc].dist + 1;
     return nownode;
 }
-
 priority_queue<pair<LL, int>, vector<pair<LL, int> >, greater<pair<LL, int> > > Q;
-
 int main() {
 	scanf("%d%d%d", &n, &m, &Kth);
 	for (int i = 1; i <= m; ++i) {

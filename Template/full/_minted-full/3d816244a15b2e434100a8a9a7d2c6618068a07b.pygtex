@@ -6,8 +6,7 @@
         \PYG{k+kt}{int} \PYG{n}{y} \PYG{o}{=} \PYG{n}{edge}\PYG{p}{[}\PYG{n}{x}\PYG{p}{][}\PYG{n}{i}\PYG{p}{];}
         \PYG{k+kt}{int} \PYG{n}{w} \PYG{o}{=} \PYG{n}{matchy}\PYG{p}{[}\PYG{n}{y}\PYG{p}{];}
         \PYG{k}{if} \PYG{p}{(}\PYG{n}{w} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{||} \PYG{n}{level}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]} \PYG{o}{+} \PYG{l+m+mi}{1} \PYG{o}{==} \PYG{n}{level}\PYG{p}{[}\PYG{n}{w}\PYG{p}{]} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{w}\PYG{p}{))} \PYG{p}{\PYGZob{}}
-            \PYG{n}{matchx}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]} \PYG{o}{=} \PYG{n}{y}\PYG{p}{;}
-            \PYG{n}{matchy}\PYG{p}{[}\PYG{n}{y}\PYG{p}{]} \PYG{o}{=} \PYG{n}{x}\PYG{p}{;}
+            \PYG{n}{matchx}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]} \PYG{o}{=} \PYG{n}{y}\PYG{p}{;} \PYG{n}{matchy}\PYG{p}{[}\PYG{n}{y}\PYG{p}{]} \PYG{o}{=} \PYG{n}{x}\PYG{p}{;}
             \PYG{k}{return} \PYG{n+nb}{true}\PYG{p}{;}
         \PYG{p}{\PYGZcb{}}
     \PYG{p}{\PYGZcb{}}
@@ -23,9 +22,7 @@
             \PYG{k}{if} \PYG{p}{(}\PYG{n}{matchx}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
                 \PYG{n}{level}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
                 \PYG{n}{q}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}
-            \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
-                \PYG{n}{level}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
-            \PYG{p}{\PYGZcb{}}
+            \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{n}{level}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
         \PYG{p}{\PYGZcb{}}
         \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{head} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{head} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{q}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{o}{++}\PYG{n}{head}\PYG{p}{)} \PYG{p}{\PYGZob{}}
             \PYG{k+kt}{int} \PYG{n}{x} \PYG{o}{=} \PYG{n}{q}\PYG{p}{[}\PYG{n}{head}\PYG{p}{];}
@@ -39,16 +36,9 @@
             \PYG{p}{\PYGZcb{}}
         \PYG{p}{\PYGZcb{}}
         \PYG{k+kt}{int} \PYG{n}{delta} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
-        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-            \PYG{k}{if} \PYG{p}{(}\PYG{n}{matchx}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{i}\PYG{p}{))} \PYG{p}{\PYGZob{}}
-                \PYG{n}{delta}\PYG{o}{++}\PYG{p}{;}
-            \PYG{p}{\PYGZcb{}}
-        \PYG{p}{\PYGZcb{}}
-        \PYG{k}{if} \PYG{p}{(}\PYG{n}{delta} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-            \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
-        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
-            \PYG{n}{ans} \PYG{o}{+=} \PYG{n}{delta}\PYG{p}{;}
-        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{matchx}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{i}\PYG{p}{))} \PYG{o}{++}\PYG{n}{delta}\PYG{p}{;}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{delta} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;} \PYG{k}{else} \PYG{n}{ans} \PYG{o}{+=} \PYG{n}{delta}\PYG{p}{;}
     \PYG{p}{\PYGZcb{}}
 \PYG{p}{\PYGZcb{}}
 \end{Verbatim}

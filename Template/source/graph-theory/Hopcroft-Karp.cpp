@@ -5,8 +5,7 @@ bool dfs(int x) {
         int y = edge[x][i];
         int w = matchy[y];
         if (w == -1 || level[x] + 1 == level[w] && dfs(w)) {
-            matchx[x] = y;
-            matchy[y] = x;
+            matchx[x] = y; matchy[y] = x;
             return true;
         }
     }
@@ -22,9 +21,7 @@ int solve() {
             if (matchx[i] == -1) {
                 level[i] = 0;
                 q.push_back(i);
-            } else {
-                level[i] = -1;
-            }
+            } else level[i] = -1;
         }
         for (int head = 0; head < (int)q.size(); ++head) {
             int x = q[head];
@@ -38,15 +35,8 @@ int solve() {
             }
         }
         int delta = 0;
-        for (int i = 0; i < n; ++i) {
-            if (matchx[i] == -1 && dfs(i)) {
-                delta++;
-            }
-        }
-        if (delta == 0) {
-            return ans;
-        } else {
-            ans += delta;
-        }
+        for (int i = 0; i < n; ++i)
+            if (matchx[i] == -1 && dfs(i)) ++delta;
+        if (delta == 0) return ans; else ans += delta;
     }
 }

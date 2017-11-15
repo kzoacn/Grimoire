@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  15 NOV 2017 14:38
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  15 NOV 2017 19:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1914,22 +1914,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-] [2
-
 ] (./full.toc
-[3]
+[2
+
+]
 
 LaTeX Font Warning: Font shape `EU1/FandolSong-Regular(1)/m/sl' undefined
 (Font)              using `EU1/FandolSong-Regular(1)/m/n' instead on input line
  81.
 
-[4])
+[3])
 \tf@toc=\write6
 \openout6 = `full.toc'.
 
- (../source.tex (../source/algebra.tex [5] [6
-
-]
+ (../source.tex [4] (../source/algebra.tex
 Chapter 1.
 *************************************************
 * fontspec warning: "script-not-exist"
@@ -1994,7 +1992,10 @@ makeatother\\endinput\n \"); f.close();")...executed.
 . <->"STXihei/OT:script=latn;language=DFLT;embolden=4;"
 . - 'bold small caps'  (bx/sc) with NFSS spec.: 
 .................................................
-[7])
+[5
+
+
+])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2017,7 +2018,7 @@ endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/64dad20bfaa7c12cd164ed36d2c9aea4894ac161.pygtex [8])
+(./_minted-full/64dad20bfaa7c12cd164ed36d2c9aea4894ac161.pygtex [6])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2029,7 +2030,7 @@ er\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/5ac7e2d66e64465f1a715af7dc4a0b5ffe64a9ce.pygtex [9])
+(./_minted-full/5ac7e2d66e64465f1a715af7dc4a0b5ffe64a9ce.pygtex [7])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2053,7 +2054,7 @@ lgebra/polynomial-divide.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
 
 
 (./full.mintedmd5)
-(./_minted-full/d9763029fafd591661f7009e59a61802de14ece8.pygtex [10])
+(./_minted-full/d9763029fafd591661f7009e59a61802de14ece8.pygtex [8])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2065,7 +2066,7 @@ f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123)
 
 
 (./full.mintedmd5)
-(./_minted-full/d3b54e8e6781683ac7dde9b96a1f6eb6996fbaef.pygtex [11])
+(./_minted-full/d3b54e8e6781683ac7dde9b96a1f6eb6996fbaef.pygtex [9])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2077,7 +2078,7 @@ endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/a7deb1e01cb0bd47417dc0a5738b7c6fcbb0d2b1.pygtex [12])
+(./_minted-full/a7deb1e01cb0bd47417dc0a5738b7c6fcbb0d2b1.pygtex [10])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2089,8 +2090,8 @@ er\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/6434f4c3c53fc0c4a0cf8b1b5cb0c2cb24f2546d.pygtex [13]))
-(../source/number-theory.tex [14]
+(./_minted-full/6434f4c3c53fc0c4a0cf8b1b5cb0c2cb24f2546d.pygtex [11])) [12]
+(../source/number-theory.tex
 Chapter 2.
 \openout5 = `full.mintedcmd'.
 
@@ -2126,7 +2127,8 @@ umber-theory/miller-rabin.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
 
 
 (./full.mintedmd5)
-(./_minted-full/6440998441e1a0c1d9d09caac8d34712edc5790f.pygtex [15
+(./_minted-full/6440998441e1a0c1d9d09caac8d34712edc5790f.pygtex [13
+
 
 ])
 \openout5 = `full.mintedcmd'.
@@ -2164,7 +2166,7 @@ eatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/e0b595d1c3fa94c81e2435ccecae6cfff3c92068.pygtex [16])
+(./_minted-full/e0b595d1c3fa94c81e2435ccecae6cfff3c92068.pygtex [14])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2200,7 +2202,7 @@ eatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/6bca75a06d853f45640db06a7f775594c40264e1.pygtex [17])
+(./_minted-full/6bca75a06d853f45640db06a7f775594c40264e1.pygtex [15])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2236,7 +2238,7 @@ umber-theory/EX-BSGS-zzq.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
 
 
 (./full.mintedmd5)
-(./_minted-full/0e6122765ecff1a9568264965952dc8411b08d3d.pygtex [18])
+(./_minted-full/0e6122765ecff1a9568264965952dc8411b08d3d.pygtex [16])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2248,7 +2250,7 @@ umber-theory/EX-BSGS-zky.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
 
 
 (./full.mintedmd5)
-(./_minted-full/19fa42ae583e40320a71bdc30db79942d1db8478.pygtex [19])
+(./_minted-full/19fa42ae583e40320a71bdc30db79942d1db8478.pygtex [17])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2272,8 +2274,8 @@ eatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/5c46b078fe778561febae5d246b644d527ccb501.pygtex))
-(../source/graph-theory.tex [20]
+(./_minted-full/5c46b078fe778561febae5d246b644d527ccb501.pygtex)) [18]
+(../source/graph-theory.tex
 Chapter 3.
 \openout5 = `full.mintedcmd'.
 
@@ -2285,7 +2287,7 @@ raph-theory/basic.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(
 other\\endinput\n \"); f.close();")...executed.
 
 (./full.mintedmd5)
-(./_minted-full/4a39fa0e3a2183a7c76d70ab149ff4bef5c4b2f2.pygtex)
+(./_minted-full/44a0f60ff79af4189f6df2a602260d19e88bbeb7.pygtex)
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2297,7 +2299,8 @@ tter\" + macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/09beedfb8442b9467bf96d70ff4b43fc1d6ecf04.pygtex [21
+(./_minted-full/d593464ec63883f943492d1f6250903684157d61.pygtex [19
+
 
 ])
 \openout5 = `full.mintedcmd'.
@@ -2311,7 +2314,7 @@ ter\" + macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/ceb93bf42a2f88292ac3a45c39d6c259aedf9cb2.pygtex [22])
+(./_minted-full/24365204befe39f1f890a2830344f0f1e9fed7aa.pygtex [20])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2323,10 +2326,7 @@ r\" + macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/67438d515113c5f0683edf9d563f55f63b5fd6af.pygtex [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24])
+(./_minted-full/ccc4da8a21244cfdb72e488384d03b5eb01cb9ff.pygtex [21])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2338,7 +2338,7 @@ raph-theory/biconnected-graph-edge -jzh.cpp\", \"rb\"); hasher.update(f.read())
 
 
 (./full.mintedmd5)
-(./_minted-full/b50cb5dcd348d958a11b408415a8e9dde3186a63.pygtex [25])
+(./_minted-full/b50cb5dcd348d958a11b408415a8e9dde3186a63.pygtex [22])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2350,7 +2350,7 @@ raph-theory/two-satisfiability.cpp\", \"rb\"); hasher.update(f.read()); f.close
 
 
 (./full.mintedmd5)
-(./_minted-full/299ba79346d315da61f9b00f4f7437d3744a3b47.pygtex)
+(./_minted-full/8888e5007e093d2a1fec65a4eb42d7aec179894f.pygtex [23])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2362,10 +2362,7 @@ raph-theory/Hopcroft-Karp.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
 
 
 (./full.mintedmd5)
-(./_minted-full/622c963ebceea9e99e91094d73cbb0f58a18e45f.pygtex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26])
+(./_minted-full/3d816244a15b2e434100a8a9a7d2c6618068a07b.pygtex [24])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2377,10 +2374,7 @@ raph-theory/general-matching.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/c97b724db6bfb1bffb9ebb02b35ff58b0a5c870f.pygtex [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28])
+(./_minted-full/9b48f11b6b56aebe485096d8e00378f681f590c9.pygtex [25])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2392,16 +2386,16 @@ raph-theory/weighted_blossom.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/40dd504c94ff484b73d33f16b12981a4c713225f.pygtex [29]
+(./_minted-full/40dd504c94ff484b73d33f16b12981a4c713225f.pygtex [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
+ [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
+ [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32])
+ [29])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2413,7 +2407,7 @@ macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/467aa9e49b57442a6dca49296e88420ca243a151.pygtex)
+(./_minted-full/467aa9e49b57442a6dca49296e88420ca243a151.pygtex [30])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2425,7 +2419,7 @@ raph-theory/StoerWagner_O(V^3).cpp\", \"rb\"); hasher.update(f.read()); f.close
 
 
 (./full.mintedmd5)
-(./_minted-full/f32a12fdfdaca4744d4043765bc8fb53ab3f6ba4.pygtex [33])
+(./_minted-full/f32a12fdfdaca4744d4043765bc8fb53ab3f6ba4.pygtex)
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2437,7 +2431,10 @@ keatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/3525afb4679814898ef0e68297c192c345753c92.pygtex [34])
+(./_minted-full/cf155a172fc177df2128875005c8425891894040.pygtex [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2449,28 +2446,25 @@ raph-theory/Kth-minimum-path.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/e981e106791b189533ad209c34917461b7a96660.pygtex [35]
+(./_minted-full/510243a228a31ffb0a5001ab27c09552e4d747c4.pygtex [33]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37])
+ [35])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
 intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/g
-raph-theory/最大团搜索.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(
-\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher
-.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeat
-other\\endinput\n \"); f.close();")...executed.
+raph-theory/MaximumClique.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
+ = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) 
++ hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"
+\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/eb5e573f46f9114a7227fb97ff38bf9ba2090481.pygtex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38])
+(./_minted-full/80bbccd71dfbce8f4208071b88272e3279e1e3ff.pygtex [36])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2482,7 +2476,7 @@ other\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/fff7558a09e93eda36fb39735af43b3d150fc800.pygtex [39])
+(./_minted-full/fff7558a09e93eda36fb39735af43b3d150fc800.pygtex [37])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2494,7 +2488,7 @@ akeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/885cb30cdb991d2baedd5dfd0a5a687d0f35f5d9.pygtex)
+(./_minted-full/1fb36050e36c04d03a21314c90d66f395e9fb752.pygtex)
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2506,10 +2500,10 @@ ro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/b1990d8b9e2a2ccbe4036fbf7e0f9897c779881e.pygtex [40]))
-(../source/data-structure.tex [41] [42
+(./_minted-full/883dbffeab066d264b5500f481fc6adcf1d02ad1.pygtex [38])) [39]
+[40
 
-]
+] (../source/data-structure.tex
 Chapter 4.
 \openout5 = `full.mintedcmd'.
 
@@ -2521,13 +2515,15 @@ sher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\ma
 keatother\\endinput\n \"); f.close();")...executed.
 
 (./full.mintedmd5)
-(./_minted-full/462770ba94df28dfd95721b4094eab3dd27bf29c.pygtex [43]
+(./_minted-full/462770ba94df28dfd95721b4094eab3dd27bf29c.pygtex [41
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
+ [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45])
+ [43])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2539,7 +2535,7 @@ other\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/ba182dce8ddf5e9b063cc7995333680643a13ef5.pygtex [46])
+(./_minted-full/ba182dce8ddf5e9b063cc7995333680643a13ef5.pygtex [44])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2554,7 +2550,7 @@ ata-structure/fenwicktree_kth.cpp\", \"rb\"); hasher.update(f.read()); f.close(
 (./_minted-full/8c5fc3eee6695fcc58b815f579c7b6c4a8adeb9d.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47])
+ [45])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2566,7 +2562,7 @@ atother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/aa854baf821907387f6223532b6d22a2c1dbb841.pygtex [48])
+(./_minted-full/aa854baf821907387f6223532b6d22a2c1dbb841.pygtex [46])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2578,10 +2574,10 @@ akeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/b581106e85cb8dc3be8c529c9249708b4ab3ba25.pygtex [49]
+(./_minted-full/b581106e85cb8dc3be8c529c9249708b4ab3ba25.pygtex [47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50])
+ [48])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2593,10 +2589,10 @@ ata-structure/true.fhqtreap.cpp\", \"rb\"); hasher.update(f.read()); f.close();
 
 
 (./full.mintedmd5)
-(./_minted-full/41789e4ef412e9c0d0e959ff6959e9fe0244e7f2.pygtex [51]
+(./_minted-full/41789e4ef412e9c0d0e959ff6959e9fe0244e7f2.pygtex [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52])
+ [50])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2623,8 +2619,8 @@ f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123)
 (./_minted-full/14a74238ad95be25cdafe85f24b0d1ff3319542a.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]))
-(../source/string.tex [54]
+ [51]))
+[52] (../source/string.tex
 Chapter 5.
 \openout5 = `full.mintedcmd'.
 
@@ -2648,45 +2644,10 @@ cro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/a21046e8265c9715ec6232548c2510f368f7055b.pygtex [55
+(./_minted-full/a21046e8265c9715ec6232548c2510f368f7055b.pygtex [53
+
 
 ])
-\openout5 = `full.mintedcmd'.
-
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
-intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/s
-tring/SuffixAutomaton_array.cpp\", \"rb\"); hasher.update(f.read()); f.close();
- f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123
-) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + 
-\"\\makeatother\\endinput\n \"); f.close();")...executed.
-
-
-(./full.mintedmd5)
-(./_minted-full/b07ace6e1957ca8aef8ae8723d922864ac43d222.pygtex [56])
-\openout5 = `full.mintedcmd'.
-
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
-intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/s
-tring/SuffixAutomaton_pointer.cpp\", \"rb\"); hasher.update(f.read()); f.close(
-); f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(1
-23) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro 
-+ \"\\makeatother\\endinput\n \"); f.close();")...executed.
-
-
-(./full.mintedmd5)
-(./_minted-full/d4a0440512a2563f3dfff7bdb22126eae5c6a48e.pygtex [57])
-\openout5 = `full.mintedcmd'.
-
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
-intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/s
-tring/EX_SuffixAutomaton_pointer.cpp\", \"rb\"); hasher.update(f.read()); f.clo
-se(); f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + ch
-r(123) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + mac
-ro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
-
-
-(./full.mintedmd5)
-(./_minted-full/f98f79b20de35cee62aba19b4adb9d6acb525f34.pygtex [58])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2698,7 +2659,7 @@ dinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/78e569f5f2fef824e2938ea831c8e4fd307d70d4.pygtex [59])
+(./_minted-full/78e569f5f2fef824e2938ea831c8e4fd307d70d4.pygtex [54])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2710,8 +2671,10 @@ other\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/5131c17f85d60c6f17356a0133df647774dc6590.pygtex))
-(../source/computational-geometry.tex [60]
+(./_minted-full/5131c17f85d60c6f17356a0133df647774dc6590.pygtex)) [55] [56
+
+]
+(../source/computational-geometry.tex
 Chapter 6.
 \openout5 = `full.mintedcmd'.
 
@@ -2723,12 +2686,12 @@ omputational-geometry/point.cpp\", \"rb\"); hasher.update(f.read()); f.close();
 \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 (./full.mintedmd5)
-(./_minted-full/6dc28349675697d9b4ecb544ce97a37fec39d924.pygtex [61
+(./_minted-full/6dc28349675697d9b4ecb544ce97a37fec39d924.pygtex [57
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62])
+ [58])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2740,7 +2703,7 @@ omputational-geometry/circle.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/a72f44293ddfbad7fbc558e36c04f9c91117f9e6.pygtex [63])
+(./_minted-full/a72f44293ddfbad7fbc558e36c04f9c91117f9e6.pygtex [59])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2764,7 +2727,37 @@ omputational-geometry/mincir.cpp\", \"rb\"); hasher.update(f.read()); f.close()
 
 
 (./full.mintedmd5)
-(./_minted-full/41ca046db824d23e59b765d2e7c1a704fba40188.pygtex [64])
+(./_minted-full/41ca046db824d23e59b765d2e7c1a704fba40188.pygtex [60])
+\openout5 = `full.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
+intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/c
+omputational-geometry/circle_union.cpp\", \"rb\"); hasher.update(f.read()); f.c
+lose(); f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + 
+chr(123) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + m
+acro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
+
+
+(./full.mintedmd5)
+(./_minted-full/a23c77f78c16f61d678879339c02745de1e17354.pygtex [61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63])
+\openout5 = `full.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
+intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../source/c
+omputational-geometry/Apollonius_Circle.cpp\", \"rb\"); hasher.update(f.read())
+; f.close(); f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash
+\" + chr(123) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\
+" + macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
+
+
+(./full.mintedmd5)
+(./_minted-full/066497b194dd7e8b54907859c039464ab6adc9db.pygtex)
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2776,7 +2769,7 @@ ter\" + macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/b78e2591f2e37f82e2c91ecd3b4a494761183c95.pygtex [65])
+(./_minted-full/b78e2591f2e37f82e2c91ecd3b4a494761183c95.pygtex [64])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2800,10 +2793,10 @@ omputational-geometry/PlayWithConvex.cpp\", \"rb\"); hasher.update(f.read()); f
 
 
 (./full.mintedmd5)
-(./_minted-full/5e748d06d314efbbf8096e4124221b1dbbe024d4.pygtex [66]
+(./_minted-full/5e748d06d314efbbf8096e4124221b1dbbe024d4.pygtex [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67])
+ [66])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2815,7 +2808,7 @@ tter\" + macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/4158ac8cb2b2d8a73a72660b0845f6bb828cb069.pygtex [68])
+(./_minted-full/4158ac8cb2b2d8a73a72660b0845f6bb828cb069.pygtex)
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2827,7 +2820,10 @@ ro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/6bc99c483e5f516eafb8d7f69a4418ca53395c25.pygtex [69])
+(./_minted-full/6bc99c483e5f516eafb8d7f69a4418ca53395c25.pygtex [67]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2839,10 +2835,10 @@ omputational-geometry/farmland.cpp\", \"rb\"); hasher.update(f.read()); f.close
 
 
 (./full.mintedmd5)
-(./_minted-full/51c95668fc9ff17c2dc977e5033da07ebc175cbe.pygtex [70]
+(./_minted-full/51c95668fc9ff17c2dc977e5033da07ebc175cbe.pygtex [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71])
+ [70])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2854,10 +2850,10 @@ omputational-geometry/3DGeo.cpp\", \"rb\"); hasher.update(f.read()); f.close();
 
 
 (./full.mintedmd5)
-(./_minted-full/ce9154186955985558b00d9abf04b7aba3be3d50.pygtex [72]
+(./_minted-full/ce9154186955985558b00d9abf04b7aba3be3d50.pygtex [71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73])
+ [72])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2869,7 +2865,7 @@ omputational-geometry/3DConvex.cpp\", \"rb\"); hasher.update(f.read()); f.close
 
 
 (./full.mintedmd5)
-(./_minted-full/8accda0f84f9c935dada1713d17dbc9b24c9e232.pygtex [74])
+(./_minted-full/8accda0f84f9c935dada1713d17dbc9b24c9e232.pygtex [73])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2881,11 +2877,10 @@ ter\" + macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/b7c02cb96585d0addd52ac8ee7879d52d46da4c2.pygtex
+(./_minted-full/b7c02cb96585d0addd52ac8ee7879d52d46da4c2.pygtex [74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75]
-[76])
+ [75])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2895,15 +2890,12 @@ d()); f.close(); f = open(\"full.mintedmd5\", \"w\"); macro = \"\\edef\\minted@
 hash\" + chr(123) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatlet
 ter\" + macro + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
- (./full.mintedmd5)
-(./_minted-full/6ddc14b239cd331853dcb5cddc8ab525cd631242.pygtex
+
+(./full.mintedmd5)
+(./_minted-full/74ec31cf6fb53fef1398a4790961734287738d75.pygtex [76]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77]
-[78]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [79])
+ [77])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -2915,8 +2907,8 @@ omputational-geometry/min_ball.cpp\", \"rb\"); hasher.update(f.read()); f.close
 
 
 (./full.mintedmd5)
-(./_minted-full/031e02687d2788fbbccab147927ef48149130086.pygtex))
-(../source/hints.tex [80]
+(./_minted-full/031e02687d2788fbbccab147927ef48149130086.pygtex)) [78]
+(../source/hints.tex
 Chapter 7.
 \openout5 = `full.mintedcmd'.
 
@@ -2952,7 +2944,8 @@ keatother\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/b6b878759b63a3df15184fe1c6b84f39bebabc9b.pygtex [81
+(./_minted-full/b6b878759b63a3df15184fe1c6b84f39bebabc9b.pygtex [79
+
 
 ])
 \openout5 = `full.mintedcmd'.
@@ -3002,7 +2995,7 @@ ther\\endinput\n \"); f.close();")...executed.
 
 
 (./full.mintedmd5)
-(./_minted-full/3a93448f6ee5a8bb3a06cd8c304ad0c6e6aac883.pygtex [82])
+(./_minted-full/3a93448f6ee5a8bb3a06cd8c304ad0c6e6aac883.pygtex [80])
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -3018,7 +3011,7 @@ her\\endinput\n \"); f.close();")...executed.
 (../source/hints/Formula.tex
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
- [83]
+ [81]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
@@ -3032,13 +3025,13 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84]
-[85]
+ [82]
+[83]
 Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-[86])
+[84])
 File: ../source/hints/Integral.pdf Graphic file (type QTm)
  <use  "../source/hints/Integral.pdf" >
 File: ../source/hints/Integral.pdf Graphic file (type QTm)
@@ -3049,7 +3042,7 @@ File: ../source/hints/Integral.pdf Graphic file (type QTm)
 <use  "../source/hints/Integral.pdf"  page1>
 File: ../source/hints/Integral.pdf Graphic file (type QTm)
 
-<use  "../source/hints/Integral.pdf"  page1> [87]
+<use  "../source/hints/Integral.pdf"  page1> [85]
 File: ../source/hints/Integral.pdf Graphic file (type QTm)
 
 <use  "../source/hints/Integral.pdf"  page1>
@@ -3058,7 +3051,7 @@ File: ../source/hints/Integral.pdf Graphic file (type QTm)
 <use  "../source/hints/Integral.pdf"  page1>
 File: ../source/hints/Integral.pdf Graphic file (type QTm)
 
-<use  "../source/hints/Integral.pdf"  page1> [88]
+<use  "../source/hints/Integral.pdf"  page1> [86]
 File: ../source/hints/Integral.pdf Graphic file (type QTm)
 
 <use  "../source/hints/Integral.pdf"  page2>
@@ -3067,7 +3060,7 @@ File: ../source/hints/Integral.pdf Graphic file (type QTm)
 <use  "../source/hints/Integral.pdf"  page2>
 File: ../source/hints/Integral.pdf Graphic file (type QTm)
 
-<use  "../source/hints/Integral.pdf"  page2> [89]
+<use  "../source/hints/Integral.pdf"  page2> [87]
 \openout5 = `full.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"full.m
@@ -3079,6 +3072,72 @@ er\\endinput\n \"); f.close();")...executed.
 
  (./full.mintedmd5)
 (./_minted-full/6a16947851cbf1442d358d0dff2145ee8b797585.pygtex)
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf" >
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf" >
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page1>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page1> [88]
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page1>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page1>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page1> [89]
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page2>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page2>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page2> [90]
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page3>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page3>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page3> [91]
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page4>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page4>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page4> [92]
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page5>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page5>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page5> [93]
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page6>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page6>
+File: ../source/hints/BigDecimal.pdf Graphic file (type QTm)
+
+<use  "../source/hints/BigDecimal.pdf"  page6> [94]
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
 <use  "../source/hints/treemap.pdf" >
@@ -3089,16 +3148,16 @@ File: ../source/hints/treemap.pdf Graphic file (type QTm)
 <use  "../source/hints/treemap.pdf"  page1>
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
-<use  "../source/hints/treemap.pdf"  page1> [90]
-File: ../source/hints/treemap.pdf Graphic file (type QTm)
-
 <use  "../source/hints/treemap.pdf"  page1>
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
 <use  "../source/hints/treemap.pdf"  page1>
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
-<use  "../source/hints/treemap.pdf"  page1> [91]
+<use  "../source/hints/treemap.pdf"  page1>
+File: ../source/hints/treemap.pdf Graphic file (type QTm)
+
+<use  "../source/hints/treemap.pdf"  page1> [95]
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
 <use  "../source/hints/treemap.pdf"  page2>
@@ -3107,7 +3166,7 @@ File: ../source/hints/treemap.pdf Graphic file (type QTm)
 <use  "../source/hints/treemap.pdf"  page2>
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
-<use  "../source/hints/treemap.pdf"  page2> [92]
+<use  "../source/hints/treemap.pdf"  page2> [96]
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
 <use  "../source/hints/treemap.pdf"  page3>
@@ -3116,7 +3175,7 @@ File: ../source/hints/treemap.pdf Graphic file (type QTm)
 <use  "../source/hints/treemap.pdf"  page3>
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
-<use  "../source/hints/treemap.pdf"  page3> [93]
+<use  "../source/hints/treemap.pdf"  page3> [97]
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
 <use  "../source/hints/treemap.pdf"  page4>
@@ -3125,7 +3184,7 @@ File: ../source/hints/treemap.pdf Graphic file (type QTm)
 <use  "../source/hints/treemap.pdf"  page4>
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
-<use  "../source/hints/treemap.pdf"  page4> [94]
+<use  "../source/hints/treemap.pdf"  page4> [98]
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
 <use  "../source/hints/treemap.pdf"  page5>
@@ -3134,7 +3193,9 @@ File: ../source/hints/treemap.pdf Graphic file (type QTm)
 <use  "../source/hints/treemap.pdf"  page5>
 File: ../source/hints/treemap.pdf Graphic file (type QTm)
 
-<use  "../source/hints/treemap.pdf"  page5> [95]))
+<use  "../source/hints/treemap.pdf"  page5> [99]) [100
+
+])
 runsystem(rm "full.mintedcmd")...executed.
 
 runsystem(rm "full.mintedmd5")...executed.
@@ -3149,12 +3210,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 28392 strings out of 493638
- 562022 string characters out of 6146796
- 617592 words of memory out of 5000000
- 30935 multiletter control sequences out of 15000+600000
+ 28375 strings out of 493638
+ 560660 string characters out of 6146796
+ 618396 words of memory out of 5000000
+ 30921 multiletter control sequences out of 15000+600000
  21176 words of font info for 130 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 65i,18n,87p,10431b,958s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,18n,87p,10431b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on full.pdf (95 pages).
+Output written on full.pdf (100 pages).

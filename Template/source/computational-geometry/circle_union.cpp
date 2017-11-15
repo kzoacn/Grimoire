@@ -1,12 +1,4 @@
-\begin{lstlisting}
-double pi = acos(-1.0), eps = 1e-12;
-double sqr(const double & x) {
-	return x * x;
-}
 double ans[2001];
-int sign(const double & x) {
-	return x < -eps?-1:x > eps;
-}
 struct Point {
 	double x, y;
 	Point(){}
@@ -149,9 +141,7 @@ int main() {
 			else
 				a[i].print();
 		}
- 
 	}
 	fclose(stdin);
 	return 0;
 }
-\end{lstlisting}
