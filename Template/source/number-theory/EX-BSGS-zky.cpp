@@ -1,14 +1,20 @@
 LL BSGS(LL a,LL b,LL p){
-	LL m=sqrt(p)+.5,v=inv(pw(a,m,p),p),e=1;
-	map<LL,LL>hash;hash[1]=0;
-	for(int i=1;i<m;i++)
-		e=e*a%p,hash[e]=i;
-	for(int i=0;i<=m;i++){
-		if(hash.count(b))return i*m+hash[b];
-		b=b*v%p;
-	}return -1;
+    LL m=0;for(;m*m<=p;m++);
+    map<LL,int>hash;hash[1]=0;
+    LL e=1,amv=inv(pw(a,m,p),p);
+    for(int i=1;i<m;i++){
+        e=e*a%p;
+        if(!hash.count(e))
+            hash[e]=i;  
+        else break;
+    }
+    for(int i=0;i<m;i++){
+        if(hash.count(b))
+            return hash[b]+i*m;
+        b=b*amv%p;  
+    }
+    return -1;
 }
-
 LL solve2(LL a,LL b,LL p){
     //a^x=b (mod p)
     b%=p;
