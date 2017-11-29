@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  15 NOV 2017 19:48
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.23)  27 NOV 2017 14:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3009,7 +3009,7 @@ her\\endinput\n \"); f.close();")...executed.
 (./full.mintedmd5)
 (./_minted-full/5c8aa6c4920600e9ee239aa939a98d674fd7ac63.pygtex)
 (../source/hints/Formula.tex
-Underfull \vbox (badness 1546) has occurred while \output is active []
+Underfull \vbox (badness 1005) has occurred while \output is active []
 
  [81]
 

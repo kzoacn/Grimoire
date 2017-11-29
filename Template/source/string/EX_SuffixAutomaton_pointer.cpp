@@ -35,12 +35,19 @@ namespace SAM {
 		static Node *last, *q, *nq;
 		
 		int x = ch - 'a';
+		last = np; np = new Node(++now_len);
 		if (np->to[x]) {
-			np = np->to[x];
-			++now_len;
+			q = last->to[x];
+			if (q->step == last->step + 1) np->parent = q;
+			else {
+				nq = new Node(*q);
+				nq->step = last->step + 1;
+				q->parent = np->parent = nq;
+				for (; last && last->to[x] == q; last = last->parent)
+					last->to[x] = nq;
+			}
 		}
 		else {
-			last = np; np = new Node(++now_len);
 			for (; last && !last->to[x]; last = last->parent)
 				last->to[x] = np;
 			if (!last) np->parent = root;
