@@ -1,0 +1,18 @@
+11
+a.c a.c
+poj.org vpn-china
+www.pku.edu.cn vpn-pku1
+mail.pku.edu.cn vpn-pku1
+*.test.pku.edu.cn vpn-pku2
+*.test.pku.edu.cn vpn-pku2
+*.a.test.pku.edu.cn vpn-pku2
+*.test2.pku.edu.cn vpn-pku2
+*.pku.edu.cn vpn-pku2
+#.pku.edu.cn vpn-pku0
+#.www.pku.edu.cn vpn-pku0
+5
+a.c
+mail.pku.edu.cn
+*.test.pku.edu.cn
+*.pku.edu.cn
+
