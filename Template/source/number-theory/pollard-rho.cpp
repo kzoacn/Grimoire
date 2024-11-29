@@ -1,7 +1,7 @@
 LL prho(LL n,LL c){
 	LL i=1,k=2,x=rand()%(n-1)+1,y=x;
 	while(1){
-		i++;x=(x*x%n+c)%n;
+		i++;x=(mult(x,x,n)+c)%n;
 		LL d=__gcd((y-x+n)%n,n);
 		if(d>1&&d<n)return d;
 		if(y==x)return n;
